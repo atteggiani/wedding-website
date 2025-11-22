@@ -1,0 +1,23 @@
+baseURL = "https://atteggiani.github.io/wedding-website/"
+languageCode = "en"
+defaultContentLanguage = "en"
+defaultContentLanguageInSubdir = true
+title = "Davide & Jennifer"
+
+[languages]
+  [languages.en]
+    weight = 1
+    languageName = "English"
+  [languages.es]
+    weight = 2
+    languageName = "Español"
+  [languages.it]
+    weight = 3
+    languageName = "Italiano"
+
+[outputs]
+  home = ["HTML"]
+
+[params]
+  supabaseUrl = "https://bcyxjsqpvkywiuvaskvs.supabase.co"
+  supabaseAnonKey = "$SUBABASE_ANON_KEY"
