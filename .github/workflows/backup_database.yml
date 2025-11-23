@@ -1,0 +1,46 @@
+name: Backup Supabase Database
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 14 * * *" # every day at 14:00 UTC (1am AEDT)
+env:
+  DB_FILE: data/database_backup.csv
+
+jobs:
+  backup:
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: write  # required to push backup commit
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Install Supabase CLI
+        uses: supabase/setup-cli@v1
+
+      - name: Export guests table to CSV
+        run: |
+          mkdir -p data
+          curl \
+            -H "apikey: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}" \
+            -H "Authorization: Bearer ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}" \
+            -H "Accept: text/csv" \
+            '${{ secrets.SUPABASE_URL }}/rest/v1/guests?select=*' \
+            > ${{ env.DB_FILE }}
+
+      - name: Commit and push backup if changed
+        run: |
+          if git diff --quiet ${{ env.DB_FILE }}; then
+            echo "No changes in database backup"
+            exit 0
+          fi
+
+          git config user.name "GitHub Actions"
+          git config user.email "actions@github.com"
+
+          git add ${{ env.DB_FILE }}
+          git commit -m "Backup Supabase DB: $(date -u +"%Y-%m-%d %H:%M:%S UTC")"
+          git push

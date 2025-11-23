@@ -20,4 +20,4 @@ title = "Davide & Jennifer"
 
 [params]
   supabaseUrl = "https://bcyxjsqpvkywiuvaskvs.supabase.co"
-  supabaseAnonKey = "$SUBABASE_ANON_KEY"
+  supabaseAnonKey = "$SUPABASE_ANON_KEY"

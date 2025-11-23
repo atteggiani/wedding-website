@@ -1,0 +1,255 @@
+{
+  "lockfile-version": 1,
+  "manifest": {
+    "version": 1,
+    "install": {
+      "supabase": {
+        "pkg-path": "python313Packages.supabase"
+      },
+      "supabase-cli": {
+        "pkg-path": "supabase-cli"
+      }
+    },
+    "hook": {},
+    "profile": {},
+    "options": {}
+  },
+  "packages": [
+    {
+      "attr_path": "python313Packages.supabase",
+      "broken": false,
+      "derivation": "/nix/store/ml6nv1yfwjjckrmv7jnp8r8kjakmrqb4-python3.13-supabase-2.17.0.drv",
+      "description": "Supabas client for Python",
+      "install_id": "supabase",
+      "license": "MIT",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=b3d51a0365f6695e7dd5cdf3e180604530ed33b4",
+      "name": "python3.13-supabase-2.17.0",
+      "pname": "supabase",
+      "rev": "b3d51a0365f6695e7dd5cdf3e180604530ed33b4",
+      "rev_count": 888552,
+      "rev_date": "2025-11-02T19:18:41Z",
+      "scrape_date": "2025-11-04T00:36:36.841700Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "2.17.0",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "dist": "/nix/store/xhpxadcqxy3cz9ag636k89ah4zfgxc1w-python3.13-supabase-2.17.0-dist",
+        "out": "/nix/store/8fpv2wvmy6mg1pazi3a313akrb4vbfyf-python3.13-supabase-2.17.0"
+      },
+      "system": "aarch64-darwin",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "python313Packages.supabase",
+      "broken": false,
+      "derivation": "/nix/store/4shixincvv5mfdhxix66sh92vdkyfss1-python3.13-supabase-2.17.0.drv",
+      "description": "Supabas client for Python",
+      "install_id": "supabase",
+      "license": "MIT",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=b3d51a0365f6695e7dd5cdf3e180604530ed33b4",
+      "name": "python3.13-supabase-2.17.0",
+      "pname": "supabase",
+      "rev": "b3d51a0365f6695e7dd5cdf3e180604530ed33b4",
+      "rev_count": 888552,
+      "rev_date": "2025-11-02T19:18:41Z",
+      "scrape_date": "2025-11-05T16:30:49.092460Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "2.17.0",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "dist": "/nix/store/s14lvj8gx3nzvzrvh4h74c27iq0vxdxc-python3.13-supabase-2.17.0-dist",
+        "out": "/nix/store/zsp4x015bd8alk5ziqvmikkl1xvgzb2i-python3.13-supabase-2.17.0"
+      },
+      "system": "aarch64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "python313Packages.supabase",
+      "broken": false,
+      "derivation": "/nix/store/7v6sri11mfxlnxgv8x8z3842x1rmgs31-python3.13-supabase-2.17.0.drv",
+      "description": "Supabas client for Python",
+      "install_id": "supabase",
+      "license": "MIT",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=b3d51a0365f6695e7dd5cdf3e180604530ed33b4",
+      "name": "python3.13-supabase-2.17.0",
+      "pname": "supabase",
+      "rev": "b3d51a0365f6695e7dd5cdf3e180604530ed33b4",
+      "rev_count": 888552,
+      "rev_date": "2025-11-02T19:18:41Z",
+      "scrape_date": "2025-11-05T16:56:13.757850Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "2.17.0",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "dist": "/nix/store/w9ilkqlajqgy2r9xsyky56pw4bin7yx1-python3.13-supabase-2.17.0-dist",
+        "out": "/nix/store/v3ym3ymaixz9khxmwhyjs0qfpxm47m4j-python3.13-supabase-2.17.0"
+      },
+      "system": "x86_64-darwin",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "python313Packages.supabase",
+      "broken": false,
+      "derivation": "/nix/store/iczhq37anrlv1qrc6kawzlhmzs6qcvaf-python3.13-supabase-2.17.0.drv",
+      "description": "Supabas client for Python",
+      "install_id": "supabase",
+      "license": "MIT",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=b3d51a0365f6695e7dd5cdf3e180604530ed33b4",
+      "name": "python3.13-supabase-2.17.0",
+      "pname": "supabase",
+      "rev": "b3d51a0365f6695e7dd5cdf3e180604530ed33b4",
+      "rev_count": 888552,
+      "rev_date": "2025-11-02T19:18:41Z",
+      "scrape_date": "2025-11-05T17:22:48.729302Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "2.17.0",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "dist": "/nix/store/y19c1nidgh5xm93mcw1wwjdpvm343cgm-python3.13-supabase-2.17.0-dist",
+        "out": "/nix/store/9y65qd9q732sx4kigmz6nwffjdw7x7dy-python3.13-supabase-2.17.0"
+      },
+      "system": "x86_64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "supabase-cli",
+      "broken": false,
+      "derivation": "/nix/store/9294527iv93qgif1xjs6vchlqk324l5q-supabase-cli-2.55.4.drv",
+      "description": "CLI for interacting with supabase",
+      "install_id": "supabase-cli",
+      "license": "MIT",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=b3d51a0365f6695e7dd5cdf3e180604530ed33b4",
+      "name": "supabase-cli-2.55.4",
+      "pname": "supabase-cli",
+      "rev": "b3d51a0365f6695e7dd5cdf3e180604530ed33b4",
+      "rev_count": 888552,
+      "rev_date": "2025-11-02T19:18:41Z",
+      "scrape_date": "2025-11-04T00:37:04.754369Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "2.55.4",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/wh3630qw2z62x99gip4ggc50742w8khb-supabase-cli-2.55.4"
+      },
+      "system": "aarch64-darwin",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "supabase-cli",
+      "broken": false,
+      "derivation": "/nix/store/h20nzxcczzf8hv5011sg4m8adqln2arv-supabase-cli-2.55.4.drv",
+      "description": "CLI for interacting with supabase",
+      "install_id": "supabase-cli",
+      "license": "MIT",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=b3d51a0365f6695e7dd5cdf3e180604530ed33b4",
+      "name": "supabase-cli-2.55.4",
+      "pname": "supabase-cli",
+      "rev": "b3d51a0365f6695e7dd5cdf3e180604530ed33b4",
+      "rev_count": 888552,
+      "rev_date": "2025-11-02T19:18:41Z",
+      "scrape_date": "2025-11-05T16:31:24.238521Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "2.55.4",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/67ha07hvhsfrmp842cmx3kxcf6kwhgic-supabase-cli-2.55.4"
+      },
+      "system": "aarch64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "supabase-cli",
+      "broken": false,
+      "derivation": "/nix/store/1ph6czjlvzrh7r7mi3sfqrf7rlfv51ja-supabase-cli-2.55.4.drv",
+      "description": "CLI for interacting with supabase",
+      "install_id": "supabase-cli",
+      "license": "MIT",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=b3d51a0365f6695e7dd5cdf3e180604530ed33b4",
+      "name": "supabase-cli-2.55.4",
+      "pname": "supabase-cli",
+      "rev": "b3d51a0365f6695e7dd5cdf3e180604530ed33b4",
+      "rev_count": 888552,
+      "rev_date": "2025-11-02T19:18:41Z",
+      "scrape_date": "2025-11-05T16:56:39.713702Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "2.55.4",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/rhs4zp7q9cak850p526nnlnw4svjnz6p-supabase-cli-2.55.4"
+      },
+      "system": "x86_64-darwin",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "supabase-cli",
+      "broken": false,
+      "derivation": "/nix/store/gig67a0njllcs3dsbz625rznplls482p-supabase-cli-2.55.4.drv",
+      "description": "CLI for interacting with supabase",
+      "install_id": "supabase-cli",
+      "license": "MIT",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=b3d51a0365f6695e7dd5cdf3e180604530ed33b4",
+      "name": "supabase-cli-2.55.4",
+      "pname": "supabase-cli",
+      "rev": "b3d51a0365f6695e7dd5cdf3e180604530ed33b4",
+      "rev_count": 888552,
+      "rev_date": "2025-11-02T19:18:41Z",
+      "scrape_date": "2025-11-05T17:23:27.914169Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "2.55.4",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/bgb8l3q7aa5j2r7mf3kcpynhydgjf8pm-supabase-cli-2.55.4"
+      },
+      "system": "x86_64-linux",
+      "group": "toplevel",
+      "priority": 5
+    }
+  ]
+}
