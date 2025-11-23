@@ -1,3 +1,4 @@
+# Hugo config file
 baseURL = "https://atteggiani.github.io/wedding-website/"
 languageCode = "en"
 defaultContentLanguage = "en"
