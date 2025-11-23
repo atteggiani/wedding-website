@@ -5,7 +5,7 @@ on:
   schedule:
     - cron: "0 14 * * *" # every day at 14:00 UTC (1am AEDT)
 env:
-  DB_FILE: data/database_backup.csv
+  DB_FILE: backups/database_backup.csv
 
 jobs:
   backup:

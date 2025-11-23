@@ -5,6 +5,9 @@ defaultContentLanguage = "en"
 defaultContentLanguageInSubdir = true
 title = "Davide & Jennifer"
 
+# Disable multilingual handling for the homepage
+disableLanguages = []
+
 [languages]
   [languages.en]
     weight = 1
