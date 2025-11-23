@@ -1,0 +1,59 @@
+id,token,group_members,custom_form,responses,updated_at
+257ddc61-cccb-48bd-bb78-b1fc717ddc59,kFXNg,"[{""id"":""g1"",""name"":""Maria Alejandra Monroy""},{""id"":""g2"",""name"":""Manuel Treviño""},{""id"":""g3"",""name"":""Sofia Trviño Monroy"",""child"":true}]",null,null,2025-11-22 07:29:22.914041+00
+7b0bf5d5-1fac-4ba9-951b-38eb551efdee,or3f8,"[{""id"":""g1"",""name"":""Veronica Marchegiani""},{""id"":""g2"",""name"":""Oreste Sarra""},{""id"":""g3"",""name"":""Rachele Marchegiani"",""child"":true}]",null,null,2025-11-22 07:47:36.890623+00
+4414e5c4-4e6e-4029-8b7e-477b946f5e38,S6Djf,"[{""id"":""g1"",""name"":""Alfa Tocci""},{""id"":""g2"",""name"":null,""plusone"":true}]",null,null,2025-11-22 07:41:56.387466+00
+4c86c407-3c03-4f10-a71c-1b87f5da9f85,TDYrR,"[{""id"":""g1"",""name"":""Adriano Giuliani""},{""id"":""g2"",""name"":null,""plusone"":true}]",null,null,2025-11-22 07:56:37.375974+00
+4f165059-59e9-4903-93a0-076a492806f3,3zzCc,"[{""id"":""g1"",""name"":""Fabrizio Mura""},{""id"":""g2"",""name"":null,""plusone"":true}]",null,null,2025-11-22 23:50:13.960973+00
+504cc588-2461-47e0-abf7-cf6a25854d64,ZPwyS,"[{""id"":""g1"",""name"":""Marta Mendez""}]",null,null,2025-11-22 07:30:04.662385+00
+57791d01-a82e-44f0-bd19-276297390e9a,wMMgx,"[{""id"":""g1"",""name"":""Estefania Parra""},{""id"":""g2"",""name"":null,""plusone"":true}]",null,null,2025-11-22 07:32:10.722309+00
+58214b5f-2da4-41cf-b64a-41c101a1e912,ALLfF,"[{""id"":""g1"",""name"":""Luciano Mottola""},{""id"":""g2"",""name"":""Lucrezia Spagoni""}]",null,null,2025-11-22 23:50:52.409466+00
+6297ba81-8b4a-427c-b792-a0ea60854716,wyF7i,"[{""id"":""g1"",""name"":""Andrea De Santis""},{""id"":""g2"",""name"":null,""plusone"":true}]",null,null,2025-11-22 07:57:10.674325+00
+634a5cdc-08b4-450a-9fcc-d069e005c7e9,Xa18b,"[{""id"":""g1"",""name"":""Ilaria Castellucci""},{""id"":""g2"",""name"":null,""plusone"":true}]",null,null,2025-11-23 00:12:44.530296+00
+6e15938b-906b-4520-b682-8807d4c33f9f,u9Dbc,"[{""id"":""g1"",""name"":""Carlos Ivan Rivera Gonzalez""},{""id"":""g2"",""name"":""Lisa Lozada""}]",null,null,2025-11-22 07:27:00.981865+00
+76d7ab30-f9a6-40f1-9042-85dc25dd592d,eSGgk,"[{""id"":""g1"",""name"":""Isabella Pennica""},{""id"":""g2"",""name"":null,""plusone"":true}]",null,null,2025-11-22 23:51:44.432882+00
+7c2f8788-1fbf-4e83-9a78-2e50705c2bb5,ucM1y,"[{""id"":""g1"",""name"":""Carlos Julio Rivera Gonzalez""},{""id"":""g2"",""name"":""Ivonne Gonzalez Niño""}]",null,null,2025-11-22 07:21:14.988484+00
+7f28be4e-8602-4ff3-97a0-505bbc164c96,XvGte,"[{""id"":""g1"",""name"":""Graziella Migliori""},{""id"":""g2"",""name"":""Diego Marchegiani""}]",null,null,2025-11-22 07:48:13.268713+00
+80b19562-bb01-493f-854d-06cbfb615ebb,3Q72e,"[{""id"":""g1"",""name"":""Ell Marchegiani""},{""id"":""g2"",""name"":null,""plusone"":true},{""id"":""g3"",""name"":null,""plusone"":true}]",null,null,2025-11-22 07:37:41.974723+00
+94c19aba-1233-4958-beb2-8734f8add5c5,LC96y,"[{""id"":""g1"",""name"":""Annalisa Muto""},{""id"":""g2"",""name"":""Marco Battistini""}]",null,null,2025-11-22 23:53:43.009487+00
+a41b6bea-342c-4dc0-8060-5202e3a29863,PbMkX,"[{""id"":""g1"",""name"":""Giovanni Marchegiani""},{""id"":""g2"",""name"":null,""plusone"":true}]",null,null,2025-11-22 07:46:48.512259+00
+a7047ccd-3a74-496b-b380-510d174ce506,9d9TV,"[{""id"":""g1"",""name"":""Deyanira Buitrago""},{""id"":""g2"",""name"":""Daniel Gonzalez""},{""id"":""g3"",""name"":""David Gonzalez""}]",null,null,2025-11-22 07:28:04.256279+00
+ac425e7e-85a8-4503-8f58-40097409c177,9eq9w,"[{""id"":""g1"",""name"":""Luca Rufo""},{""id"":""g2"",""name"":null,""plusone"":true}]",null,null,2025-11-22 07:40:39.951624+00
+c24febe1-5a79-4096-86f8-2e3f345f20ab,CgpKg,"[{""id"":""g1"",""name"":""Luciano Rufo""},{""id"":""g2"",""name"":""Eligia Bono""}]",null,null,2025-11-22 07:39:24.205686+00
+c65d1b61-db70-4c75-af8d-e9590ba4ad28,Qp2Pv,"[{""id"":""g1"",""name"":""Antje Genso""},{""id"":""g2"",""name"":""Erich Genso""}]",null,null,2025-11-22 07:33:04.660103+00
+d19393dd-bf75-4d49-946a-f5384ce9b7b1,6KWJx,"[{""id"":""g1"",""name"":""Alessandro D'aprano""},{""id"":""g2"",""name"":""Giorgia Granato""}]",null,null,2025-11-23 00:03:06.115326+00
+d40416c1-5cb5-4b0c-9ab7-c9236b8e4985,omvJU,"[{""id"":""g1"",""name"":""Diletta Damiano""},{""id"":""g2"",""name"":""Agostino Loffredi""}]",null,null,2025-11-23 00:12:07.975864+00
+d44f0ffd-0ed5-404c-969f-2d7e1c7c7421,hbCpp,"[{""id"":""g1"",""name"":""Ester Marafini""},{""id"":""g2"",""name"":""Guillaume ""}]",null,null,2025-11-23 00:09:13.832668+00
+dd60dc64-1a22-43a8-a62d-6fb933dbcad3,s7MoA,"[{""id"":""g1"",""name"":""Stefano Rufo""},{""id"":""g2"",""name"":""Eleonora Prezioso""}]",null,null,2025-11-22 07:44:28.999553+00
+e80f44db-14c1-461e-9557-3f206564fce3,m1x9g,"[{""id"":""g1"",""name"":""Giorgio Rufo""},{""id"":""g2"",""name"":""Olga Mancini""}]",null,null,2025-11-22 07:43:48.03716+00
+ecad8db0-d451-49a3-92b5-5d92905a5f62,wJG6x,"[{""id"":""g1"",""name"":""Francesco Marchegiani""},{""id"":""g2"",""name"":""Maria Grazia Rufo""}]",null,null,2025-11-22 07:34:33.096511+00
+fa05e7ae-da5a-4ed5-ae32-9e5e8086e605,FDsW6,"[{""id"":""g1"",""name"":""Alessandro Cervelloni""},{""id"":""g2"",""name"":null,""plusone"":true}]",null,null,2025-11-22 07:57:44.959064+00
+84a2dc5b-182e-4a9b-ab6a-fd775e1f3aca,cFm7Q,"[{""id"":""g1"",""name"":""Andrea Rufo""},{""id"":""g2"",""name"":""Luigina Camilli""},{""id"":""g3"",""name"":""Rebecca Rufo"",""child"":true}]",null,null,2025-11-22 07:45:45.986575+00
+98e19cd2-05ae-4cf1-9409-0f3c83ed6806,VCpuZ,"[{""id"":""g1"",""name"":""Luca Salvato""},{""id"":""g2"",""name"":""Giorgia Tomasella""},{""id"":""g3"",""name"":null,""child"":true,""plusone"":true}]",null,null,2025-11-23 00:22:12.898162+00
+551b585b-b144-413d-b86d-c7e52e9ef8e5,DAeBp,"[{""id"":""g1"",""name"":""Daniele Macali""},{""id"":""g2"",""name"":""Milena Szatkowska""},{""id"":""g3"",""name"":""Enrico Macali"",""child"":true},{""id"":""g4"",""name"":""Francesco Macali"",""child"":true}]",null,null,2025-11-23 00:23:17.492208+00
+e945056c-de59-46a8-967c-a7e6a64de692,nxTNK,"[{""id"":""g1"",""name"":""Walter Moscato""}]",null,null,2025-11-23 00:23:51.538674+00
+f51d0335-74bc-4bf5-b347-964fdc10bdf7,8yuL2,"[{""id"":""g1"",""name"":""Roberto Senesi""}]",null,null,2025-11-23 00:24:19.372763+00
+781e8d5c-3e32-419a-820e-afac128f38d9,da7Ug,"[{""id"":""g1"",""name"":""Mauro Cacciotti""},{""id"":""g2"",""name"":""Gioia Tomassi""}]",null,null,2025-11-23 00:28:23.772469+00
+ffa757e9-50bb-4991-9b38-2c2a4e32624d,xidyB,"[{""id"":""g1"",""name"":""Simone Nappi""},{""id"":""g2"",""name"":null,""plusone"":true},{""id"":""g3"",""name"":null,""child"":true,""plusone"":true}]",null,null,2025-11-23 00:29:42.409542+00
+f4a6e938-8f83-4996-bda6-31bdd1709fa8,hTyLu,"[{""id"":""g1"",""name"":""Sheida Shadani""},{""id"":""g2"",""name"":null,""plusone"":true}]",null,null,2025-11-23 00:33:31.162547+00
+f04e8cfd-0023-44d7-b28f-d835102065d8,WdWpu,"[{""id"":""g1"",""name"":""Manuél Vasquez""}]",null,null,2025-11-23 00:35:32.01774+00
+471f35fb-b413-49fd-b874-8118df96123a,eEuUy,"[{""id"":""g1"",""name"":""Camila Alfonso""},{""id"":""g2"",""name"":""Marc Chetty""}]",null,null,2025-11-23 00:37:08.511207+00
+b1c6c2fa-55c7-49a6-8b01-5ab26187246d,svDGh,"[{""id"":""g1"",""name"":""Patrik Letko""},{""id"":""g2"",""name"":""Arriane Basali""}]",null,null,2025-11-23 00:39:23.44806+00
+bfab436d-0aeb-46ad-a7ce-1917afa1bc36,L4dMs,"[{""id"":""g1"",""name"":""Mattia Cacciotti""},{""id"":""g2"",""name"":""Michela Colombo""},{""id"":""g3"",""name"":""Edoardo Cacciotti"",""child"":true},{""id"":""g4"",""name"":""Cesare Cacciotti"",""child"":true}]",null,null,2025-11-23 00:27:28.906962+00
+487cf135-dbe5-49da-8ca0-bcd29a121f38,YDaqp,"[{""id"":""g1"",""name"":""Emily Valastro""},{""id"":""g2"",""name"":""Giuseppe Sapienza""},{""id"":""g3"",""name"":null,""child"":true,""plusone"":true}]",null,null,2025-11-23 00:44:29.195717+00
+e3d9bc2a-243e-4aec-b4b3-7435f0910699,g5B6b,"[{""id"":""g1"",""name"":""Suzan Majeed""},{""id"":""g2"",""name"":null,""plusone"":true},{""id"":""g3"",""name"":null,""child"":true,""plusone"":true}]",null,null,2025-11-23 00:48:39.943089+00
+7b42a9c6-07c1-46f2-9d0a-ebfa2f2a95e5,dWmhi,"[{""id"":""g1"",""name"":""Fernanda Alvarado""},{""id"":""g2"",""name"":""Pablo Paredes""}]",null,null,2025-11-23 00:49:46.360927+00
+01abfe3f-da4d-4120-b4ec-89796b9ef18e,Aa6xX,"[{""id"":""g1"",""name"":""Rabii Chaarani""},{""id"":""g2"",""name"":""Michele Sicheroli""}]",null,null,2025-11-23 00:54:15.595899+00
+9db5e8ef-9f27-4696-98a7-07e6d10cd3cc,8FfBN,"[{""id"":""g1"",""name"":""Fatemeh Amirporsaheed""},{""id"":""g2"",""name"":""Armin Ehrampoosh""}]",null,null,2025-11-23 00:59:03.985852+00
+b769add2-dc7c-4105-b3e8-f38bd4b78cdd,FmT7A,"[{""id"":""g1"",""name"":""Pourya Pazandeh""},{""id"":""g2"",""name"":""Klaudia Adamus""}]",null,null,2025-11-23 00:59:55.263063+00
+2b89f23c-c2be-4aff-b7c1-04bf5ef81f4e,fCuxm,"[{""id"":""g1"",""name"":""Ecie Pournamazian""},{""id"":""g2"",""name"":""Safi Salehi""},{""id"":""g3"",""name"":null,""child"":true,""plusone"":true}]",null,null,2025-11-23 01:02:17.533607+00
+892fa868-280b-4581-97c1-42bc76c3bdfd,KyvVX,"[{""id"":""g1"",""name"":""Marycarmen Martinez""},{""id"":""g2"",""name"":null,""plusone"":true}]",null,null,2025-11-23 01:03:41.514604+00
+8e62bba3-757e-44e0-926e-ae9e68895991,sZtAJ,"[{""id"":""g1"",""name"":""Donovan Garcia""},{""id"":""g2"",""name"":null,""plusone"":true}]",null,null,2025-11-23 01:04:20.465167+00
+627f34c7-edbe-4dd3-a0c8-c0f4b975dc94,GkkM5,"[{""id"":""g1"",""name"":""Matteo Borgia""},{""id"":""g2"",""name"":""Giulia Cuffaro""}]",null,null,2025-11-23 01:05:52.376883+00
+a4e32e5e-ed2b-46a5-8f04-2fb9fae0a70d,JmJKV,"[{""id"":""g1"",""name"":""Marco Roberti""},{""id"":""g2"",""name"":null,""plusone"":true}]",null,null,2025-11-23 01:06:28.197075+00
+0ac3c59c-e6b4-40ad-964c-c6faaa3abca1,DExvz,"[{""id"":""g1"",""name"":""Pia Freizen""}]",null,null,2025-11-23 01:07:20.086259+00
+98a0c1d4-7751-4fd0-82cc-7be20e33099d,aHnVF,"[{""id"":""g1"",""name"":""Daniel Robbins""},{""id"":""g2"",""name"":null,""plusone"":true}]",null,null,2025-11-23 01:08:20.611805+00
+e977db15-37cb-458d-82b1-aa4ed953458e,RqNz8,"[{""id"":""g1"",""name"":""Michael Green""}]",null,null,2025-11-23 01:14:17.002733+00
+834e41b1-4cf7-4e44-882c-c15e4c430fa3,NRjbb,"[{""id"":""g1"",""name"":""Maria Angélica Perez""},{""id"":""g2"",""name"":null,""plusone"":true}]",null,null,2025-11-22 07:31:08.827317+00
+f7d73f53-3b92-4890-9f58-6cfb6ac767ee,F6DvZ,"[{""id"":""g1"",""name"":""Bruno Ribeiro""},{""id"":""g2"",""name"":""Julia Nobrega""},{""id"":""g3"",""name"":null,""child"":true,""plusone"":true}]",null,null,2025-11-23 01:09:21.456262+00
+1fc4af91-0100-4ddd-8988-486057db5810,5mUKA,"[{""id"":""g1"",""name"":""Lucas Barbosa""},{""id"":""g2"",""name"":""Pamela Richetti""}]",null,null,2025-11-23 01:10:25.062702+00
+fc2244ad-d5a7-4b91-b259-2dc3b25a1d0b,KMfou,"[{""id"":""g1"",""name"":""David Parker""}]",null,null,2025-11-23 01:11:04.011093+00
