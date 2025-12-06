@@ -14,7 +14,9 @@
       }
     },
     "hook": {},
-    "profile": {},
+    "profile": {
+      "common": "  alias hs='hugo server --noHTTPCache'\n"
+    },
     "options": {}
   },
   "packages": [

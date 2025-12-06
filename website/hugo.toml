@@ -1,27 +1,45 @@
-# Hugo config file
-baseURL = "https://atteggiani.github.io/wedding-website/"
-languageCode = "en"
+baseURL = "http://example.org/"
 defaultContentLanguage = "en"
-defaultContentLanguageInSubdir = true
+theme= "hugo-PaperMod"
 title = "Davide & Jennifer"
 
-# Disable multilingual handling for the homepage
-disableLanguages = []
-
-[languages]
-  [languages.en]
-    weight = 1
-    languageName = "English"
-  [languages.es]
-    weight = 2
-    languageName = "Español"
-  [languages.it]
-    weight = 3
-    languageName = "Italiano"
-
-[outputs]
-  home = ["HTML"]
-
-[params]
-  supabaseUrl = "https://bcyxjsqpvkywiuvaskvs.supabase.co"
-  supabaseAnonKey = "$SUPABASE_ANON_KEY"
+[Languages]
+    [Languages.en]
+        title = "Multilingual Hugo Example"
+        weight = 0
+        languagename = "English"
+        
+        [[Languages.en.menu.main]]
+            url = "/"
+            name = "Home"
+            weight = 1
+        [[Languages.en.menu.main]]
+            url = "/about/"
+            name = "About"
+            weight = 0
+    
+    [Languages.it]
+        weight = 1
+        languagename = "Italiano"
+        
+        [[Languages.it.menu.main]]
+            url = "/"
+            name = "Home"
+            weight = 1
+        [[Languages.it.menu.main]]
+            url = "/about/"
+            name = "About"
+            weight = 0
+    
+    [Languages.es]
+        weight = 2
+        languagename = "Español"
+        
+        [[Languages.es.menu.main]]
+            url = "/"
+            name = "Home"
+            weight = 1
+        [[Languages.es.menu.main]]
+            url = "/about/"
+            name = "About"
+            weight = 0
