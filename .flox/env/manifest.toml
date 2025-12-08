@@ -49,7 +49,7 @@ hugo.pkg-path = "hugo"
 ## -------------------------------------------------------------------
 [profile]
 common = '''
-  alias hs='hugo server --noHTTPCache'
+  alias hs='hugo server --noHTTPCache -D --destination "$(mktemp -d)"'
 '''
 ## Shell-specific customizations such as setting aliases go here:
 # bash = ...

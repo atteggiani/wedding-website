@@ -1,0 +1,23 @@
+{{ define "head" }}
+<link rel="stylesheet" href="{{ "css/homepage.css" | relURL }}">
+{{ end }}
+
+{{ define "main" }}
+<div class="background-image"></div>
+
+<div class="language-buttons d-flex flex-wrap justify-content-center">
+    {{ range .Site.Languages }}
+        <a href="{{ .Lang | relURL }}/home" class="button rounded-borders">
+            {{ .LanguageName }}
+        </a>
+    {{ end }}
+</div>
+
+<h1>
+    {{ .Site.Title }}
+</h1>
+
+<h2>
+    {{ .Site.Params.date }}
+</h2>
+{{ end }}
