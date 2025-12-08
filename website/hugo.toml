@@ -1,45 +1,40 @@
 baseURL = "http://example.org/"
 defaultContentLanguage = "en"
-theme= "wedding-theme"
+defaultContentLanguageInSubdir = true
 title = "Davide & Jennifer"
 
-[Languages]
-    [Languages.en]
-        title = "Multilingual Hugo Example"
-        weight = 0
-        languagename = "English"
-        
-        [[Languages.en.menu.main]]
-            url = "/"
-            name = "Home"
-            weight = 1
-        [[Languages.en.menu.main]]
-            url = "/about/"
-            name = "About"
-            weight = 0
-    
-    [Languages.it]
-        weight = 1
-        languagename = "Italiano"
-        
-        [[Languages.it.menu.main]]
-            url = "/"
-            name = "Home"
-            weight = 1
-        [[Languages.it.menu.main]]
-            url = "/about/"
-            name = "About"
-            weight = 0
-    
-    [Languages.es]
-        weight = 2
-        languagename = "Español"
-        
-        [[Languages.es.menu.main]]
-            url = "/"
-            name = "Home"
-            weight = 1
-        [[Languages.es.menu.main]]
-            url = "/about/"
-            name = "About"
-            weight = 0
+[languages]
+  [languages.en]
+    weight = 0
+    languageName = "English"
+    contentDir = "content/en"
+  [languages.it]
+    weight = 1
+    languageName = "Italiano"
+    contentDir = "content/it"
+  [languages.es]
+    weight = 2
+    languageName = "Español"
+    contentDir = "content/es"
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+[params]
+  date = "02.09.2026"
+  [[params.banner]]
+    title = "D & J 02.09.2026"
+  [[params.menuLinks]]
+    url = "#story"
+    key = "menu.story"
+  [[params.menuLinks]]
+    url = "#travel"
+    key = "menu.travel"
+  [[params.menuLinks]] 
+    url = "#accomodation"
+    key = "menu.accommodation"
+  [[params.menuLinks]]
+    url = "#schedule"
+    key = "menu.schedule"
