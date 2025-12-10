@@ -1,4 +1,11 @@
+{{ define "head" }}
+<link rel="stylesheet" href="{{ "css/topbanner.css" | relURL }}">
+<link rel="stylesheet" href="{{ "css/footer.css" | relURL }}">
+{{ end }}
+
 {{ define "main" }}
+  {{ partial "topbanner.html" . }}
   <h1>{{ .Title }}</h1>
   {{ .Content }}
+  {{ partial "footer.html" . }}
 {{ end }}

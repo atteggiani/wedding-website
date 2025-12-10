@@ -1,79 +1,52 @@
-{{- /* Top banner partial for Hugo */ -}}
-<nav class="top-banner" role="navigation" aria-label="Top Banner">
-  <div class="tb-inner">
-
-    <!-- Left: menu links (translated via i18n) -->
-    <ul class="tb-left">
-      {{ $menu := .Site.Params.menuLinks }}
-      {{ range $i, $link := $menu }}
-        {{ $raw := $link.url }}
-        {{/* if the url is an anchor like "#story", we create "/#story" so relLangURL can prefix language */}}
-        {{ if (strings.HasPrefix $raw "#") }}
-          {{ $href := (printf "/%s" $raw) | relLangURL }}
-        {{ else }}
-          {{ $href := $raw | relLangURL }}
-        {{ end }}
-        {{/* we need $href visible outside the if blocks: compute with temp variable trick */}}
-        {{ $href := cond (strings.HasPrefix $raw "#") ((printf "/%s" $raw) | relLangURL) ($raw | relLangURL) }}
-        <li class="tb-item">
-          <a href="{{ $href }}" class="tb-link">{{ i18n $link.key }}</a>
+<div class="top-banner">
+  
+  <!-- LEFT: MENU ITEMS (i18n translated) -->
+  <nav class="banner-menu">
+    <ul>
+      {{ range .Site.Menus.main }}
+        <li>
+          <a href="{{ .URL }}">
+            {{ i18n .Identifier | default .Name }}
+          </a>
         </li>
       {{ end }}
     </ul>
+  </nav>
 
-    <!-- Center: title -->
-    <div class="tb-center" role="banner">
-      <a class="tb-title" href="{{ ("/" | relLangURL) }}">{{ .Site.Params.bannerTitle | default "D & J 02.09.2026" }}</a>
-    </div>
-
-    <!-- Right: language switcher + RSVP -->
-    <div class="tb-right">
-
-      <!-- Language switcher: links to language home (works when you use subdirs like /en/, /it/, /es/) -->
-      <div class="lang-switch" aria-label="{{ i18n "button.language" }}">
-        <button id="langToggle" class="lang-current" aria-haspopup="true" aria-expanded="false">
-          {{/* show current language name */}}
-          {{ .Site.Language }}
-        </button>
-        <ul class="lang-list" id="langList" aria-hidden="true">
-          {{ range .Site.Languages }}
-            {{/* If site is multilingual and you use subdirs, the language home is /<lang>/ */}}
-            {{ if .Site.IsMultiLingual }}
-              {{ $href := (printf "/%s/" .Lang) | relURL }}
-            {{ else }}
-              {{ $href := "/" | relURL }}
-            {{ end }}
-            <li><a href="{{ if .Site.IsMultiLingual }}{{ (printf "/%s/" .Lang) | relURL }}{{ else }}/{{ end }}">{{ .LanguageName }}</a></li>
-          {{ end }}
-        </ul>
-      </div>
-
-      <!-- RSVP button (translated) -->
-      <div class="rsvp-wrap">
-        <a class="rsvp-btn" href="{{ (printf "/rsvp/" ) | relLangURL }}">{{ i18n "button.rsvp" }}</a>
-      </div>
-
-    </div>
+  <!-- CENTER: TITLE -->
+  <div class="banner-title">
+    {{ .Site.Params.bannerTitle }}
   </div>
-</nav>
 
-<script>
-/* Minimal JS for language dropdown accessibility */
-(function(){
-  const toggle = document.getElementById('langToggle');
-  const list = document.getElementById('langList');
-  if (!toggle || !list) return;
-  toggle.addEventListener('click', () => {
-    const expanded = toggle.getAttribute('aria-expanded') === 'true';
-    toggle.setAttribute('aria-expanded', String(!expanded));
-    list.setAttribute('aria-hidden', String(expanded));
-  });
-  // Close when clicking outside
-  document.addEventListener('click', (e) => {
-    if (!toggle.contains(e.target) && !list.contains(e.target)) {
-      toggle.setAttribute('aria-expanded', 'false');
-      list.setAttribute('aria-hidden', 'true');
-    }
-  });
-})();
-</script>
+  <!-- RIGHT: LANGUAGE SWITCH + RSVP -->
+  <div class="banner-buttons">
+    
+      
+    <!-- Language switcher -->
+    {{ $currentLang := .Site.Language.Lang }}
+    {{ $flags := dict "en" "🇬🇧" "it" "🇮🇹" "es" "🇪🇸" }}
+
+    <div class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="langDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+            {{ index $flags $currentLang }} {{ $currentLang | upper }}
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="langDropdown">
+            {{ range .Translations }}
+                <li>
+                    <a class="dropdown-item" href="{{ .RelPermalink }}" hreflang="{{ .Language.LanguageCode }}">
+                        {{ index $flags .Lang }} {{ .Lang | upper }}
+                    </a>
+                </li>
+            {{ end }}
+        </ul>
+    </div>
+
+
+
+    <a href="{{ "/rsvp/" | relLangURL }}" class="rsvp-btn">
+      {{ i18n "rsvp" }}
+    </a>
+
+  </div>
+
+</div>

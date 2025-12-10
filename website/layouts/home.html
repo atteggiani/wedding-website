@@ -7,7 +7,7 @@
 
 <div class="language-buttons d-flex flex-wrap justify-content-center">
     {{ range .Site.Languages }}
-        <a href="{{ .Lang | relURL }}/home" class="button rounded-borders">
+        <a href="{{ printf "/%s/home/" .Lang }}" class="button rounded-borders">
             {{ .LanguageName }}
         </a>
     {{ end }}

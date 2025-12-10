@@ -1,56 +1,75 @@
 .top-banner {
-  background: #fff;
-  border-bottom: 1px solid rgba(0,0,0,0.06);
-  position: sticky;
-  top: 0;
-  z-index: 999;
   width: 100%;
-  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
-}
-
-.tb-inner {
+  padding: 1rem 2rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: 0.6rem 1rem;
+  background: #ffffff;
+  border-bottom: 1px solid #e4e4e4;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  box-sizing: border-box;
+}
+
+/* LEFT MENU */
+.banner-menu ul {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.banner-menu a {
+  text-decoration: none;
+  font-weight: 500;
+  color: #444;
+}
+
+.banner-menu a:hover {
+  color: #000;
+}
+
+/* CENTER TITLE */
+.banner-title {
+  flex: 1;
+  text-align: center;
+  font-size: 1.7rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  color: #222;
+}
+
+/* RIGHT ACTIONS */
+.banner-buttons {
+  display: flex;
+  align-items: center;
   gap: 1rem;
 }
 
-/* Left menu */
-.tb-left { list-style: none; margin: 0; padding: 0; display:flex; gap: 0.6rem; align-items:center; }
-.tb-item { margin: 0; }
-.tb-link { text-decoration: none; font-weight: 500; padding: 0.4rem 0.6rem; display:inline-block; color: inherit; }
-
-/* Center */
-.tb-center { flex: 1; text-align: center; }
-.tb-title { text-decoration: none; font-size: 1.05rem; font-weight: 700; letter-spacing: 0.04em; color: inherit; }
-
-/* Right */
-.tb-right { display:flex; align-items:center; gap:0.6rem; }
-.lang-switch { position: relative; }
-.lang-current { background: transparent; border: none; cursor: pointer; font-weight:600; padding: 0.3rem 0.5rem; }
-.lang-list { position: absolute; right: 0; margin: 0.4rem 0 0; padding: 0.25rem 0; list-style: none; background: #fff; border: 1px solid rgba(0,0,0,0.08); box-shadow: 0 6px 18px rgba(0,0,0,0.06); display:block; min-width: 120px; }
-.lang-list[aria-hidden="true"] { display:none; }
-.lang-list li { padding: 0; margin: 0; }
-.lang-list a { display:block; padding: 0.4rem 0.6rem; text-decoration:none; color:inherit; }
-
-/* RSVP button */
-.rsvp-btn {
-  display:inline-block;
-  padding: 0.45rem 0.8rem;
-  border-radius: 6px;
-  background: #0b63ff;
-  color: #fff;
+/* LANGUAGE BUTTON */
+.lang-btn {
+  padding: 0.4rem 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
   text-decoration: none;
-  font-weight: 700;
-  box-shadow: 0 2px 8px rgba(11,99,255,0.12);
+  color: #444;
+  background: #fafafa;
 }
 
-/* Responsive: collapse left menu into small spacing on small screens */
-@media (max-width: 700px) {
-  .tb-left { display:none; }
-  .tb-center { text-align: left; padding-left: 0.5rem; }
-  .tb-inner { padding: 0.6rem; }
+.lang-btn:hover {
+  background: #f0f0f0;
+}
+
+/* RSVP BUTTON */
+.rsvp-btn {
+  padding: 0.5rem 1rem;
+  background: #000;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: 500;
+}
+
+.rsvp-btn:hover {
+  background: #333;
 }
