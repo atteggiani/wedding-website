@@ -1,5 +1,6 @@
-story:
-  other: "Nuestra Historia"
-
 rsvp:
   other: "RSVP"
+story:
+  other: "Nuestra historia"
+home:
+  other: "Casa"

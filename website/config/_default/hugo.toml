@@ -21,20 +21,3 @@ title = "Davide & Jennifer"
   [markup.goldmark]
     [markup.goldmark.renderer]
       unsafe = true
-
-[menus]
-  [[menus.main]]
-    identifier = "home"
-    name = "Home"
-    url = "/"
-    weight = 10
-  [[menus.main]]
-    identifier = "story"
-    name = "Our Story"
-    url = "/story/"
-    weight = 20
-  
-[params]
-  date = "02.09.2026"
-  bannerTitle = "D & J 02.09.2026"
-

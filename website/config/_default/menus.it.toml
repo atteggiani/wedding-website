@@ -1,0 +1,8 @@
+[[main]]
+    identifier = "home"
+    pageRef = "/home"
+    weight = 1
+[[main]]
+    identifier = "story"
+    pageRef = "/story"
+    weight = 2
