@@ -6,7 +6,7 @@
       {{ range .Site.Menus.main }}
         <li>
           <a href="{{ .URL }}">
-            {{ i18n .Identifier | default .Name }}
+            {{ i18n .Identifier | default .Identifier }}
           </a>
         </li>
       {{ end }}
