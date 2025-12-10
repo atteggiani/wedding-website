@@ -22,19 +22,19 @@ title = "Davide & Jennifer"
     [markup.goldmark.renderer]
       unsafe = true
 
+[menus]
+  [[menus.main]]
+    identifier = "home"
+    name = "Home"
+    url = "/"
+    weight = 10
+  [[menus.main]]
+    identifier = "story"
+    name = "Our Story"
+    url = "/story/"
+    weight = 20
+  
 [params]
   date = "02.09.2026"
-  [[params.banner]]
-    title = "D & J 02.09.2026"
-  [[params.menuLinks]]
-    url = "#story"
-    key = "menu.story"
-  [[params.menuLinks]]
-    url = "#travel"
-    key = "menu.travel"
-  [[params.menuLinks]] 
-    url = "#accomodation"
-    key = "menu.accommodation"
-  [[params.menuLinks]]
-    url = "#schedule"
-    key = "menu.schedule"
+  bannerTitle = "D & J 02.09.2026"
+
