@@ -1,0 +1,25 @@
+.page-margins {
+  margin: 0 3rem 3rem;
+}
+
+.page-content {
+  line-height: 1.5;
+}
+
+/* RSVP BUTTON */
+.rsvp-btn {
+  padding: 0.5rem 1rem;
+  background: #000;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: 500;
+}
+
+.rsvp-btn:hover {
+  background: #333;
+}
+
+.with-text-shadow {
+    text-shadow: 0.02em 0.02em calc(4px + 0.08em) rgba(0, 0, 0, 0.7);
+}
