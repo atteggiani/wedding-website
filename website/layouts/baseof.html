@@ -7,6 +7,10 @@
     {{ block "head" . }}{{ end }}
 </head>
 <body>
-  {{ block "main" . }}{{ end }}
+  <div class="site-content">
+    <div class="main-content">
+        {{ block "main" . }}{{ end }}
+    </div>
+  </div>
 </body>
 </html>

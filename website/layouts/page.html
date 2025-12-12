@@ -6,6 +6,8 @@
 {{ define "main" }}
   {{ partial "topbanner.html" . }}
   <h1>{{ .Title }}</h1>
-  {{ .Content }}
+  <div class="page-content page-margins">
+    {{ .Content }}
+  </div>
   {{ partial "footer.html" . }}
 {{ end }}
