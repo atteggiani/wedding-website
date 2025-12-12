@@ -24,7 +24,7 @@
       
     <!-- Language switcher -->
     {{ $currentLang := .Site.Language.Lang }}
-    {{ $flags := dict "en" "🇦🇺" "it" "🇮🇹" "es" "🇨🇴" }}
+    {{ $flags := .Site.Params.flags }}
 
     <div class="dropdown">
         <button class="btn btn-secondary dropdown-toggle" type="button" id="langDropdown" data-bs-toggle="dropdown" aria-expanded="false">

@@ -5,13 +5,16 @@
 {{ define "main" }}
 <div class="background-image"></div>
 
-<div class="language-buttons d-flex flex-wrap justify-content-center">
-    {{ range .Site.Languages }}
-        <a href="{{ printf "/%s/home/" .Lang }}" class="button rounded-borders">
-            {{ .LanguageName }}
-        </a>
-    {{ end }}
+<div class="language-buttons d-flex flex-wrap gap-2">
+  {{ $flags := .Site.Params.flags }}
+  {{ range .Site.Languages }}
+    <a href="{{ printf "/%s/home/" .Lang }}"
+       class="btn btn-primary flex-fill flex-sm-grow-0 text-center fs-2">
+      {{ index $flags .Lang }} {{ .LanguageName }}
+    </a>
+  {{ end }}
 </div>
+
 
 <h1>
     {{ .Site.Title }}
