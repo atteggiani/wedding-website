@@ -35,10 +35,7 @@ h2 {
   position: relative;
   margin: 0.5em auto;
   top: 5vh;
-  display: flex;
   justify-content: space-around;
   align-items: center;
-  flex-wrap: wrap;
   width: 80vw;
-  height: 5em;
 }
