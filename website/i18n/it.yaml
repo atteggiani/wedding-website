@@ -2,7 +2,13 @@ rsvp:
   other: "Conferma"
 story:
   other: "La nostra storia"
-home:
-  other: "Home"
 banner_text:
   other: "Non vediamo l’ora di condividere il nostro giorno speciale con voi!"
+travel:
+  other: "Soggiorno e Viaggi"
+faq:
+  other: "FAQ"
+registry:
+  other: "Lista Nozze"
+ceremony:
+  other: "Cerimonia e Ricevimento"

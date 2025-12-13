@@ -1,8 +1,20 @@
 [[main]]
-    identifier = "home"
-    pageRef = "/home"
+    identifier = "ceremony"
+    pageRef = "/ceremony"
     weight = 1
+[[main]]
+    identifier = "travel"
+    pageRef = "/travel"
+    weight = 2
 [[main]]
     identifier = "story"
     pageRef = "/story"
-    weight = 2
+    weight = 3
+[[main]]
+    identifier = "registry"
+    pageRef = "/registry"
+    weight = 4
+[[main]]
+    identifier = "faq"
+    pageRef = "/faq"
+    weight = 5
