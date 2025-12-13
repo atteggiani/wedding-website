@@ -2,7 +2,13 @@ rsvp:
   other: "RSVP"
 story:
   other: "Nuestra historia"
-home:
-  other: "Casa"
 banner_text:
   other: "¡No podemos esperar para compartir nuestro día especial con ustedes!"
+travel:
+  other: "Viajes y Estancia"
+faq:
+  other: "Preguntas Frecuentes"
+registry:
+  other: "Lista de Regalos"
+ceremony:
+  other: "Ceremonia y Recepción"

@@ -13,39 +13,38 @@
     </ul>
   </nav>
 
-  <!-- CENTER: TITLE -->
+  <!-- BANNER TEXT -->
   <div class="banner-title">
-    {{ .Site.Params.bannerTitle }}
+    <a href="{{ "/home" | relLangURL }}">{{ .Site.Params.bannerTitle }}</a>
   </div>
 
   <!-- RIGHT: LANGUAGE SWITCH + RSVP -->
   <div class="banner-buttons">
-    
-      
-    <!-- Language switcher -->
-    {{ $currentLang := .Site.Language.Lang }}
-    {{ $flags := .Site.Params.flags }}
-
-    <div class="dropdown">
-        <button class="btn btn-secondary dropdown-toggle" type="button" id="langDropdown" data-bs-toggle="dropdown" aria-expanded="false">
-            {{ index $flags $currentLang }} {{ $currentLang | upper }}
-        </button>
-        <ul class="dropdown-menu" aria-labelledby="langDropdown">
-            {{ range .Translations }}
-                <li>
-                    <a class="dropdown-item" href="{{ .RelPermalink }}" hreflang="{{ .Language.LanguageCode }}">
-                        {{ index $flags .Lang }} {{ .Lang | upper }}
-                    </a>
-                </li>
-            {{ end }}
-        </ul>
+    <div class="language-switcher">
+        <!-- Language switcher -->
+        {{ $currentLang := .Site.Language.Lang }}
+        {{ $flags := .Site.Params.flags }}
+        <div class="dropdown d-inline-block">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="langDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                {{ index $flags $currentLang }} {{ $currentLang | upper }}
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="langDropdown">
+                {{ range .Translations }}
+                    <li>
+                        <a class="dropdown-item" href="{{ .RelPermalink }}" hreflang="{{ .Language.LanguageCode }}">
+                            {{ index $flags .Lang }} {{ .Lang | upper }}
+                        </a>
+                    </li>
+                {{ end }}
+            </ul>
+        </div>
     </div>
-
-
-
-    <a href="{{ "/rsvp/" | relLangURL }}" class="rsvp-btn">
-      {{ i18n "rsvp" }}
-    </a>
+    <!-- RSVP button -->
+    <div class="rsvp-button">
+        <a href="{{ "/rsvp/" | relLangURL }}" class="rsvp-btn">
+            {{ i18n "rsvp" }}
+        </a>
+    </div>
 
   </div>
 
