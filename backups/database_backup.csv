@@ -1,4 +1,4 @@
-id,token,group_members,custom_form,responses,updated_at
+id,rsvp_token,group_members,custom_form,responses,updated_at
 257ddc61-cccb-48bd-bb78-b1fc717ddc59,kFXNg,"[{""id"": ""g1"", ""name"": ""Maria Alejandra Monroy""}, {""id"": ""g2"", ""name"": ""Manuel Treviño""}, {""id"": ""g3"", ""name"": ""Sofia Trviño Monroy"", ""child"": true}]",,,"2025-11-22 07:29:22.914041+00"
 7b0bf5d5-1fac-4ba9-951b-38eb551efdee,or3f8,"[{""id"": ""g1"", ""name"": ""Veronica Marchegiani""}, {""id"": ""g2"", ""name"": ""Oreste Sarra""}, {""id"": ""g3"", ""name"": ""Rachele Marchegiani"", ""child"": true}]",,,"2025-11-22 07:47:36.890623+00"
 4414e5c4-4e6e-4029-8b7e-477b946f5e38,S6Djf,"[{""id"": ""g1"", ""name"": ""Alfa Tocci""}, {""id"": ""g2"", ""name"": null, ""plusone"": true}]",,,"2025-11-22 07:41:56.387466+00"
