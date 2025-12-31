@@ -2,7 +2,7 @@
   <h1>RSVP</h1>
 
   <div id="token-form">
-    <label class="form-label">Enter your RSVP code</label>
+    <label class="form-label">Enter your RSVP password</label>
     <input type="text" id="rsvp-token" class="form-control mb-3">
     <button class="btn btn-primary" id="load-rsvp">Continue</button>
   </div>
@@ -34,28 +34,22 @@
     }
 
     // Run Supabase Edge function to get a guest session to authenticate the user if the rsvp_token matches
-    async function getGuestSession(rsvpToken, supabaseURL, supabaseAnonKey) {
-        const res = await fetch(
-            `${supabaseURL}/functions/v1/guest-issue-jwt`, 
-            { 
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                    'Authorization': `Bearer ${supabaseAnonKey}`
-                },
-                body: JSON.stringify({ rsvp_token: rsvpToken })
-            }
+    async function getGuestSession(rsvpToken, supabaseClient) {
+        const res = await supabaseClient.functions.invoke(
+            'guest-issue-jwt',
+            {body: JSON.stringify({ rsvp_token: rsvpToken })}
         );
 
         if (!res.ok) {
             if (res.status === 401) {
                 $('#status').text(
-                    "Oops! The RSVP code you entered is invalid. Check the invitation for your code. If you can’t find it, please contact us!"
+                    "Oops! The RSVP password you entered is invalid. Check the invitation for your code. If you can’t find it, please contact us!"
                 );
             } else {
                 $('#status').text(
-                    "There was an error retriving the RSVP_password! Please try again. If the error persists, please contact us!"
+                    "There was an error retrieving the RSVP password! Please try again. If the error persists, please contact us!"
                 );
+                console.log(res?.error || 'Error');
             }
             return
         }
@@ -87,7 +81,7 @@
         $('#status').text("")
         setLoading(true);
         // Get Guest session
-        const session = await getGuestSession(rsvpToken, SUPABASE_URL, SUPABASE_ANON_KEY)
+        const session = await getGuestSession(rsvpToken, supabaseClient)
         if (session) {
             // Authenticate user using session token
             await signInWithGuestSession(session, supabaseClient)
