@@ -3,7 +3,7 @@
 
   <div id="token-form">
     <label class="form-label">Enter your RSVP password</label>
-    <input type="text" id="rsvp-token" class="form-control mb-3">
+    <input type="text" id="rsvp-password" class="form-control mb-3" value="IBG9ES">
     <button class="btn btn-primary" id="load-rsvp">Continue</button>
   </div>
 
@@ -25,7 +25,7 @@
             btn.prop('disabled', true);
             btn.html(`
             <span class="spinner-border spinner-border-sm me-2" role="status" aria-hidden="true"></span>
-            Loading...
+            Verifying...
             `);
         } else {
             btn.prop('disabled', false);
@@ -34,87 +34,57 @@
     }
 
     // Run Supabase Edge function to get a guest session to authenticate the user if the rsvp_token matches
-    async function getGuestSession(rsvpToken, supabaseClient) {
+    async function getGuestJWT(rsvpPassword, supabaseClient) {
         const res = await supabaseClient.functions.invoke(
             'guest-issue-jwt',
-            {body: JSON.stringify({ rsvp_token: rsvpToken })}
+            {
+                body: { rsvp_password: rsvpPassword }
+            }
         );
 
-        if (!res.ok) {
-            if (res.status === 401) {
+        if (res.error) {
+            if (res.error.context?.status === 401) {
                 $('#status').text(
                     "Oops! The RSVP password you entered is invalid. Check the invitation for your code. If you can’t find it, please contact us!"
                 );
             } else {
                 $('#status').text(
-                    "There was an error retrieving the RSVP password! Please try again. If the error persists, please contact us!"
+                    "There was an error validating the RSVP password! Please try again. If the error persists, please contact us!"
                 );
-                console.log(res?.error || 'Error');
+                console.log(res.error);
             }
             return
         }
-
-        const { session } = await res.json();
-        return session;
-    }
-
-    // Authenticate as a guest to supabase after receiving a `session` from the Edge Function
-    async function signInWithGuestSession(session, supabaseClient) {
-        const accessToken = session?.access_token;
-        if (!accessToken) throw new Error('No access token returned');
-
-        // Option A — set session in client (recommended):
-        await supabaseClient.auth.setSession({
-            access_token: accessToken,
-            refresh_token: session.refresh_token, // optional if provided
-        });
+        return res.data.access_token;
     }
 
     // Database initialisation
     const SUPABASE_URL = 'https://bcyxjsqpvkywiuvaskvs.supabase.co'
     const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImJjeXhqc3Fwdmt5d2l1dmFza3ZzIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjM3ODk0MjMsImV4cCI6MjA3OTM2NTQyM30.zLQ9S78OPKE0vXYrqbd3BB2jsvtr9HE6bCHuLY-ecyY'
-    const supabaseClient = supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
+    let supabaseClient = supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
 
     $('#load-rsvp').on('click', async function () {
-        const rsvpToken = $('#rsvp-token').val().trim();
-        if (!rsvpToken) return;
+        const rsvpPassword = $('#rsvp-password').val().trim();
+        if (!rsvpPassword) return;
         $('#status').text("")
         setLoading(true);
-        // Get Guest session
-        const session = await getGuestSession(rsvpToken, supabaseClient)
-        if (session) {
-            // Authenticate user using session token
-            await signInWithGuestSession(session, supabaseClient)
-        } else {
-            console.log('Error')
-        }
+        // Get Guest JWT
+        const JWT = await getGuestJWT(rsvpPassword, supabaseClient);
         setLoading(false);
+        supabaseClient = supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY, {
+            global: {
+                headers: { 
+                    Authorization: `Bearer ${JWT}` 
+                },
+            },
+        });
+        const { data, error } = await supabaseClient
+            .from('guests')
+            .select('*')
+            .single();
+        console.log(data);
     });
-
-
-        // // Core logic + dynamic form rendering
-        // let currentRow = null;
-        
-  
-
     
-    
-//     const { data, error } = await supabaseClient
-//       .from('guests')
-//       .select('*')
-//       .single()
-//       .setHeaders({ 'x-request-token': rsvpToken });
-    
-//     setLoading(false);
-//     console.log(error)
-//     console.log(data)
-//     if (error) {
-//       $('#status').text(
-//         "Oops! The RSVP code you entered is invalid. Check the invitation for your code. If you can’t find it, please contact us!"
-//       );
-//       return;
-//     }
-
 //     currentRow = data;
 //     $('#token-form').hide();
 //     $('#rsvp-form').removeClass('d-none');
