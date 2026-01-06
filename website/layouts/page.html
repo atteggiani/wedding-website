@@ -8,6 +8,18 @@
     {{ end }}
 {{ end }}
 
+{{ define "scripts" }}
+    {{/* Page-specific JS, shared across languages */}}
+    {{ if .IsPage }}
+        {{ $name := .File.BaseFileName }}
+        {{ $jsPath := printf "js/%s.js" $name }}
+
+        {{ if fileExists (printf "static/%s" $jsPath) }}
+            <script src="/{{ $jsPath }}"></script>
+        {{ end }}
+    {{ end }}
+{{ end }}
+
 {{ define "main" }}
     {{ partial "topbanner.html" . }}
     <h1>{{ .Title }}</h1>
