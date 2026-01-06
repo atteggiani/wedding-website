@@ -1,13 +1,18 @@
 {{ define "head" }}
-<link rel="stylesheet" href="{{ "css/topbanner.css" | relURL }}">
-<link rel="stylesheet" href="{{ "css/footer.css" | relURL }}">
+    <link rel="stylesheet" href="{{ "css/topbanner.css" | relURL }}">
+    <link rel="stylesheet" href="{{ "css/footer.css" | relURL }}">
+    {{/* Page-specific CSS, shared across languages */}}
+    {{ if and .IsPage .File }}
+        {{ $name := .File.BaseFileName }}
+        <link rel="stylesheet" href="/css/{{ $name }}.css">
+    {{ end }}
 {{ end }}
 
 {{ define "main" }}
-  {{ partial "topbanner.html" . }}
-  <h1>{{ .Title }}</h1>
-  <div class="page-content page-margins">
-    {{ .Content }}
-  </div>
-  {{ partial "footer.html" . }}
+    {{ partial "topbanner.html" . }}
+    <h1>{{ .Title }}</h1>
+    <div class="page-content page-margins">
+        {{ .Content }}
+    </div>
+    {{ partial "footer.html" . }}
 {{ end }}
