@@ -1,18 +1,18 @@
 <div class="container py-5">
   <h1>RSVP</h1>
 
-  <div id="token-form">
+  <div id="password-input">
     <label class="form-label">Enter your RSVP password</label>
     <input type="text" id="rsvp-password" class="form-control mb-3" value="IBG9ES">
     <button class="btn btn-primary" id="load-rsvp">Continue</button>
+    <div class="status-text"></div>
   </div>
+  
 
   <form id="rsvp-form" class="d-none">
     <div id="guests-container"></div>
     <button type="submit" class="btn btn-success mt-4">Submit RSVP</button>
   </form>
-
-  <div id="status" class="mt-3"></div>
 </div>
 
 <!-- JavaScript inline -->
@@ -44,11 +44,11 @@
 
         if (res.error) {
             if (res.error.context?.status === 401) {
-                $('#status').text(
+                $('#password-input > .status-text').text(
                     "Oops! The RSVP password you entered is invalid. Check the invitation for your code. If you can’t find it, please contact us!"
                 );
             } else {
-                $('#status').text(
+                $('#password-input > .status-text').text(
                     "There was an error validating the RSVP password! Please try again. If the error persists, please contact us!"
                 );
                 console.log(res.error);
@@ -66,31 +66,42 @@
     $('#load-rsvp').on('click', async function () {
         const rsvpPassword = $('#rsvp-password').val().trim();
         if (!rsvpPassword) return;
-        $('#status').text("")
+        $('#password-input > .status-text').text("")
         setLoading(true);
         // Get Guest JWT
         const JWT = await getGuestJWT(rsvpPassword, supabaseClient);
         setLoading(false);
-        supabaseClient = supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY, {
-            global: {
-                headers: { 
-                    Authorization: `Bearer ${JWT}` 
+        if (JWT) {
+            supabaseClient = supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY, {
+                global: {
+                    headers: { 
+                        Authorization: `Bearer ${JWT}` 
+                    },
                 },
-            },
-        });
-        const { data, error } = await supabaseClient
-            .from('guests')
-            .select('*')
-            .single();
-        console.log(data);
-    });
-    
-//     currentRow = data;
-//     $('#token-form').hide();
-//     $('#rsvp-form').removeClass('d-none');
+            });
+            const { data, error } = await supabaseClient
+                .from('guests')
+                .select('*')
+                .single();
 
-//     renderGuests(data.group_members, data.responses || []);
-//   });
+            if (!error) {
+                renderGuests(data.group_members);
+            } else {
+                $('#password-input > .status-text').text(
+                    `There was an error retrieving data associated with guest '${rsvpPassword}'! Please try again. If the error persists, please contact us!`
+                );
+                console.log(error);
+            }
+        }
+    });
+
+    function renderGuests(members) {
+        $('#password-input').hide();
+        console.log(members);
+        $('#rsvp-form').removeClass('d-none');
+    }
+
+
 
 //   function renderGuests(members, responses) {
 //     const container = $('#guests-container');
@@ -166,9 +177,9 @@
 //       .eq('id', currentRow.id);
 
 //     if (error) {
-//       $('#status').text('Error saving RSVP');
+//       $('#password-input > .status-text').text('Error saving RSVP');
 //     } else {
-//       $('#status').text('RSVP saved successfully!');
+//       $('#password-input > .status-text').text('RSVP saved successfully!');
 //     }
 //   });
 </script>
