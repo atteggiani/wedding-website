@@ -2,9 +2,13 @@
     <link rel="stylesheet" href="{{ "css/topbanner.css" | relURL }}">
     <link rel="stylesheet" href="{{ "css/footer.css" | relURL }}">
     {{/* Page-specific CSS, shared across languages */}}
-    {{ if and .IsPage .File }}
+    {{ if .IsPage }}
         {{ $name := .File.BaseFileName }}
-        <link rel="stylesheet" href="/css/{{ $name }}.css">
+        {{ $cssPath := printf "css/%s.css" $name }}
+
+        {{ if fileExists (printf "static/%s" $cssPath) }}
+            <link rel="stylesheet" href="/{{ $cssPath }}">
+        {{ end }}
     {{ end }}
 {{ end }}
 
