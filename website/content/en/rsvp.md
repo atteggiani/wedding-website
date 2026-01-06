@@ -54,19 +54,31 @@
         sessionStorage.setItem(COOKIE_JWT_EXP, payload.exp * 1000);
     }
 
-    // Initialise the supabaseClient with the provided JWT
-    function initSupabaseWithJWT(jwt) {
+    // Helper function to create a supabase Client without auth
+    function createSupabaseClient(extraHeaders = {}) {
+        const SUPABASE_URL = 'https://bcyxjsqpvkywiuvaskvs.supabase.co'
+        const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImJjeXhqc3Fwdmt5d2l1dmFza3ZzIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjM3ODk0MjMsImV4cCI6MjA3OTM2NTQyM30.zLQ9S78OPKE0vXYrqbd3BB2jsvtr9HE6bCHuLY-ecyY'
         return supabase.createClient(
             SUPABASE_URL,
             SUPABASE_ANON_KEY,
             {
+                auth: {
+                    persistSession: false,
+                    autoRefreshToken: false,
+                    detectSessionInUrl: false
+                },
                 global: {
-                    headers: {
-                        Authorization: `Bearer ${jwt}`
-                    }
+                    headers: extraHeaders
                 }
             }
         );
+    }
+
+    // Initialise the supabaseClient with the provided JWT
+    function initSupabaseWithJWT(jwt) {
+        return createSupabaseClient({
+            Authorization: `Bearer ${jwt}`
+        });
     }
 
     // Set loading spinner button
@@ -121,9 +133,8 @@
 
     
     // Database initialisation
-    const SUPABASE_URL = 'https://bcyxjsqpvkywiuvaskvs.supabase.co'
-    const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImJjeXhqc3Fwdmt5d2l1dmFza3ZzIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjM3ODk0MjMsImV4cCI6MjA3OTM2NTQyM30.zLQ9S78OPKE0vXYrqbd3BB2jsvtr9HE6bCHuLY-ecyY'
-    let supabaseClient = supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
+    
+    let supabaseClient = createSupabaseClient();
     
     $('#load-rsvp').on('click', async function () {
         const rsvpPassword = $('#rsvp-password').val().trim();
