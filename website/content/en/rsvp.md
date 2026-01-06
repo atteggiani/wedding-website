@@ -1,22 +1,74 @@
 <div class="container py-5">
   <h1>RSVP</h1>
-
-  <div id="password-input">
-    <label class="form-label">Enter your RSVP password</label>
-    <input type="text" id="rsvp-password" class="form-control mb-3" value="IBG9ES">
-    <button class="btn btn-primary" id="load-rsvp">Continue</button>
-    <div class="status-text"></div>
-  </div>
   
-
-  <form id="rsvp-form" class="d-none">
-    <div id="guests-container"></div>
-    <button type="submit" class="btn btn-success mt-4">Submit RSVP</button>
-  </form>
+  <div id="rsvp-section">
+    <div id="page-loader" class="d-none">
+        <div class="loader-inner">
+        <div class="spinner-border text-primary" role="status"></div>
+        <p class="mt-3">Loading your invitation…</p>
+        </div>
+    </div>
+    <div id="password-input" class="d-none">
+        <label class="form-label">Enter your RSVP password</label>
+        <input type="text" id="rsvp-password" class="form-control mb-3" value="IBG9ES">
+        <button class="btn btn-primary" id="load-rsvp">Continue</button>
+        <div class="status-text"></div>
+    </div>
+    <form id="rsvp-form" class="d-none">
+        <h4>
+            Please complete the RSVP for every person listed below.<br>
+            If you are bringing a plus one, please add their name where indicated.
+        </h4>
+        <div id="guests-container"></div>
+        <button type="submit" class="btn btn-success mt-4">Submit RSVP</button>
+    </form>
+  </div>
 </div>
 
 <!-- JavaScript inline -->
 <script>
+    const COOKIE_JWT='guest_jwt'
+    const COOKIE_JWT_EXP='guest_jwt_exp'
+
+    function restoreGuestSession() {
+        const jwt = sessionStorage.getItem(COOKIE_JWT);
+        const exp = sessionStorage.getItem(COOKIE_JWT_EXP);
+
+        if (!jwt || !exp) return;
+
+        // Expired?
+        if (Date.now() >= Number(exp)) {
+            sessionStorage.removeItem(COOKIE_JWT);
+            sessionStorage.removeItem(COOKIE_JWT_EXP);
+            return;
+        }
+
+        return initSupabaseWithJWT(jwt);
+    }
+
+    // Store JWT in sessionStorage
+    function storeGuestJWT(jwt) {
+        const payload = JSON.parse(atob(jwt.split('.')[1]));
+
+        sessionStorage.setItem(COOKIE_JWT, jwt);
+        sessionStorage.setItem(COOKIE_JWT_EXP, payload.exp * 1000);
+    }
+
+    // Initialise the supabaseClient with the provided JWT
+    function initSupabaseWithJWT(jwt) {
+        return supabase.createClient(
+            SUPABASE_URL,
+            SUPABASE_ANON_KEY,
+            {
+                global: {
+                    headers: {
+                        Authorization: `Bearer ${jwt}`
+                    }
+                }
+            }
+        );
+    }
+
     // Set loading spinner button
     function setLoading(isLoading) {
         const btn = $('#load-rsvp');
@@ -25,12 +77,21 @@
             btn.prop('disabled', true);
             btn.html(`
             <span class="spinner-border spinner-border-sm me-2" role="status" aria-hidden="true"></span>
-            Verifying...
+            Loading your invitation...
             `);
         } else {
             btn.prop('disabled', false);
             btn.text('Continue');
         }
+    }
+
+    function showPageLoader() {
+        $('#password-input').addClass('d-none');
+        $('#page-loader').removeClass('d-none');
+    }
+
+    function hidePageLoader() {
+        $('#page-loader').addClass('d-none');
     }
 
     // Run Supabase Edge function to get a guest session to authenticate the user if the rsvp_token matches
@@ -58,11 +119,12 @@
         return res.data.access_token;
     }
 
+    
     // Database initialisation
     const SUPABASE_URL = 'https://bcyxjsqpvkywiuvaskvs.supabase.co'
     const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImJjeXhqc3Fwdmt5d2l1dmFza3ZzIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjM3ODk0MjMsImV4cCI6MjA3OTM2NTQyM30.zLQ9S78OPKE0vXYrqbd3BB2jsvtr9HE6bCHuLY-ecyY'
     let supabaseClient = supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
-
+    
     $('#load-rsvp').on('click', async function () {
         const rsvpPassword = $('#rsvp-password').val().trim();
         if (!rsvpPassword) return;
@@ -70,20 +132,14 @@
         setLoading(true);
         // Get Guest JWT
         const JWT = await getGuestJWT(rsvpPassword, supabaseClient);
-        setLoading(false);
         if (JWT) {
-            supabaseClient = supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY, {
-                global: {
-                    headers: { 
-                        Authorization: `Bearer ${JWT}` 
-                    },
-                },
-            });
+            storeGuestJWT(JWT);
+            supabaseClient = initSupabaseWithJWT(JWT);
             const { data, error } = await supabaseClient
                 .from('guests')
                 .select('*')
                 .single();
-
+            setLoading(false);
             if (!error) {
                 renderGuests(data.group_members);
             } else {
@@ -96,23 +152,52 @@
     });
 
     function renderGuests(members) {
-        $('#password-input').hide();
         console.log(members);
+        const container = $('#guests-container');
+        container.empty();
+        members.forEach(member => {
+            container.append(`
+                <div class="card mb-3 p-3">
+                <h5>${member.name}</h5>
+            `)
+        });
+        $('#password-input').addClass('d-none');
         $('#rsvp-form').removeClass('d-none');
-    }
+    };
+    
+    // Restore state or load RSVP password input
+    $(async function () {
+        showPageLoader();
+        try {
+            const restoredClient = restoreGuestSession();
 
+            if (!restoredClient) {
+                $('#password-input').removeClass('d-none');
+                return;
+            }
 
+            supabaseClient = restoredClient;
 
-//   function renderGuests(members, responses) {
-//     const container = $('#guests-container');
-//     container.empty();
+            const { data, error } = await supabaseClient
+                .from('guests')
+                .select('*')
+                .single();
+            
+            if (error) {
+                throw error;
+            }
 
-//     members.forEach(member => {
-//       const existing = responses.find(r => r.id === member.id) || {};
+            renderGuests(data.group_members);
 
-//       container.append(`
-//         <div class="card mb-3 p-3">
-//           <h5>${member.name}</h5>
+        } catch (err) {
+            console.log(err)
+            sessionStorage.clear();
+            $('#password-input').removeClass('d-none');
+
+        } finally {
+            hidePageLoader();
+        }
+    });
 
 //           ${member.plusone ? `
 //             <div class="mb-2">
