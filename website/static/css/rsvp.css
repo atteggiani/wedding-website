@@ -1,5 +1,28 @@
 .status-text {
-    color: brown;
+    color: rgb(204, 0, 0);
     margin-top: 1rem;
     height: 2em;
+}
+
+#page-loader {
+  position: absolute;
+  inset: 0;
+  background: white;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#page-loader.d-none {
+  display: none;
+}
+
+.loader-inner {
+  text-align: center;
+}
+
+#rsvp-section {
+    position: relative;
+    min-height: 300px;
 }
