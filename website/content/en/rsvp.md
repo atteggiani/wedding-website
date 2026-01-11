@@ -10,7 +10,7 @@
     </div>
     <div id="password-input" class="d-none">
         <label class="form-label">Enter your RSVP password</label>
-        <input type="text" id="rsvp-password" class="form-control mb-3" value="IBG9ES">
+        <input type="text" id="rsvp-password" class="form-control mb-3" value="FZF5UU">
         <button class="btn btn-primary" id="load-rsvp">Continue</button>
         <div class="status-text"></div>
     </div>

@@ -26,3 +26,16 @@
     position: relative;
     min-height: 400px;
 }
+
+.attending-form > span {
+    font-weight: bold;
+}
+
+input[id^="attending-switch-"]:not(:disabled) {
+    cursor: pointer;
+}
+
+input[id^="dietary-requirements-"]:disabled,
+.form-switch:has(> input:disabled) {
+    cursor: not-allowed;
+}

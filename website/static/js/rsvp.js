@@ -98,7 +98,7 @@ async function getGuestJWT(rsvpPassword, supabaseClient) {
             $('#password-input > .status-text').text(
                 "There was an error validating the RSVP password! Please try again. If the error persists, please contact us!"
             );
-            console.log(res.error);
+            // console.log(res.error);
         }
         return
     }
@@ -121,34 +121,134 @@ $('#load-rsvp').on('click', async function () {
             .single();
         setLoading(false);
         if (!error) {
-            renderGuests(data.group_members);
+            renderGuests(data.group_members, data.responses);
         } else {
             $('#password-input > .status-text').text(
                 `There was an error retrieving data associated with guest '${rsvpPassword}'! Please try again. If the error persists, please contact us!`
             );
-            console.log(error);
+            // console.log(error);
         }
     }
 });
 
-function renderGuests(members) {
+function renderGuests(members, responses) {
     console.log(members);
+    console.log(responses);
     const container = $('#guests-container');
     container.empty();
     members.forEach(member => {
-        container.append(`
-            <div class="card mb-3 p-3">
-            <h5>${member.name}</h5>
-            <div class="form-floating">
-            <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea_${member.id}"></textarea>
-            <label for="floatingTextarea_${member.id}">Comments</label>
+        const name = member.name || '';
+        const response = responses?.[member.id]
+        const attendance = response?.attendance || false;
+        const dietaryRequirements = response?.dietary_requirements || '';
+        // Determine what type of member this is
+        const hasPlusOne = !!member.plusone;
+        const hasChild = !!member.child;
+        // Default labels
+        let attendanceLabel = 'Are you attending?';
+        let showPlusOneNameInput = false;
+        let plusOneNameLabel = '';
+        // Adjust labels/inputs based on member type
+        if (hasPlusOne && hasChild) {
+            attendanceLabel = 'Is a child attending?';
+            showPlusOneNameInput = true;
+            plusOneNameLabel = 'Full name of your child';
+        } else if (hasPlusOne) {
+            attendanceLabel = 'Is a +1 attending?';
+            showPlusOneNameInput = true;
+            plusOneNameLabel = 'Full name of your +1';
+        } else if (hasChild) {
+            attendanceLabel = 'Is this child attending?';
+        }
+        // Build HTML sections
+        const nameSection = !showPlusOneNameInput
+            ? `<h4>${name}</h4>` : 
+            `<div class="form-floating mb-3">
+                <input 
+                type="text" 
+                maxlength="50"
+                class="form-control" 
+                id="plusoneName_${member.id}"
+                value="${name}"
+                ${attendance ? '' : 'disabled'}
+                >
+                <label for="plusoneName_${member.id}">
+                    ${plusOneNameLabel}
+                </label>
+            </div>`;
+        
+        const attendanceSection = `
+        <div class="d-flex align-items-center gap-3 attending-form mt-2 mb-2">
+            <span>${attendanceLabel}</span>
+            <div class="form-check form-switch m-0">
+                <input
+                class="form-check-input"
+                type="checkbox"
+                id="attending-switch-${member.id}"
+                ${attendance ? 'checked' : ''}
+                >
+                <label class="form-check-label" for="attending-switch-${member.id}" id="attendingLabel_${member.id}">
+                    ${attendance ? 'Yes' : 'No'}
+                </label>
             </div>
-            </div>
-        `)
+        </div>`;
+        
+        const dietarySection = `
+        <div class="form-floating mb-3">
+            <input 
+            type="text" 
+            maxlength="50"
+            class="form-control" 
+            id="dietary-requirements-${member.id}"
+            value="${dietaryRequirements}"
+            ${attendance ? '' : 'disabled'}
+            >
+            <label for="dietary-requirements-${member.id}">
+                Dietary requirements
+            </label>
+        </div>`;
+        // Assemble card depending on the order
+        let cardHTML;
+        if (hasPlusOne) {
+            // Attendance first, then name, then dietary
+            cardHTML = `
+                <div class="card mb-3 p-3">
+                    ${attendanceSection}
+                    ${nameSection}
+                    ${dietarySection}
+                </div>
+            `;
+        } else {
+            // Name first, then attendance, then dietary
+            cardHTML = `
+                <div class="card mb-3 p-3">
+                    ${nameSection}
+                    ${attendanceSection}
+                    ${dietarySection}
+                </div>
+            `;
+        }
+        container.append(cardHTML);
     });
     $('#password-input').addClass('d-none');
     $('#rsvp-form').removeClass('d-none');
 };
+
+// Change functionality based on attendance switch
+$(document).on('change', 'input[id^="attending-switch-"]', function () {
+  const id = this.id.replace('attending-switch-', '');
+  const isAttending = this.checked;
+
+  // Update label
+  $(`#attendingLabel_${id}`).text(isAttending ? 'Yes' : 'No');
+
+  // Enable / disable 
+  const dietaryText = $(`#dietary-requirements-${id}`);
+  dietaryText.prop('disabled', !isAttending);
+  const nameText = $(`#plusoneName_${id}`);
+  nameText.prop('disabled', !isAttending);
+});
+
 
 // Database initialisation
 let supabaseClient = createSupabaseClient();
@@ -171,10 +271,9 @@ $(async function () {
             throw error;
         }
 
-        renderGuests(data.group_members);
+        renderGuests(data.group_members, data.responses);
 
     } catch (err) {
-        console.log(err)
         clearSupabaseClientJWT();
         sessionStorage.clear();
         $('#password-input').removeClass('d-none');
@@ -183,42 +282,6 @@ $(async function () {
         hidePageLoader();
     }
 });
-
-//           ${member.plusone ? `
-//             <div class="mb-2">
-//               <p>This invitation includes a +1</p>
-//               <input class="form-control plusone-name" 
-//                      data-id="${member.id}"
-//                      placeholder="Plus one name"
-//                      value="${existing.plusone_name || ''}">
-//             </div>
-//           ` : ''}
-
-//           <div class="mb-2">
-//             <label>Attending?</label>
-//             <select class="form-select attending" data-id="${member.id}">
-//               <option value="yes" ${existing.attending ? 'selected' : ''}>Yes</option>
-//               <option value="no" ${existing.attending === false ? 'selected' : ''}>No</option>
-//             </select>
-//           </div>
-
-//           <div class="mb-2 dietary ${existing.attending ? '' : 'd-none'}">
-//             <label>Dietary requirements</label>
-//             <input class="form-control dietary-input"
-//                    data-id="${member.id}"
-//                    value="${existing.dietary || ''}">
-//           </div>
-//         </div>
-//       `);
-//     });
-//   }
-
-//   // Toggle dietary field visibility
-//   $(document).on('change', '.attending', function () {
-//     const card = $(this).closest('.card');
-//     card.find('.dietary').toggleClass('d-none', this.value !== 'yes');
-//   });
-
 //   // Submit logic
 //   $('#rsvp-form').on('submit', async function (e) {
 //     e.preventDefault();
