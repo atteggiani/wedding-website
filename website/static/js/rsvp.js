@@ -1,5 +1,13 @@
-const COOKIE_JWT='guest_jwt'
-const COOKIE_JWT_EXP='guest_jwt_exp'
+// =====================
+// Constants
+// =====================
+const COOKIE_JWT = 'guest_jwt';
+const COOKIE_JWT_EXP = 'guest_jwt_exp';
+
+const cornerIcons = {
+  child: '/assets/child_icon.png',
+  plusone: '/assets/plusone.png',
+};
 
 function restoreGuestSession(client) {
     const jwt = sessionStorage.getItem(COOKIE_JWT);
@@ -103,11 +111,6 @@ async function getGuestJWT(rsvpPassword, supabaseClient) {
         return
     }
     return res.data.access_token;
-}
-
-const cornerIcons = {
-    child: '/assets/child_icon.png',
-    plusone: '/assets/plusone.png',
 }
 
 function renderCornerIcon(type) {
@@ -276,7 +279,7 @@ let supabaseClient = createSupabaseClient();
 $(async function () {
     showPageLoader();
     try {
-        if (!restoreGuestSession()) {
+        if (!restoreGuestSession(supabaseClient)) {
             $('#password-input').removeClass('d-none');
             return;
         }
