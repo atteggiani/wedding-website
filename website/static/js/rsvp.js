@@ -1,7 +1,7 @@
 const COOKIE_JWT='guest_jwt'
 const COOKIE_JWT_EXP='guest_jwt_exp'
 
-function restoreGuestSession() {
+function restoreGuestSession(client) {
     const jwt = sessionStorage.getItem(COOKIE_JWT);
     const exp = sessionStorage.getItem(COOKIE_JWT_EXP);
 
@@ -13,7 +13,7 @@ function restoreGuestSession() {
         return false;
     }
 
-    setSupabaseClientJWT(jwt);
+    setSupabaseClientJWT(client,jwt);
     return true;
 }
 
@@ -43,16 +43,16 @@ function createSupabaseClient() {
 }
 
 // Add JWT token to client headers
-function setSupabaseClientJWT(jwt) {
-    supabaseClient.rest.headers.set(
+function setSupabaseClientJWT(client, jwt) {
+    client.rest.headers.set(
         'Authorization',
         `Bearer ${jwt}`
     );
 }
 
 // Clear JWT token from client headers
-function clearSupabaseClientJWT() {
-    supabaseClient.rest.headers.delete('Authorization');
+function clearSupabaseClientJWT(client) {
+    client.rest.headers.delete('Authorization');
 }
 
 // Set loading spinner button
@@ -127,7 +127,7 @@ $('#load-rsvp').on('click', async function () {
     const JWT = await getGuestJWT(rsvpPassword, supabaseClient);
     if (JWT) {
         storeGuestJWT(JWT);
-        setSupabaseClientJWT(JWT);
+        setSupabaseClientJWT(supabaseClient, JWT);
         const { data, error } = await supabaseClient
             .from('guests')
             .select('*')
@@ -293,7 +293,7 @@ $(async function () {
         renderGuests(data.group_members, data.responses);
 
     } catch (err) {
-        clearSupabaseClientJWT();
+        clearSupabaseClientJWT(supabaseClient);
         sessionStorage.clear();
         $('#password-input').removeClass('d-none');
 
