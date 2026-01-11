@@ -20,6 +20,7 @@
         </h5>
         <div id="guests-container"></div>
         <button type="submit" class="btn btn-success mt-4">Submit RSVP</button>
+        <div class="status-text"></div>
     </form>
   </div>
 </div>

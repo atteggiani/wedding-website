@@ -9,29 +9,18 @@ const cornerIcons = {
   plusone: '/assets/plusone.png',
 };
 
-function restoreGuestSession(client) {
-    const jwt = sessionStorage.getItem(COOKIE_JWT);
-    const exp = sessionStorage.getItem(COOKIE_JWT_EXP);
+// =====================
+// Cached DOM
+// =====================
+const $passwordInput = $('#password-input');
+const $rsvpForm = $('#rsvp-form');
+const $pageLoader = $('#page-loader');
+const $guestsContainer = $('#guests-container');
+const $loadBtn = $('#load-rsvp');
 
-    if (!jwt || !exp) return false;
-
-    // Expired?
-    if (Date.now() >= Number(exp)) {
-        sessionStorage.clear();
-        return false;
-    }
-
-    setSupabaseClientJWT(client,jwt);
-    return true;
-}
-
-// Store JWT in sessionStorage
-function storeGuestJWT(jwt) {
-    const payload = JSON.parse(atob(jwt.split('.')[1]));
-
-    sessionStorage.setItem(COOKIE_JWT, jwt);
-    sessionStorage.setItem(COOKIE_JWT_EXP, payload.exp * 1000);
-}
+// =====================
+// Supabase helpers
+// =====================
 
 // Helper function to create a supabase Client without auth
 function createSupabaseClient() {
@@ -63,9 +52,41 @@ function clearSupabaseClientJWT(client) {
     client.rest.headers.delete('Authorization');
 }
 
+// =====================
+// Session helpers
+// =====================
+
+function restoreGuestSession(client) {
+    const jwt = sessionStorage.getItem(COOKIE_JWT);
+    const exp = sessionStorage.getItem(COOKIE_JWT_EXP);
+
+    if (!jwt || !exp) return false;
+
+    // Expired?
+    if (Date.now() >= Number(exp)) {
+        sessionStorage.clear();
+        return false;
+    }
+
+    setSupabaseClientJWT(client,jwt);
+    return true;
+}
+
+// Store JWT in sessionStorage
+function storeGuestJWT(jwt) {
+    const payload = JSON.parse(atob(jwt.split('.')[1]));
+
+    sessionStorage.setItem(COOKIE_JWT, jwt);
+    sessionStorage.setItem(COOKIE_JWT_EXP, payload.exp * 1000);
+}
+
+// =====================
+// UI helpers
+// =====================
+
 // Set loading spinner button
 function setLoading(isLoading) {
-    const btn = $('#load-rsvp');
+    const btn = $loadBtn;
 
     if (isLoading) {
         btn.prop('disabled', true);
@@ -80,13 +101,17 @@ function setLoading(isLoading) {
 }
 
 function showPageLoader() {
-    $('#password-input').addClass('d-none');
-    $('#page-loader').removeClass('d-none');
+    $passwordInput.addClass('d-none');
+    $pageLoader.removeClass('d-none');
 }
 
 function hidePageLoader() {
-    $('#page-loader').addClass('d-none');
+    $pageLoader.addClass('d-none');
 }
+
+// =====================
+// API helpers
+// =====================
 
 // Run Supabase Edge function to get a guest session to authenticate the user if the rsvp_token matches
 async function getGuestJWT(rsvpPassword, supabaseClient) {
@@ -113,7 +138,12 @@ async function getGuestJWT(rsvpPassword, supabaseClient) {
     return res.data.access_token;
 }
 
+// =====================
+// Rendering helpers
+// =====================
+
 function renderCornerIcon(type) {
+    if (!cornerIcons[type]) return '';
     return `
     <div class="card-corner-icon" type=${type}>
       <img src="${cornerIcons[type]}" alt="${type}" />
@@ -121,34 +151,8 @@ function renderCornerIcon(type) {
   `;
 }
 
-$('#load-rsvp').on('click', async function () {
-    const rsvpPassword = $('#rsvp-password').val().trim();
-    if (!rsvpPassword) return;
-    $('#password-input > .status-text').text("")
-    setLoading(true);
-    // Get Guest JWT
-    const JWT = await getGuestJWT(rsvpPassword, supabaseClient);
-    if (JWT) {
-        storeGuestJWT(JWT);
-        setSupabaseClientJWT(supabaseClient, JWT);
-        const { data, error } = await supabaseClient
-            .from('guests')
-            .select('*')
-            .single();
-        setLoading(false);
-        if (!error) {
-            renderGuests(data.group_members, data.responses);
-        } else {
-            $('#password-input > .status-text').text(
-                `There was an error retrieving data associated with guest '${rsvpPassword}'! Please try again. If the error persists, please contact us!`
-            );
-            // console.log(error);
-        }
-    }
-});
-
 function renderGuests(members, responses) {
-    const container = $('#guests-container');
+    const container = $guestsContainer;
     container.empty();
     members.forEach(member => {
         const name = member.name || '';
@@ -252,61 +256,45 @@ function renderGuests(members, responses) {
         }
         container.append(cardHTML);
     });
-    $('#password-input').addClass('d-none');
-    $('#rsvp-form').removeClass('d-none');
+    $passwordInput.addClass('d-none');
+    $rsvpForm.removeClass('d-none');
 };
 
-// Change functionality based on attendance switch
-$(document).on('change', 'input[id^="attending-switch-"]', function () {
-  const id = this.id.replace('attending-switch-', '');
-  const isAttending = this.checked;
-
-  // Update label
-  $(`#attendingLabel_${id}`).text(isAttending ? 'Yes' : 'No');
-
-  // Enable / disable 
-  const dietaryText = $(`#dietary-requirements-${id}`);
-  dietaryText.prop('disabled', !isAttending);
-  const nameText = $(`#plusoneName_${id}`);
-  nameText.prop('disabled', !isAttending);
-});
-
-
-// Database initialisation
-let supabaseClient = createSupabaseClient();
-
-// Restore state or load RSVP password input
-$(async function () {
-    showPageLoader();
-    try {
-        if (!restoreGuestSession(supabaseClient)) {
-            $('#password-input').removeClass('d-none');
-            return;
-        }
-
+// =====================
+// Event handlers
+// =====================
+// RSVP password entering button
+$loadBtn.on('click', async function () {
+    const rsvpPassword = $('#rsvp-password').val().trim();
+    if (!rsvpPassword) return;
+    $passwordInput.find('> .status-text').text("")
+    setLoading(true);
+    // Get Guest JWT
+    const JWT = await getGuestJWT(rsvpPassword, supabaseClient);
+    if (JWT) {
+        storeGuestJWT(JWT);
+        setSupabaseClientJWT(supabaseClient, JWT);
         const { data, error } = await supabaseClient
             .from('guests')
             .select('*')
             .single();
-        
-        if (error) {
-            throw error;
+        setLoading(false);
+        if (!error) {
+            renderGuests(data.group_members, data.responses);
+        } else {
+            $('#password-input > .status-text').text(
+                `There was an error retrieving data associated with guest '${rsvpPassword}'! Please try again. If the error persists, please contact us!`
+            );
+            // console.log(error);
         }
-
-        renderGuests(data.group_members, data.responses);
-
-    } catch (err) {
-        clearSupabaseClientJWT(supabaseClient);
-        sessionStorage.clear();
-        $('#password-input').removeClass('d-none');
-
-    } finally {
-        hidePageLoader();
     }
 });
-//   // Submit logic
-//   $('#rsvp-form').on('submit', async function (e) {
-//     e.preventDefault();
+
+// RSVP submit button
+$rsvpForm.on('submit', async function (e) {
+    e.preventDefault();
+    console.log('submitted');
+});
 
 //     const responses = [];
 //     $('.card').each(function () {
@@ -337,3 +325,53 @@ $(async function () {
 //       $('#password-input > .status-text').text('RSVP saved successfully!');
 //     }
 //   });
+
+// Change functionality based on attendance switch
+$(document).on('change', 'input[id^="attending-switch-"]', function () {
+    const id = this.id.replace('attending-switch-', '');
+    const isAttending = this.checked;
+
+    // Update label
+    $(`#attendingLabel_${id}`).text(isAttending ? 'Yes' : 'No');
+    // Enable / disable 
+    $(`#dietary-requirements-${id}`).prop('disabled', !isAttending);
+    const $nameText = $(`#plusoneName_${id}`);
+    if ($nameText.length) $nameText.prop('disabled', !isAttending);
+});
+
+// =====================
+// Initialise page
+// =====================
+
+// Database initialisation
+let supabaseClient = createSupabaseClient();
+
+// Restore state or load RSVP password input
+$(async function () {
+    showPageLoader();
+    try {
+        if (!restoreGuestSession(supabaseClient)) {
+            $passwordInput.removeClass('d-none');
+            return;
+        }
+
+        const { data, error } = await supabaseClient
+            .from('guests')
+            .select('*')
+            .single();
+        
+        if (error) {
+            throw error;
+        }
+
+        renderGuests(data.group_members, data.responses);
+
+    } catch (err) {
+        clearSupabaseClientJWT(supabaseClient);
+        sessionStorage.clear();
+        $passwordInput.removeClass('d-none');
+
+    } finally {
+        hidePageLoader();
+    }
+});
