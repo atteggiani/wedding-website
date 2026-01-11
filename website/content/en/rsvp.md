@@ -15,10 +15,9 @@
         <div class="status-text"></div>
     </div>
     <form id="rsvp-form" class="d-none">
-        <h4>
-            Please complete the RSVP for every person listed below.<br>
-            If you are bringing a plus one, please add their name where indicated.
-        </h4>
+        <h5>
+            Please complete or modify this RSVP for the people listed below.<br>
+        </h5>
         <div id="guests-container"></div>
         <button type="submit" class="btn btn-success mt-4">Submit RSVP</button>
     </form>

@@ -105,6 +105,19 @@ async function getGuestJWT(rsvpPassword, supabaseClient) {
     return res.data.access_token;
 }
 
+const cornerIcons = {
+    child: '/assets/child_icon.png',
+    plusone: '/assets/plusone.png',
+}
+
+function renderCornerIcon(type) {
+    return `
+    <div class="card-corner-icon" type=${type}>
+      <img src="${cornerIcons[type]}" alt="${type}" />
+    </div>
+  `;
+}
+
 $('#load-rsvp').on('click', async function () {
     const rsvpPassword = $('#rsvp-password').val().trim();
     if (!rsvpPassword) return;
@@ -132,8 +145,6 @@ $('#load-rsvp').on('click', async function () {
 });
 
 function renderGuests(members, responses) {
-    console.log(members);
-    console.log(responses);
     const container = $('#guests-container');
     container.empty();
     members.forEach(member => {
@@ -209,10 +220,17 @@ function renderGuests(members, responses) {
         </div>`;
         // Assemble card depending on the order
         let cardHTML;
+        let cornerIconHTML = '';
+        if (hasPlusOne) {
+            cornerIconHTML = renderCornerIcon(hasChild ? 'child' : 'plusone');
+        } else if (hasChild) {
+            cornerIconHTML = renderCornerIcon('child');
+        }
         if (hasPlusOne) {
             // Attendance first, then name, then dietary
             cardHTML = `
                 <div class="card mb-3 p-3">
+                    ${cornerIconHTML}
                     ${attendanceSection}
                     ${nameSection}
                     ${dietarySection}
@@ -222,6 +240,7 @@ function renderGuests(members, responses) {
             // Name first, then attendance, then dietary
             cardHTML = `
                 <div class="card mb-3 p-3">
+                    ${cornerIconHTML}
                     ${nameSection}
                     ${attendanceSection}
                     ${dietarySection}

@@ -1,3 +1,14 @@
+:root {
+    --filter-icon-orange:
+        saturate(100%)
+        invert(80%) sepia(45%)
+        saturate(750%) hue-rotate(340deg);
+    --filter-icon-green: 
+        saturate(100%)
+        invert(50%) sepia(40%)
+        saturate(750%) hue-rotate(60deg);
+}
+
 .status-text {
     color: rgb(204, 0, 0);
     margin-top: 1rem;
@@ -38,4 +49,39 @@ input[id^="attending-switch-"]:not(:disabled) {
 input[id^="dietary-requirements-"]:disabled,
 .form-switch:has(> input:disabled) {
     cursor: not-allowed;
+}
+
+#guests-container {
+    margin: 1rem 0;
+}
+
+.form-switch .form-check-input {
+  transform: scale(1.6);
+  transform-origin: left center;
+}
+
+.form-check-label {
+    /* font-size: 1.2em; */
+    margin-left: 1.5em;
+    font-weight: bold;
+}
+
+.card-corner-icon {
+    position: absolute;
+    top: 0.6rem;
+    right: 1.8rem;
+    z-index: 1;
+    pointer-events: none; /* avoids blocking clicks */
+}
+.card-corner-icon > img {
+    width: 2.3em;
+}
+[type='child'] > img {
+    filter: var(--filter-icon-orange);
+}
+[type='plusone'] > img {
+    filter: var(--filter-icon-green);
+}
+.form-check-input:focus {
+  box-shadow: 0 0 0 0.15rem rgba(13, 110, 253, 0.25); /* thinner */
 }
