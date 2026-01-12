@@ -16,7 +16,10 @@ const $passwordInput = $('#password-input');
 const $rsvpForm = $('#rsvp-form');
 const $pageLoader = $('#page-loader');
 const $guestsContainer = $('#guests-container');
-const $loadBtn = $('#load-rsvp');
+const $loadRsvpBtn = $('#load-rsvp');
+const $submitRsvpBtn = $('#submit-rsvp');
+const $passwordStatus = $passwordInput.find('.status-text');
+const $submitStatus = $rsvpForm.find('.status-text');
 
 // =====================
 // Supabase helpers
@@ -65,6 +68,7 @@ function restoreGuestSession(client) {
     // Expired?
     if (Date.now() >= Number(exp)) {
         sessionStorage.clear();
+        $passwordStatus.text('Your session expired. Please enter your RSVP password again.');
         return false;
     }
 
@@ -85,18 +89,17 @@ function storeGuestJWT(jwt) {
 // =====================
 
 // Set loading spinner button
-function setLoading(isLoading) {
-    const btn = $loadBtn;
-
+function setLoadingButton(elem, isLoading, text = null) {
+    if (!text) text = elem.text();
     if (isLoading) {
-        btn.prop('disabled', true);
-        btn.html(`
+        elem.prop('disabled', true);
+        elem.html(`
         <span class="spinner-border spinner-border-sm me-2" role="status" aria-hidden="true"></span>
-        Verifying...
+        ${text}
         `);
     } else {
-        btn.prop('disabled', false);
-        btn.text('Continue');
+        elem.prop('disabled', false);
+        elem.text(text);
     }
 }
 
@@ -124,14 +127,13 @@ async function getGuestJWT(rsvpPassword, supabaseClient) {
 
     if (res.error) {
         if (res.error.context?.status === 401) {
-            $('#password-input > .status-text').text(
+            $passwordStatus.text(
                 "Oops! The RSVP password you entered is invalid. Check the invitation for your code. If you can’t find it, please contact us!"
             );
         } else {
-            $('#password-input > .status-text').text(
+            $passwordStatus.text(
                 "There was an error validating the RSVP password! Please try again. If the error persists, please contact us!"
             );
-            // console.log(res.error);
         }
         return
     }
@@ -151,7 +153,9 @@ function renderCornerIcon(type) {
   `;
 }
 
-function renderGuests(members, responses) {
+function renderGuests(data) {
+    guestData = data;
+    const {group_members: members, responses} = data;
     const container = $guestsContainer;
     container.empty();
     members.forEach(member => {
@@ -264,67 +268,103 @@ function renderGuests(members, responses) {
 // Event handlers
 // =====================
 // RSVP password entering button
-$loadBtn.on('click', async function () {
+$loadRsvpBtn.on('click', async function () {
     const rsvpPassword = $('#rsvp-password').val().trim();
     if (!rsvpPassword) return;
-    $passwordInput.find('> .status-text').text("")
-    setLoading(true);
+    $passwordStatus.text('');
+    setLoadingButton($loadRsvpBtn, true, "Verifying...");
     // Get Guest JWT
-    const JWT = await getGuestJWT(rsvpPassword, supabaseClient);
-    if (JWT) {
-        storeGuestJWT(JWT);
-        setSupabaseClientJWT(supabaseClient, JWT);
-        const { data, error } = await supabaseClient
-            .from('guests')
-            .select('*')
-            .single();
-        setLoading(false);
-        if (!error) {
-            renderGuests(data.group_members, data.responses);
-        } else {
-            $('#password-input > .status-text').text(
-                `There was an error retrieving data associated with guest '${rsvpPassword}'! Please try again. If the error persists, please contact us!`
-            );
-            // console.log(error);
+    try {
+        const JWT = await getGuestJWT(rsvpPassword, supabaseClient);
+        if (JWT) {
+            storeGuestJWT(JWT);
+            setSupabaseClientJWT(supabaseClient, JWT);
+            const { data, error } = await supabaseClient
+                .from('guests')
+                .select('*')
+                .single();
+            if (!error) {
+                renderGuests(data);
+            } else {
+                $passwordStatus.text(
+                    `There was an error retrieving data associated with guest '${rsvpPassword}'! Please try again. If the error persists, please contact us!`
+                );
+            }
         }
+    } finally {
+        setLoadingButton($loadRsvpBtn, false, "Continue");
     }
 });
 
 // RSVP submit button
 $rsvpForm.on('submit', async function (e) {
     e.preventDefault();
-    console.log('submitted');
+    // Clear previous status message
+    $submitStatus.text('');
+
+    setLoadingButton($submitRsvpBtn, true, "Submitting...");
+    const newGuestData = guestData;
+
+    try {
+        $guestsContainer.find('.card').each(function () {
+            const $card = $(this);
+            const $attendingSwitch = $card.find('.form-switch input');
+            const memberId = $attendingSwitch.attr('id')?.split('-')[2];
+            if (!memberId) throw new Error("Member ID not found");
+
+            // Attendance
+            const isAttending = $attendingSwitch.prop('checked');
+            // Name
+            const $nameInput = $card.find(`#plusoneName_${memberId}`);
+            if ($nameInput.length && isAttending) {
+                const plusOneName = $nameInput.val().trim();
+                if (!plusOneName.length) {
+                    $submitStatus.text('The name field cannot be empty.');
+                    $nameInput.focus();
+                    throw new Error();
+                };
+            
+                // Set Name
+                newGuestData.group_members.find(
+                    member => member.id === memberId
+                ).name = plusOneName;
+            }
+
+            
+            // Dietary requirements
+            const dietaryReq = $card.find(`#dietary-requirements-${memberId}`).val().trim() || '';
+            // Set responses
+            newGuestData.responses[memberId] = {
+                attendance: isAttending,
+                dietary_requirements: dietaryReq
+            };
+        });
+        // Ensure JWT is still valid otherwise reload RSVP password
+        if (!restoreGuestSession(supabaseClient)) {
+            $passwordInput.removeClass('d-none');
+            $rsvpForm.addClass('d-none');
+            throw new Error("JWT expired");
+        }
+        // Update the database
+        const { data, error } = await supabaseClient
+            .from('guests')
+            .update({
+                group_members: newGuestData.group_members,
+                responses: newGuestData.responses
+            }).eq('id', newGuestData.id);
+
+        if (error) {
+            $submitStatus.text(
+                'There was an error saving your RSVP. Please try again. If the error persists, please contact us!'
+            );
+            throw new Error(error.message || 'Unknown error');
+        }
+        // Success: show a confirmation message
+        $submitStatus.text('Your RSVP has been saved successfully!');
+    } finally {
+        setLoadingButton($submitRsvpBtn, false, "Submit");
+    }
 });
-
-//     const responses = [];
-//     $('.card').each(function () {
-//       const id = $(this).find('.attending').data('id');
-//       const attending = $(this).find('.attending').val() === 'yes';
-//       const dietary = $(this).find('.dietary-input').val() || '';
-//       const plusoneName = $(this).find('.plusone-name').val();
-
-//       responses.push({
-//         id,
-//         attending,
-//         dietary,
-//         plusone_name: plusoneName || null
-//       });
-//     });
-
-//     const { error } = await supabaseClient
-//       .from('guests')
-//       .update({
-//         responses,
-//         submitted_at: new Date().toISOString()
-//       })
-//       .eq('id', currentRow.id);
-
-//     if (error) {
-//       $('#password-input > .status-text').text('Error saving RSVP');
-//     } else {
-//       $('#password-input > .status-text').text('RSVP saved successfully!');
-//     }
-//   });
 
 // Change functionality based on attendance switch
 $(document).on('change', 'input[id^="attending-switch-"]', function () {
@@ -345,6 +385,7 @@ $(document).on('change', 'input[id^="attending-switch-"]', function () {
 
 // Database initialisation
 let supabaseClient = createSupabaseClient();
+let guestData;
 
 // Restore state or load RSVP password input
 $(async function () {
@@ -364,7 +405,7 @@ $(async function () {
             throw error;
         }
 
-        renderGuests(data.group_members, data.responses);
+        renderGuests(data);
 
     } catch (err) {
         clearSupabaseClientJWT(supabaseClient);

@@ -19,7 +19,7 @@
             Please complete or modify this RSVP for the people listed below.<br>
         </h5>
         <div id="guests-container"></div>
-        <button type="submit" class="btn btn-success mt-4">Submit RSVP</button>
+        <button type="submit" class="btn btn-success mt-4" id="submit-rsvp">Submit</button>
         <div class="status-text"></div>
     </form>
   </div>

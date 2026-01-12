@@ -12,7 +12,7 @@
 .status-text {
     color: rgb(204, 0, 0);
     margin-top: 1rem;
-    height: 2em;
+    min-height: 2em;
 }
 
 #page-loader {
@@ -35,7 +35,6 @@
 
 #rsvp-section {
     position: relative;
-    min-height: 400px;
 }
 
 .attending-form > span {
