@@ -300,10 +300,10 @@ $loadRsvpBtn.on('click', async function () {
 $rsvpForm.on('submit', async function (e) {
     e.preventDefault();
     // Clear previous status message
-    $submitStatus.text('');
+    $submitStatus.removeClass('success').text('');
 
     setLoadingButton($submitRsvpBtn, true, "Submitting...");
-    const newGuestData = guestData;
+    const newGuestData = { ...guestData };
 
     try {
         $guestsContainer.find('.card').each(function () {
@@ -339,6 +339,21 @@ $rsvpForm.on('submit', async function (e) {
                 dietary_requirements: dietaryReq
             };
         });
+        // Make sure no "extra guest" is attending if no "primary guest" is attending
+        const primaryGuestIds = newGuestData.group_members.filter(
+            member => !('plusone' in member) && !('child' in member)
+            ).map(member => member.id)
+        const extraGuestIds = newGuestData.group_members.filter(
+            member => ('plusone' in member) || ('child' in member)
+            ).map(member => member.id)
+        const primaryGuestAttendance = primaryGuestIds.map(id => newGuestData.responses[id].attendance);
+        const extraGuestAttendance = extraGuestIds.map(id => newGuestData.responses[id].attendance);
+        if (primaryGuestAttendance.every(x => !x) && extraGuestAttendance.some(x => x)) {
+            $submitStatus.text(
+                "Plus-ones and children cannot attend unless a primary guest is also attending."
+            );
+            throw new Error();
+        }
         // Ensure JWT is still valid otherwise reload RSVP password
         if (!restoreGuestSession(supabaseClient)) {
             $passwordInput.removeClass('d-none');
@@ -360,7 +375,7 @@ $rsvpForm.on('submit', async function (e) {
             throw new Error(error.message || 'Unknown error');
         }
         // Success: show a confirmation message
-        $submitStatus.text('Your RSVP has been saved successfully!');
+        $submitStatus.addClass('success').text('Your RSVP has been saved successfully!');
     } finally {
         setLoadingButton($submitRsvpBtn, false, "Submit");
     }

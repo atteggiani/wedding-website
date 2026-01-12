@@ -13,6 +13,12 @@
     color: rgb(204, 0, 0);
     margin-top: 1rem;
     min-height: 2em;
+    font-weight: 500;
+}
+.status-text.success {
+    color: rgb(0, 153, 0);
+    margin-top: 1rem;
+    min-height: 2em;
 }
 
 #page-loader {
