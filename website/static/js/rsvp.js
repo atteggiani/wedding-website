@@ -62,7 +62,7 @@ function clearSupabaseClientJWT(client) {
 function restoreGuestSession(client) {
     const jwt = sessionStorage.getItem(COOKIE_JWT);
     const exp = sessionStorage.getItem(COOKIE_JWT_EXP);
-
+    
     if (!jwt || !exp) return false;
 
     // Expired?
@@ -82,6 +82,13 @@ function storeGuestJWT(jwt) {
 
     sessionStorage.setItem(COOKIE_JWT, jwt);
     sessionStorage.setItem(COOKIE_JWT_EXP, payload.exp * 1000);
+}
+
+// Calculate JWT token expiration ETA in minutes
+function calcJwtExpirationEtaInMinutes() {
+    const exp = sessionStorage.getItem(COOKIE_JWT_EXP);
+    const eta = Math.ceil((exp - Date.now())/(1000*60))
+    return eta;
 }
 
 // =====================
@@ -369,9 +376,16 @@ $rsvpForm.on('submit', async function (e) {
             }).eq('id', newGuestData.id);
 
         if (error) {
-            $submitStatus.text(
-                'There was an error saving your RSVP. Please try again. If the error persists, please contact us!'
-            );
+            if (error?.code === "P0001") {
+                const eta = calcJwtExpirationEtaInMinutes();
+                $submitStatus.text(
+                    `Update limit reached. Please try again in ${eta} minute${eta === 1 ? '' : 's'}.`
+                );
+            } else {
+                $submitStatus.text(
+                    'There was an error saving your RSVP. Please try again. If the error persists, please contact us!'
+                );
+            }
             throw new Error(error.message || 'Unknown error');
         }
         // Success: show a confirmation message
