@@ -1,3 +1,8 @@
+/* 
+This JS file is used as a template for Hugo to produce language-specific JS scripts using
+using the i18n function and keys in i18n/<lang>/<lang>.yaml folder 
+*/
+
 // =====================
 // Constants
 // =====================
@@ -8,6 +13,42 @@ const cornerIcons = {
   child: '/assets/child_icon.png',
   plusone: '/assets/plusone.png',
 };
+
+// =====================
+// Templating helpers
+// =====================
+/**
+ * Interpolates placeholders in a string.
+ * 
+ * Features:
+ * - {} placeholders replaced in order using array
+ * - {name} placeholders replaced using object
+ * - Escaped placeholders (\{…\}) are left as-is
+ * 
+ * @param {string} str - The string containing placeholders
+ * @param {Array|Object} vars - Array for ordered placeholders or Object for named placeholders
+ * @returns {string} - Interpolated string
+ */
+function interpolateString(str, vars) {
+  let index = 0;
+
+  return str.replace(/\\?\{(.*?)\}/g, (match, key) => {
+    // If escaped, remove the backslash and keep as-is
+    if (match.startsWith('\\')) {
+      return `{${key}}`;
+    }
+
+    if (Array.isArray(vars)) {
+      // Ordered replacement
+      return vars[index++] ?? '';
+    } else if (typeof vars === 'object' && vars !== null) {
+      // Named replacement
+      return vars[key.trim()] ?? '';
+    } else {
+      return '';
+    }
+  });
+}
 
 // =====================
 // Cached DOM
@@ -68,7 +109,7 @@ function restoreGuestSession(client) {
     // Expired?
     if (Date.now() >= Number(exp)) {
         sessionStorage.clear();
-        $passwordStatus.text('Your session expired. Please enter your RSVP password again.');
+        $passwordStatus.text({{ i18n "rsvp.session_expired" | jsonify }});
         return false;
     }
 
@@ -134,13 +175,9 @@ async function getGuestJWT(rsvpPassword, supabaseClient) {
 
     if (res.error) {
         if (res.error.context?.status === 401) {
-            $passwordStatus.text(
-                "Oops! The RSVP password you entered is invalid. Check the invitation for your code. If you can’t find it, please contact us!"
-            );
+            $passwordStatus.text({{ i18n "rsvp.invalid_password" | jsonify }});
         } else {
-            $passwordStatus.text(
-                "There was an error validating the RSVP password! Please try again. If the error persists, please contact us!"
-            );
+            $passwordStatus.text({{ i18n "rsvp.error_validating_password" | jsonify }});
         }
         return
     }
@@ -166,7 +203,7 @@ function renderGuests(data) {
     const container = $guestsContainer;
     container.empty();
     members.forEach(member => {
-        const name = member.name || '';
+        const memberName = member.name || '';
         const response = responses?.[member.id]
         const attendance = response?.attendance || false;
         const dietaryRequirements = response?.dietary_requirements || '';
@@ -174,31 +211,31 @@ function renderGuests(data) {
         const hasPlusOne = !!member.plusone;
         const hasChild = !!member.child;
         // Default labels
-        let attendanceLabel = 'Are you attending?';
+        let attendanceLabel = {{ i18n "rsvp.adult_attending_label" | jsonify }};
         let showPlusOneNameInput = false;
         let plusOneNameLabel = '';
         // Adjust labels/inputs based on member type
         if (hasPlusOne && hasChild) {
-            attendanceLabel = 'Is a child attending?';
+            attendanceLabel = {{ i18n "rsvp.plusone_child_attending_label" | jsonify }};
             showPlusOneNameInput = true;
-            plusOneNameLabel = 'Full name of your child';
+            plusOneNameLabel = {{ i18n "rsvp.child_name_label" | jsonify }};
         } else if (hasPlusOne) {
-            attendanceLabel = 'Is a +1 attending?';
+            attendanceLabel = {{ i18n "rsvp.plusone_attending_label" | jsonify }};
             showPlusOneNameInput = true;
-            plusOneNameLabel = 'Full name of your +1';
+            plusOneNameLabel = {{ i18n "rsvp.plusone_name_label" | jsonify }};
         } else if (hasChild) {
-            attendanceLabel = 'Is this child attending?';
+            attendanceLabel = {{ i18n "rsvp.child_attending_label" | jsonify }};
         }
         // Build HTML sections
         const nameSection = !showPlusOneNameInput
-            ? `<h4>${name}</h4>` : 
+            ? `<h4>${memberName}</h4>` : 
             `<div class="form-floating mb-3">
                 <input 
                 type="text" 
                 maxlength="50"
                 class="form-control" 
                 id="plusoneName_${member.id}"
-                value="${name}"
+                value="${memberName}"
                 ${attendance ? '' : 'disabled'}
                 >
                 <label for="plusoneName_${member.id}">
@@ -217,7 +254,7 @@ function renderGuests(data) {
                 ${attendance ? 'checked' : ''}
                 >
                 <label class="form-check-label" for="attending-switch-${member.id}" id="attendingLabel_${member.id}">
-                    ${attendance ? 'Yes' : 'No'}
+                    ${attendance ? {{ i18n "rsvp.yes" | jsonify }} : {{ i18n "rsvp.no" | jsonify }}}
                 </label>
             </div>
         </div>`;
@@ -233,7 +270,7 @@ function renderGuests(data) {
             ${attendance ? '' : 'disabled'}
             >
             <label for="dietary-requirements-${member.id}">
-                Dietary requirements
+                {{ i18n "rsvp.dietary_requirements_label" | jsonify }}
             </label>
         </div>`;
         // Assemble card depending on the order
@@ -274,12 +311,12 @@ function renderGuests(data) {
 // =====================
 // Event handlers
 // =====================
-// RSVP password entering button
+// Password entering button
 $loadRsvpBtn.on('click', async function () {
     const rsvpPassword = $('#rsvp-password').val().trim();
     if (!rsvpPassword) return;
     $passwordStatus.text('');
-    setLoadingButton($loadRsvpBtn, true, "Verifying...");
+    setLoadingButton($loadRsvpBtn, true, {{ i18n "rsvp.verifying" | jsonify }});
     // Get Guest JWT
     try {
         const JWT = await getGuestJWT(rsvpPassword, supabaseClient);
@@ -293,13 +330,18 @@ $loadRsvpBtn.on('click', async function () {
             if (!error) {
                 renderGuests(data);
             } else {
-                $passwordStatus.text(
-                    `There was an error retrieving data associated with guest '${rsvpPassword}'! Please try again. If the error persists, please contact us!`
-                );
+                $passwordStatus.text(interpolateString(
+                    {{ i18n "rsvp.error_retrieving_data" | jsonify }},
+                    { rsvpPassword }
+                ));
             }
         }
     } finally {
-        setLoadingButton($loadRsvpBtn, false, "Continue");
+        setLoadingButton(
+            $loadRsvpBtn, 
+            false, 
+            {{ i18n "rsvp.continue" | jsonify }}
+        );
     }
 });
 
@@ -309,7 +351,11 @@ $rsvpForm.on('submit', async function (e) {
     // Clear previous status message
     $submitStatus.removeClass('success').text('');
 
-    setLoadingButton($submitRsvpBtn, true, "Submitting...");
+    setLoadingButton(
+        $submitRsvpBtn, 
+        true, 
+        {{ i18n "rsvp.submitting" | jsonify }}
+    );
     const newGuestData = { ...guestData };
 
     try {
@@ -326,7 +372,7 @@ $rsvpForm.on('submit', async function (e) {
             if ($nameInput.length && isAttending) {
                 const plusOneName = $nameInput.val().trim();
                 if (!plusOneName.length) {
-                    $submitStatus.text('The name field cannot be empty.');
+                    $submitStatus.text({{ i18n "rsvp.error_name_not_empty" | jsonify }});
                     $nameInput.focus();
                     throw new Error();
                 };
@@ -356,12 +402,10 @@ $rsvpForm.on('submit', async function (e) {
         const primaryGuestAttendance = primaryGuestIds.map(id => newGuestData.responses[id].attendance);
         const extraGuestAttendance = extraGuestIds.map(id => newGuestData.responses[id].attendance);
         if (primaryGuestAttendance.every(x => !x) && extraGuestAttendance.some(x => x)) {
-            $submitStatus.text(
-                "Plus-ones and children cannot attend unless a primary guest is also attending."
-            );
+            $submitStatus.text({{ i18n "rsvp.error_no_only_extra_attend" | jsonify }});
             throw new Error();
         }
-        // Ensure JWT is still valid otherwise reload RSVP password
+        // Ensure JWT is still valid otherwise reload password input
         if (!restoreGuestSession(supabaseClient)) {
             $passwordInput.removeClass('d-none');
             $rsvpForm.addClass('d-none');
@@ -378,20 +422,24 @@ $rsvpForm.on('submit', async function (e) {
         if (error) {
             if (error?.code === "P0001") {
                 const eta = calcJwtExpirationEtaInMinutes();
-                $submitStatus.text(
-                    `Update limit reached. Please try again in ${eta} minute${eta === 1 ? '' : 's'}.`
-                );
+                const s = eta === 1 ? '' : 's'
+                $submitStatus.text(interpolateString(
+                    {{ i18n "rsvp.error_update_limit" | jsonify }},
+                    { eta, s }
+                ));
             } else {
-                $submitStatus.text(
-                    'There was an error saving your RSVP. Please try again. If the error persists, please contact us!'
-                );
+                $submitStatus.text({{ i18n "rsvp.error_submission" | jsonify }});
             }
             throw new Error(error.message || 'Unknown error');
         }
         // Success: show a confirmation message
-        $submitStatus.addClass('success').text('Your RSVP has been saved successfully!');
+        $submitStatus.addClass('success').text({{ i18n "rsvp.success_submission" | jsonify }});
     } finally {
-        setLoadingButton($submitRsvpBtn, false, "Submit");
+        setLoadingButton(
+            $submitRsvpBtn, 
+            false, 
+            {{ i18n "rsvp.submit" | jsonify }}
+        );
     }
 });
 
@@ -401,7 +449,7 @@ $(document).on('change', 'input[id^="attending-switch-"]', function () {
     const isAttending = this.checked;
 
     // Update label
-    $(`#attendingLabel_${id}`).text(isAttending ? 'Yes' : 'No');
+    $(`#attendingLabel_${id}`).text(isAttending ? {{ i18n "rsvp.yes" | jsonify }} : {{ i18n "rsvp.no" | jsonify }});
     // Enable / disable 
     $(`#dietary-requirements-${id}`).prop('disabled', !isAttending);
     const $nameText = $(`#plusoneName_${id}`);

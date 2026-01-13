@@ -17,12 +17,15 @@
     {{ if .IsPage }}
         {{ $name := .File.BaseFileName }}
         {{ $jsPath := printf "js/%s.js" $name }}
-
-        {{ if fileExists (printf "static/%s" $jsPath) }}
-            <script src="/{{ $jsPath }}"></script>
+        {{ $outName := printf "%s.%s.js" $name .Lang }}
+        
+        {{ with resources.Get $jsPath }}
+          {{ $js := . | resources.ExecuteAsTemplate $outName . }}
+          <script src="{{ $js.RelPermalink }}"></script>
         {{ end }}
     {{ end }}
 {{ end }}
+
 
 {{ define "main" }}
     {{ partial "topbanner.html" . }}
