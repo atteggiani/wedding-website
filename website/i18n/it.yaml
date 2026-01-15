@@ -13,7 +13,7 @@ rsvp:
   plusone_attending_label: "Parteciperà un +1?"
   child_name_label: "Nome completo del tuo bambino"
   plusone_name_label: "Nome completo del tuo +1"
-  dietary_requirements_label: "Requisiti dietetici"
+  dietary_requirements_label: "Esigenze alimentari (allergie, intolleranze, ecc.)"
   invalid_password: "Oops! La password che hai inserito non è valida. Controlla l'invito per il tuo codice. Se non riesci a trovarlo, contattaci!"
   error_validating_password: "Si è verificato un errore durante la convalida della password! Per favore riprova. Se l'errore persiste, contattaci!"
   error_retrieving_data: "Si è verificato un errore durante il recupero dei dati associati all'ospite '{rsvpPassword}'! Per favore riprova. Se l'errore persiste, contattaci!"
