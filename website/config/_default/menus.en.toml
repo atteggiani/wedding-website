@@ -1,20 +1,20 @@
 [[main]]
-    identifier = "ceremony"
+    identifier = "menu.ceremony"
     pageRef = "/ceremony"
     weight = 1
 [[main]]
-    identifier = "travel"
+    identifier = "menu.travel"
     pageRef = "/travel"
     weight = 2
 [[main]]
-    identifier = "story"
+    identifier = "menu.story"
     pageRef = "/story"
     weight = 3
 [[main]]
-    identifier = "registry"
+    identifier = "menu.registry"
     pageRef = "/registry"
     weight = 4
 [[main]]
-    identifier = "faq"
+    identifier = "FAQ"
     pageRef = "/faq"
     weight = 5

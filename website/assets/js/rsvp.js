@@ -422,10 +422,9 @@ $rsvpForm.on('submit', async function (e) {
         if (error) {
             if (error?.code === "P0001") {
                 const eta = calcJwtExpirationEtaInMinutes();
-                const s = eta === 1 ? '' : 's'
                 $submitStatus.text(interpolateString(
                     {{ i18n "rsvp.error_update_limit" | jsonify }},
-                    { eta, s }
+                    { eta }
                 ));
             } else {
                 $submitStatus.text({{ i18n "rsvp.error_submission" | jsonify }});

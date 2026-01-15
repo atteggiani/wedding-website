@@ -1,5 +1,5 @@
 <div class="container py-5">
-    <h1>La nostra storia</h1>
+    <h1>La Nostra Storia</h1>
     <h5>Un viaggio tra i nostri momenti più belli!</h5>
     <div class="timeline">
         <!-- SECTION 1 -->

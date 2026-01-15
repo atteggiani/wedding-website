@@ -19,18 +19,13 @@ rsvp:
   error_retrieving_data: "Hubo un error al recuperar los datos asociados con el invitado '{rsvpPassword}'. Por favor, inténtalo de nuevo. Si el error persiste, contáctanos."
   error_name_not_empty: "El campo de nombre no puede estar vacío."
   error_no_only_extra_attend: "Los +1 y niños no pueden asistir a menos que un invitado principal también asista."
-  error_update_limit: "Límite de actualizaciones alcanzado. Por favor, inténtalo de nuevo en {eta} minuto{s}."
+  error_update_limit: "Límite de actualizaciones alcanzado. Por favor, inténtalo de nuevo en {eta} min."
   error_submission: "Hubo un error al guardar tu confirmación. Por favor, inténtalo de nuevo. Si el error persiste, contáctanos."
-  success_submission: "Tu partecipación ha sido guardada exitosamente!"
-story:
-  other: "Nuestra historia"
+  success_submission: "Tu partecipación ha sido registrada exitosamente!"
+menu:
+  story: "Nuestra Historia"
+  travel: "Viajes y Estancia"
+  registry: "Lista de Regalos"
+  ceremony: "Ceremonia y Recepción"
 banner_text:
   other: "¡No podemos esperar para compartir nuestro día especial con ustedes!"
-travel:
-  other: "Viajes y Estancia"
-faq:
-  other: "Preguntas Frecuentes"
-registry:
-  other: "Lista de Regalos"
-ceremony:
-  other: "Ceremonia y Recepción"
