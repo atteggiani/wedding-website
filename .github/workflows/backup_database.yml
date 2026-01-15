@@ -5,7 +5,7 @@ on:
   schedule:
     - cron: "0 14 * * *" # every day at 14:00 UTC (1am AEDT)
 env:
-  DB_FILE: backups/database_backup.csv
+  BACKUP_FOLDER: backups
 
 jobs:
   backup:
@@ -21,26 +21,29 @@ jobs:
       - name: Install Supabase CLI
         uses: supabase/setup-cli@v1
 
-      - name: Export guests table to CSV
+      - name: Export guests and guest_auth table to CSV
         run: |
           mkdir -p data
-          curl \
-            -H "apikey: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}" \
-            -H "Authorization: Bearer ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}" \
-            -H "Accept: text/csv" \
-            '${{ secrets.SUPABASE_URL }}/rest/v1/guests?select=*' \
-            > ${{ env.DB_FILE }}
+          for table in guests guest_auth; do
+            curl \
+                -H "apikey: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}" \
+                -H "Authorization: Bearer ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}" \
+                -H "Accept: text/csv" \
+                "${{ secrets.SUPABASE_URL }}/rest/v1/${table}?select=*" \
+                > ${{ env.BACKUP_FOLDER }}/${table}.csv
+          done
+          ls backups
 
       - name: Commit and push backup if changed
         run: |
-          if git diff --quiet ${{ env.DB_FILE }}; then
-            echo "No changes in database backup"
+          if ! git diff --quiet ${{ env.BACKUP_FOLDER }}; then
+            echo "No changes in database"
             exit 0
           fi
 
           git config user.name "GitHub Actions"
           git config user.email "actions@github.com"
 
-          git add ${{ env.DB_FILE }}
+          git add ${{ env.BACKUP_FOLDER }}
           git commit -m "Backup Supabase DB: $(date -u +"%Y-%m-%d %H:%M:%S UTC")"
           git push
