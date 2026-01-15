@@ -99,7 +99,8 @@
 }
 
 /* alternarive layout for landscape-format image */
-#engagement-image {
+.timeline-event:nth-child(2) img,
+.timeline-event:nth-child(6) img {
     width: 100%;
     height: auto;
 }

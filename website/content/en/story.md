@@ -13,7 +13,7 @@
                 </div>
             </div>
             <div class="event-image">
-                <img src="/assets/story/meeting.jpeg" alt="We met">
+                <img src="/assets/story/meeting.png" alt="We met">
             </div>
         </div>
         <!-- SECTION 2 -->
@@ -27,7 +27,7 @@
                 </div>
             </div>
             <div class="event-image">
-                <img src="/assets/story/friends.png" alt="Friends">
+                <img src="/assets/story/friends.jpeg" alt="Friends">
             </div>
         </div>
         <!-- SECTION 3 -->
@@ -83,7 +83,7 @@
                 </div>
             </div>
             <div class="event-image">
-                <img src="/assets/story/engagement.jpeg" alt="Engagement" id="engagement-image">
+                <img src="/assets/story/engagement.jpeg" alt="Engagement">
             </div>
         </div>
         <!-- SECTION 7 -->

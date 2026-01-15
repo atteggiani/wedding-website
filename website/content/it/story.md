@@ -83,7 +83,7 @@
                 </div>
             </div>
             <div class="event-image">
-                <img src="/assets/story/engagement.jpeg" alt="Engagement" id="engagement-image">
+                <img src="/assets/story/engagement.jpeg" alt="Engagement">
             </div>
         </div>
         <!-- SECTION 7 -->

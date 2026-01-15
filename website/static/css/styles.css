@@ -1,3 +1,16 @@
+:root {
+  --primary-colour: rgb(255, 255, 255); 
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: var(--primary-colour);
+}
+
+.site-content {
+  background-color: var(--primary-colour);
+}
+
 .page-margins {
   margin: 0 3rem 3rem;
 }
