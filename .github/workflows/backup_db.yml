@@ -32,7 +32,6 @@ jobs:
                 "${{ secrets.SUPABASE_URL }}/rest/v1/${table}?select=*" \
                 > ${{ env.BACKUP_FOLDER }}/${table}.csv
           done
-          ls backups
 
       - name: Commit and push backup if changed
         run: |
