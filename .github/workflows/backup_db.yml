@@ -23,7 +23,7 @@ jobs:
 
       - name: Export guests and guest_auth table to CSV
         run: |
-          mkdir -p data
+          mkdir -p ${{ env.BACKUP_FOLDER }}
           for table in guests guest_auth; do
             curl \
                 -H "apikey: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}" \
