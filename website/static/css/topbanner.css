@@ -12,10 +12,6 @@
   background: var(--primary-colour);
 }
 
-/* .top-banner > * {
-    flex: 1;
-} */
-
 /* LEFT MENU */
 .banner-menu ul {
   display: flex;

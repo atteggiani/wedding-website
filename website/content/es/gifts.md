@@ -2,7 +2,7 @@
     <h1>Regalos</h1>
     <div class="main-text">
         <div class="highlight centered">
-            No tenemos una lista de regalos tradicional.<br>
+            No tenemos una lista de bodas tradicional.<br>
             Sabemos que para algunos de ustedes viajar a Italia para nuestra boda es un recorrido importante, y por eso su presencia en nuestra celebración es realmente el regalo más grande para nosotros!
         </div>
         <div class="highlight centered">
