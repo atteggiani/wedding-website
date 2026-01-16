@@ -11,8 +11,8 @@
     pageRef = "/story"
     weight = 3
 [[main]]
-    identifier = "menu.registry"
-    pageRef = "/registry"
+    identifier = "menu.gifts"
+    pageRef = "/gifts"
     weight = 4
 [[main]]
     identifier = "FAQ"

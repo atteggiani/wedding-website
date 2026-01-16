@@ -1,0 +1,66 @@
+h5 {
+    margin-bottom: 1em;
+}
+
+.centered {
+    text-align: center;
+}
+
+.highlight {
+    font-size: 1.3em;
+    margin: 2.5rem 4rem;
+}
+
+.bank-details {
+    border-radius: 1rem;
+    padding: 1rem;
+    background: #e8e8e8;
+}
+
+.bank-method .title {
+    font-size: 1.3em;
+    margin-bottom: 1em;
+}
+
+.bank-details-container{
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+}
+
+.bank-details-container > * {
+    flex: 1;
+}
+
+.details-grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 0.75rem 1.5rem;
+    font-size: 0.95rem;
+}
+
+.label {
+    text-align: right;
+}
+
+.value {
+    font-family: "Courier New", monospace;
+}
+
+.smaller-text {
+    display: inline-block;
+    position: absolute;
+    font-size: 0.8em;
+    transform: translateX(-100%) translateY(100%);
+}
+
+.qr-code {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.qr-code img {
+    border-radius: 0.5rem;
+    height: 15rem;
+}
