@@ -12,9 +12,9 @@
   background: var(--primary-colour);
 }
 
-.top-banner > * {
+/* .top-banner > * {
     flex: 1;
-}
+} */
 
 /* LEFT MENU */
 .banner-menu ul {
