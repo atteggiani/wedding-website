@@ -4,11 +4,6 @@
 
 html {
   scroll-behavior: smooth;
-  background-color: var(--primary-colour);
-}
-
-.site-content {
-  background-color: var(--primary-colour);
 }
 
 .page-margins {

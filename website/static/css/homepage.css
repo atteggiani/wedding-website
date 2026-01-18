@@ -2,6 +2,10 @@
     --primary-color: #007bff;
 }
 
+/* .main-content {
+    background-color: transparent;
+} */
+
 h1,h2 {
     top: 30vh;
     margin: 0.5em auto;
