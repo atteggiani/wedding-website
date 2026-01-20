@@ -1,7 +1,8 @@
-<div class="container py-5">
-  <h1>Conferma</h1>
+---
+title: "Conferma"
+---
   
-  <div id="rsvp-section">
+<div id="rsvp-section">
     <div id="page-loader" class="d-none">
         <div class="loader-inner">
         <div class="spinner-border text-primary" role="status"></div>
@@ -22,5 +23,4 @@
         <button type="submit" class="btn btn-success mt-4" id="submit-rsvp">Invia</button>
         <div class="status-text"></div>
     </form>
-  </div>
 </div>
