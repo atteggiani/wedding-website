@@ -2,7 +2,7 @@
 title: "Nuestra Historia"
 ---
 
-<h5>Un viaje por nuestros momentos más bellos!</h5>
+<h5>¡Un viaje por nuestros momentos más bellos!</h5>
 <div class="timeline">
     <!-- SECTION 1 -->
     <div class="timeline-event" id="meeting">

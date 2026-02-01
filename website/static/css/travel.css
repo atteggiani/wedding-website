@@ -22,6 +22,7 @@ a:hover {
   display: flex;
   align-items: center;
   gap: 1rem;
+  margin-bottom: 1em;
 }
 
 .subsection-title img {

@@ -3,7 +3,7 @@ title: "Travel & Stay"
 ---
 <h5>Everything you need to plan your journey!</h5>
 <div class="section" id="travel">
-  <h2 class="section-title">Travel</h2>
+  <h2 class="section-title">How to get there</h2>
 
   <div class="subsection">
     <h3 class="subsection-title">
@@ -18,7 +18,7 @@ title: "Travel & Stay"
         Once in Rome, get to <strong>Roma Termini</strong> train station.
     </p>
     <p>
-        From Roma Termini, take a regional train to <strong>Cisterna di Latina</strong>. The regional trains are frequent and the journey time is approximately <strong>30 minutes</strong>. The best way to buy a train ticket is through <a href="https://italiatren.com/en/trains/roma-termini/cisterna-di-latina-station?date=2026-09-02&time=07%3A00%3A00&adults=1" target="_blank" rel="noopener noreferrer">Trenitalia website</a>.
+        From Roma Termini, take a regional train to <strong>Cisterna di Latina</strong>. The regional trains are frequent and the journey time is approximately <strong>30 minutes</strong>. The best way to buy a train ticket is through <a href="https://italiatren.com/en/" target="_blank" rel="noopener noreferrer">Trenitalia website</a>.
     </p>
     </p>
     <p>
@@ -36,7 +36,7 @@ title: "Travel & Stay"
         <strong>Cisterna di Latina</strong>.
     </p>
     <p>
-        We suggest getting to Cisterna di Latina either from <strong>Roma Termini</strong> (about <strong>30 minutes</strong> by regional train) or <strong>Napoli Centrale</strong> (about 2.5 hours by regional train). The best way to buy a train ticket is through <a href="https://italiatren.com/en/trains/roma-termini/cisterna-di-latina-station?date=2026-09-02&time=07%3A00%3A00&adults=1" target="_blank" rel="noopener noreferrer">Trenitalia website</a>.
+        We suggest getting to Cisterna di Latina either from <strong>Roma Termini</strong> (about 30 minutes by regional train) or <strong>Napoli Centrale</strong> (about 2.5 hours by regional train). The best way to buy a train ticket is through <a href="https://italiatren.com/en/" target="_blank" rel="noopener noreferrer">Trenitalia website</a>.
     </p>
     <p>
         From Cisterna di Latina train station, you can take an Uber or Taxi to <strong><a href="https://maps.app.goo.gl/E1yVqkmkosNbQRTf7" target="_blank" rel="noopener noreferrer">Torre Ubaldo</a></strong>! It should be about <strong>10 minutes</strong>.
