@@ -1,6 +1,9 @@
-:root {
-  --primary-colour: rgb(255, 255, 255); 
-}
+/* :root {
+    --primary-color: #8b6f5a;
+    --secondary-color: #e7edf1;
+    --text-color: #3a3a3a;
+    --accent-color: #c1a58a;
+} */
 
 html {
   scroll-behavior: smooth;
@@ -27,6 +30,7 @@ html {
 
 .rsvp-btn:hover {
   background: #333;
+  text-decoration: none;
 }
 
 .with-text-shadow {
