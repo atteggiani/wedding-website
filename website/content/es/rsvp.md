@@ -24,3 +24,4 @@ title: "Confirma"
         <div class="status-text"></div>
     </form>
 </div>
+<h5>Para qualquier problema con las invitaciones, ¡no dudes en contactarnos!</h5>

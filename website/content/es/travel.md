@@ -3,7 +3,7 @@ title: "Viaje y Alojamiento"
 ---
 <h5>¡Todo lo que necesitas saber para planificar tu viaje!</h5>
 <div class="section" id="travel">
-  <h2 class="section-title">Come arrivare</h2>
+  <h2 class="section-title">Como llegar</h2>
 
   <div class="subsection">
     <h3 class="subsection-title">

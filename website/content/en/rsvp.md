@@ -24,3 +24,4 @@ title: "RSVP"
         <div class="status-text"></div>
     </form>
 </div>
+<h5>If you encounter any issues with your invitation, please don't hesitate to contact us!</h5>

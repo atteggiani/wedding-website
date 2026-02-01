@@ -24,3 +24,4 @@ title: "Conferma"
         <div class="status-text"></div>
     </form>
 </div>
+<h5>Per qualsiasi problema con le partecipazioni, non esitate a contattarci!</h5>

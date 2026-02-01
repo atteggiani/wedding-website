@@ -16,7 +16,7 @@ title: "Gifts"
     </div>
 </div>
 <div class="bank-details">
-    <h5 class="centered">Contribution Details</h5>
+    <h4 class="centered">Contribution Details</h4>
     <div class="bank-details-container">
         <div class="bank-method">
             <div class="title centered">Bank transfer</div>

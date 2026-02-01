@@ -16,21 +16,21 @@ title: "Regalos"
     </div>
 </div>
 <div class="bank-details">
-    <h5 class="centered">Contribution Details</h5>
+    <h4 class="centered">Detalles de la contribución</h4>
     <div class="bank-details-container">
         <div class="bank-method">
-            <div class="title centered">Bank transfer</div>
+            <div class="title centered">Transferencia bancaria</div>
             <div class="details-grid">
-                <div class="label">Account Name:</div>
+                <div class="label">Nombre de la cuenta:</div>
                 <div class="value">DAVIDE MARCHEGIANI AND JENNIFER RIVERA-GONZALEZ</div>
                 <div class="label">BSB:</div>
                 <div class="value">062692</div>
-                <div class="label">Account Number:</div>
+                <div class="label">Número de cuenta:</div>
                 <div class="value">81587965</div>
                 <div class="label">
                     SWIFT / BIC:
                     <span class="smaller-text">
-                        (non-Australian banks)
+                        (bancos fuera de Australia)
                     </span>
                 </div>
                 <div class="value">CTBAAU2S</div>
