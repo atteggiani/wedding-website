@@ -52,6 +52,12 @@ title: "Viaggio e Alloggio"
     <p>
         Un ampio parcheggio è dispobibile presso la location.
     </p>
+    <iframe 
+        id="maps-preview"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2985.52068159563!2d12.878361775994607!3d41.5579743712787!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132574686c1587ff%3A0xcaa9ed4e66798233!2sTorre%20Ubaldo!5e0!3m2!1sen!2sau!4v1770251767703!5m2!1sen!2sau"
+        allowfullscreen="" loading="lazy" 
+        referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
   </div>
 </div>
 

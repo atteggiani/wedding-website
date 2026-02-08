@@ -1,8 +1,10 @@
 .section {
     margin: 3rem 0;
+    text-align: center;
 }
 
 .subsection {
+    font-size: 1.3em;
     background: #ffffff;
     padding: 2rem;
     margin-bottom: 2rem;
@@ -21,10 +23,16 @@
 .subsection-title {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 1rem;
   margin-bottom: 1em;
 }
 
 .subsection-title img {
   width: 1.2em;
+}
+
+#maps-preview {
+    width: 50%;
+    height: 20rem;
 }

@@ -1,0 +1,46 @@
+
+.section {
+    text-align: center;
+}
+
+.venue-info {
+    margin: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.info {
+    font-weight: bold;
+    font-size: 1.5em;
+    margin: 0.3rem 0;
+}
+
+.info-text {
+    font-size: 1.3em;
+    margin: 0.3rem 0;
+}
+
+.venue-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    margin: 3rem 0;
+}
+
+.venue-gallery img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+    aspect-ratio: 4/3;
+}
+
+.dress-code-section {
+    margin: 4rem 0;
+}
+
+#get-there {
+    text-decoration: none;
+}

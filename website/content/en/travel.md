@@ -45,15 +45,21 @@ title: "Travel & Stay"
 
   <div class="subsection">
     <h3 class="subsection-title">
-      <img src="/assets/travel/car_icon.png" alt="Car">
-      By Car
+        <img src="/assets/travel/car_icon.png" alt="Car">
+        By Car
     </h3>
     <p>
-      If you are traveling by car, you can follow Google Maps directions to <strong><a href="https://www.google.com/maps/dir//Torre+Ubaldo,+35,+SS7,+04012+Cisterna+di+Latina+LT,+Italy/@41.5723936,12.8336098,14z/data=!4m9!4m8!1m0!1m5!1m1!1s0x132574686c1587ff:0xcaa9ed4e66798233!2m2!1d12.8807421!2d41.5578294!3e0?entry=ttu&g_ep=EgoyMDI2MDEyOC4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener noreferrer">Torre Ubaldo</a></strong>!
+        If you are traveling by car, you can follow Google Maps directions to <strong><a href="https://www.google.com/maps/dir//Torre+Ubaldo,+35,+SS7,+04012+Cisterna+di+Latina+LT,+Italy/@41.5723936,12.8336098,14z/data=!4m9!4m8!1m0!1m5!1m1!1s0x132574686c1587ff:0xcaa9ed4e66798233!2m2!1d12.8807421!2d41.5578294!3e0?entry=ttu&g_ep=EgoyMDI2MDEyOC4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener noreferrer">Torre Ubaldo</a></strong>!
     </p>
     <p>
         Ample parking is available at the venue.
     </p>
+    <iframe 
+        id="maps-preview"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2985.52068159563!2d12.878361775994607!3d41.5579743712787!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132574686c1587ff%3A0xcaa9ed4e66798233!2sTorre%20Ubaldo!5e0!3m2!1sen!2sau!4v1770251767703!5m2!1sen!2sau"
+        allowfullscreen="" loading="lazy" 
+        referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
   </div>
 </div>
 

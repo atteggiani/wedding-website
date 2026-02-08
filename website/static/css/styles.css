@@ -9,6 +9,11 @@ html {
   scroll-behavior: smooth;
 }
 
+h1, h5 {
+    text-align: center;
+    margin-bottom: 1em;
+}
+
 .page-margins {
   margin: 0 3rem 3rem;
 }
@@ -35,4 +40,8 @@ html {
 
 .with-text-shadow {
     text-shadow: 0.02em 0.02em calc(4px + 0.08em) rgba(0, 0, 0, 0.7);
+}
+
+strong {
+    font-weight: 600;
 }
