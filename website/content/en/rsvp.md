@@ -5,7 +5,7 @@ title: "RSVP"
 <div id="rsvp-section">
     <div id="page-loader" class="d-none">
         <div class="loader-inner">
-        <div class="spinner-border text-primary" role="status"></div>
+        <div class="spinner-border" role="status"></div>
         <p class="mt-3">Loading your invitation…</p>
         </div>
     </div>
