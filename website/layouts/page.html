@@ -30,8 +30,10 @@
 {{ define "main" }}
     {{ partial "topbanner.html" . }}
     <div class="page-content page-margins">
-        <div class="container py-5">
-            <h1>{{ .Title }}</h1>
+        <div class="container">
+            {{ if .Title }}
+                <h1>{{ .Title }}</h1>
+            {{ end }}
             {{ .Content }}
         </div>
     </div>

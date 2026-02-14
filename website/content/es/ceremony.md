@@ -5,13 +5,13 @@ title: "Ceremonia y Recepción"
 <div class="section">
     <h2 id="venue-title">Torre Ubaldo</h2>
     <div class="venue-info">
-        <div class="info">📅 Miércoles 02 Septiembre 2026, 5:30 PM</div>
+        <div class="info">📅 Miércoles 02 Septiembre 2026, 5:00 PM</div>
         <div class="info">
             <a id="get-there" href="/es/travel">📍</a> 35, SS7, 04012 Cisterna di Latina, Latina (LT), Italia
         </div>
         <div class="info-text">
             La ceremonia y la recepción se llevaran a cabo en Torre Ubaldo.<br>
-            La ceremonia simbolica comenzará a las 5:30 PM, y será seguida de la recepción y de una noche de fiesta!
+            La ceremonia simbolica comenzará a las 5:00 PM, y será seguida de la recepción y de una noche de fiesta!
         </div>
     </div>
     <div class="dress-code">

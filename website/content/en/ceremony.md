@@ -5,13 +5,13 @@ title: "Ceremony & Reception"
 <div class="section">
     <h2 id="venue-title">Torre Ubaldo</h2>
     <div class="venue-info">
-        <div class="info">📅 Wednesday 02 September 2026, 5:30 PM</div>
+        <div class="info">📅 Wednesday 02 September 2026, 5:00 PM</div>
         <div class="info">
             <a id="get-there" href="/en/travel">📍</a> 35, SS7, 04012 Cisterna di Latina, Latina (LT), Italy
         </div>
         <div class="info-text">
             Both the ceremony and the reception will take place at Torre Ubaldo.<br>
-            The symbolic ceremony will begin at 5:30 PM, followed by the wedding reception and a night of celebration!
+            The symbolic ceremony will begin at 5:00 PM, followed by the wedding reception and a night of celebration!
         </div>
     </div>
     <div class="dress-code">

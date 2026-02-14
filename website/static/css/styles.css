@@ -38,10 +38,14 @@ h1, h5 {
   text-decoration: none;
 }
 
-.with-text-shadow {
+.text-shadow {
     text-shadow: 0.02em 0.02em calc(4px + 0.08em) rgba(0, 0, 0, 0.7);
 }
 
 strong {
     font-weight: 600;
+}
+
+.container {
+    padding-top: 3rem;
 }
