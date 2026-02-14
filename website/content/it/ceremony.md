@@ -15,7 +15,7 @@ title: "Cerimonia e Ricevimento"
         </div>
     </div>
     <div class="dress-code">
-        <h3>Dress Code</h3>
+        <h3>👗 Dress Code 👔</h3>
         <div class="info-text">
             Invitiamo gentilmente i nostri ospiti a indossare un abbigliamento <strong>formale</strong> per il nostro matrimonio.<br>
             Trattandosi di un matrimonio estivo, vi chiediamo gentilmente di <strong>evitare il nero ed il bianco</strong> così da contribuire a creare un'atmosfera festiva e luminosa.<br>

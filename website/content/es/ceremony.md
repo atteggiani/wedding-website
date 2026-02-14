@@ -15,7 +15,7 @@ title: "Ceremonia y Recepción"
         </div>
     </div>
     <div class="dress-code">
-        <h3>Etiqueta</h3>
+        <h3>👗 Etiqueta 👔</h3>
         <div class="info-text">
             Invitamos a nuestros invitados a vestir con atuendo <strong>formal</strong> para nuestra celebración.<br>
             Al tratarse de una boda de verano les pedimos que <strong></strong>eviten el negro y el blanco</strong> para contribuir a crear una atmósfera luminosa y alegre.<br>

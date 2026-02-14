@@ -15,7 +15,7 @@ title: "Ceremony & Reception"
         </div>
     </div>
     <div class="dress-code">
-        <h3>Dress Code</h3>
+        <h3>👗 Dress Code 👔</h3>
         <div class="info-text">
             We kindly invite our guests to dress in <strong>formal attire</strong> for our celebration.<br>
             As this is a summer wedding and we love bright and festive vibes, we kindly ask you to <strong>avoid black and white</strong>.<br>
