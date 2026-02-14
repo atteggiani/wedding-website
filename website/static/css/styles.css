@@ -5,6 +5,11 @@
     --accent-color: #c1a58a;
 } */
 
+/* Smooth animation when transitioning to new pages */
+@view-transition {
+    navigation: auto;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -12,6 +17,34 @@ html {
 h1, h5 {
     text-align: center;
     margin-bottom: 1em;
+}
+
+.main-title {
+    color: white;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    overflow: hidden;
+    width: max-content;
+}
+
+h1.main-title {
+    top: 40vh;
+    font-size: 8rem;
+}
+
+h2.main-title {
+    top: 58vh;
+    font-size: 4rem;
+}
+
+.main-title {
+    color: white;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    overflow: hidden;
+    width: max-content;
 }
 
 .page-margins {

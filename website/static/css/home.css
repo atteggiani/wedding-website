@@ -2,26 +2,6 @@
     --primary-color: #007bff;
 }
 
-/* .main-content {
-    background-color: transparent;
-} */
-
-h1,h2 {
-    top: 30vh;
-    margin: 0.5em auto;
-    text-align: center;
-    color: white;
-    position: relative;
-}
-
-h1 {
-    font-size: 120px;
-}
-
-h2 {
-    font-size: 80px;
-}
-
 .background-image {
     position: fixed;
     top: 0;
@@ -42,9 +22,4 @@ h2 {
   justify-content: space-around;
   align-items: center;
   width: 80vw;
-}
-
-/* Smooth animation when transitioning to new pages */
-@view-transition {
-    navigation: auto;
 }

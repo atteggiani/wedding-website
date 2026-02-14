@@ -2,76 +2,58 @@
     padding-top: 0;
 }
 
+section {
+    margin-top: 1rem;
+}
+
 /* Landing Section */
-.landing-section {
-  position: relative;
-  width: 100vw;
-  height: 100vh;
-  margin-top: -5rem; /* Adjust for top banner height */
-  margin-left: calc(-50vw + 50%);
-  margin-right: calc(-50vw + 50%);
-  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), 
-              url('/assets/background.jpeg') center/cover no-repeat;
-  overflow: hidden;
-  z-index: 0;
-  top: 0;
-}
-
-.landing-section * {
-  z-index: 1;
-}
-
-.landing-section > h1,
-.landing-section > h2 {
-    top: 30vh;
-    margin: 0.5em auto;
-    text-align: center;
-    color: white;
+section.main-section {
     position: relative;
+    width: 100vw;
+    height: 100vh;
+    margin-top: -5rem; /* Adjust for top banner height */
+    margin-left: calc(-50vw + 50%);
+    margin-right: calc(-50vw + 50%);
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), 
+                url('/assets/background.jpeg') center/cover no-repeat;
+    overflow: hidden;
+    z-index: 0;
+    top: 0;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
 }
 
-.landing-section > h1 {
-    font-size: 120px;
-}
-
-.landing-section > h2 {
-    font-size: 80px;
-}
-
-.landing-content {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.landing-info {
-  position: absolute;
-  bottom: 5vh;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  padding: 0 5%;
-  z-index: 10;
+.main-info {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 10vh;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 2rem;
 }
 
 .info-box {
   color: white;
-  font-size: clamp(0.9rem, 2vw, 1.3rem);
-  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-weight: bold;
 }
 
 .info-label {
-  font-weight: bold;
   margin-bottom: 0.25rem;
+  font-size: 2rem;
 }
 
 .info-value {
-  font-size: clamp(0.8rem, 1.8vw, 1.1rem);
+  font-size: 2rem;
 }
+
+
+
+
 
 /* Content Sections */
 .content-section {
@@ -96,6 +78,12 @@
   overflow: hidden;
   border-radius: 8px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  order: 1;
+}
+
+/* Reverse layout */
+.reversed .section-image {
+  order: -1;
 }
 
 .section-image img {
@@ -150,149 +138,4 @@
   transform: translateX(5px);
   box-shadow: 0 4px 12px rgba(212, 175, 55, 0.3);
   color: #333;
-}
-
-/* Alternating Layout */
-.image-left .section-image {
-  order: -1;
-}
-
-.image-right .section-image {
-  order: 1;
-}
-
-/* Section-specific styling (optional) */
-.ceremony-section {
-  background: #fafafa;
-}
-
-.travel-section {
-  background: #f5f5f5;
-}
-
-.story-section {
-  background: #fafafa;
-}
-
-.gifts-section {
-  background: #f5f5f5;
-}
-
-.faq-section {
-  background: #fafafa;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-  .content-section {
-    flex-direction: column;
-    padding: 3rem 2rem;
-    gap: 2rem;
-    min-height: auto;
-  }
-
-  .section-image {
-    flex: 0 0 100%;
-    min-height: 50vh;
-    max-height: 60vh;
-  }
-
-  .image-left .section-image,
-  .image-right .section-image {
-    order: -1;
-  }
-
-  .section-content {
-    flex: 1;
-    width: 100%;
-  }
-
-  .section-content h2 {
-    font-size: 1.8rem;
-    margin-bottom: 1rem;
-  }
-
-  .section-text {
-    font-size: 1rem;
-  }
-
-  .landing-section {
-    height: 100vh;
-  }
-
-  .landing-title h1 {
-    font-size: 2.5rem;
-  }
-
-  .landing-title h2 {
-    font-size: 1.8rem;
-  }
-
-  .landing-info {
-    flex-direction: column;
-    gap: 2rem;
-    padding: 0 3rem;
-  }
-
-  .info-box {
-    font-size: 1rem;
-  }
-}
-
-@media (max-width: 480px) {
-  .content-section {
-    padding: 2rem 1rem;
-  }
-
-  .section-image {
-    min-height: 40vh;
-  }
-
-  .landing-title h1 {
-    font-size: 1.8rem;
-  }
-
-  .landing-title h2 {
-    font-size: 1.3rem;
-  }
-
-  .section-content h2 {
-    font-size: 1.5rem;
-  }
-
-  .section-text {
-    font-size: 0.95rem;
-  }
-
-  .landing-info {
-    padding: 0 2rem;
-  }
-}
-
-/* Smooth scroll behavior */
-html {
-  scroll-behavior: smooth;
-}
-
-/* Optional: Add scroll snap for better mobile experience */
-.scrollable-container {
-  scroll-snap-type: y mandatory;
-}
-
-.landing-section,
-.content-section {
-  scroll-snap-align: start;
-  scroll-snap-stop: always;
-}
-
-@supports not (scroll-snap-type: y mandatory) {
-  /* Fallback for browsers that don't support scroll snap */
-  .scrollable-container {
-    scroll-behavior: smooth;
-  }
-}
-
-/* Smooth animation when transitioning to new pages */
-@view-transition {
-    navigation: auto;
 }
