@@ -43,3 +43,8 @@ h2 {
   align-items: center;
   width: 80vw;
 }
+
+/* Smooth animation when transitioning to new pages */
+@view-transition {
+    navigation: auto;
+}
