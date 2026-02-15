@@ -21,7 +21,7 @@ rsvp:
   error_no_only_extra_attend: "Los +1 y niños no pueden asistir a menos que un invitado principal también asista."
   error_update_limit: "Límite de actualizaciones alcanzado. Por favor, inténtalo de nuevo en {eta} min."
   error_submission: "Hubo un error al guardar tu confirmación. Por favor, inténtalo de nuevo. Si el error persiste, contáctanos."
-  success_submission: "Tu partecipación ha sido registrada exitosamente!"
+  success_submission: "¡Tu partecipación ha sido registrada exitosamente!"
 menu:
   story: "Nuestra Historia"
   travel: "Viaje y Alojamiento"
