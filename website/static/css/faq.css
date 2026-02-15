@@ -76,9 +76,16 @@
     flex: 1 1 calc(50% - 1rem);
     min-width: fit-content;
     text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .contacts-info > ::nth-child(3) {
     flex-basis: 100%;
 }
 
+.whatsapp-icon {
+    width: 1.4em;
+    height: auto;
+}
