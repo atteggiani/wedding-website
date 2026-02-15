@@ -8,10 +8,8 @@
     left: 0;
     width: 100vw;
     height: 100vh;
-    background-image: url('/assets/background.jpeg');
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
+                url('/assets/background.jpeg') center/cover no-repeat;
     z-index: -1;
 }
 
