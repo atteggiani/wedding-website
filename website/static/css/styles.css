@@ -82,3 +82,12 @@ strong {
 .container {
     padding-top: 3rem;
 }
+
+
+.page-content a {
+    text-decoration: none;
+}
+
+.page-content a:hover {
+    text-decoration: underline;
+}

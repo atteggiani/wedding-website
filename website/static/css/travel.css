@@ -11,14 +11,6 @@
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
 }
 
-.section a {
-    text-decoration: none;
-}
-
-.section a:hover {
-    text-decoration: underline;
-}
-
 .subsection-title {
   display: flex;
   align-items: center;

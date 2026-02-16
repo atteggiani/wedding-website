@@ -42,6 +42,7 @@
 
 #rsvp-section {
     position: relative;
+    margin-bottom: 2rem;
 }
 
 .attending-form > span {

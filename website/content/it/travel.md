@@ -79,4 +79,4 @@ title: "Viaggio e Alloggio"
     </div>
 </div>
 
-<h5>Se avete bisogno di aiuto per organizzare il vostro viaggio, non esitate a contattarci!</h5>
+<h5>Se avete bisogno di aiuto per organizzare il vostro viaggio, non esitate a <a href="/it/faq#contacts">contattarci</a>!</h5>

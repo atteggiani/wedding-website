@@ -81,4 +81,4 @@ title: "Travel & Stay"
     </div>
 </div>
 
-<h5>If you need any help planning your journey, please don’t hesitate to contact us!</h5>
+<h5>If you need any help planning your journey, please don’t hesitate to <a href="/en/faq#contacts">contact us</a>!</h5>

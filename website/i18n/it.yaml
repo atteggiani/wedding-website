@@ -14,13 +14,21 @@ rsvp:
   child_name_label: "Nome completo del tuo bambino"
   plusone_name_label: "Nome completo del tuo +1"
   dietary_requirements_label: "Esigenze alimentari (allergie, intolleranze, ecc.)"
-  invalid_password: "Oops! La password che hai inserito non è valida. Controlla l'invito per il tuo codice. Se non riesci a trovarlo, contattaci!"
-  error_validating_password: "Si è verificato un errore durante la convalida della password! Per favore riprova. Se l'errore persiste, contattaci!"
-  error_retrieving_data: "Si è verificato un errore durante il recupero dei dati associati all'ospite '{rsvpPassword}'! Per favore riprova. Se l'errore persiste, contattaci!"
+  invalid_password: |
+    Oops! La password che hai inserito non è valida. Controlla l'invito per la tua password. 
+    Se non riesci a trovarla, <a href="/it/faq#contacts">contattaci</a>!
+  error_validating_password: |
+    Si è verificato un errore durante la convalida della password! Per favore riprova. 
+    Se l'errore persiste, <a href="/it/faq#contacts">contattaci</a>!
+  error_retrieving_data: |
+    Si è verificato un errore durante il recupero dei dati associati all'ospite '{rsvpPassword}'! 
+    Per favore riprova. Se l'errore persiste, <a href="/it/faq#contacts">contattaci</a>!
   error_name_not_empty: "Il campo nome non può essere vuoto."
   error_no_only_extra_attend: "I +1 e i bambini non possono partecipare a meno che un ospite principale non partecipi."
   error_update_limit: "Limite di aggiornamenti raggiunto. Per favore riprova tra {eta} min."
-  error_submission: "Si è verificato un errore durante il salvataggio della tua conferma. Per favore riprova. Se l'errore persiste, contattaci!"
+  error_submission: |
+    Si è verificato un errore durante il salvataggio della tua conferma. Per favore riprova. 
+    Se l'errore persiste, <a href="/it/faq#contacts">contattaci</a>!
   success_submission: "La tua partecipazione è stata salvata con successo!"
 menu:
   story: "La Nostra Storia"

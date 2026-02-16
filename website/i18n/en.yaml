@@ -14,13 +14,21 @@ rsvp:
   child_name_label: "Full name of your child"
   plusone_name_label: "Full name of your +1"
   dietary_requirements_label: "Dietary requirements (allergies, intollerances, etc.)"
-  invalid_password: "Oops! The password you entered is invalid. Check the invitation for your code. If you can’t find it, please contact us!"
-  error_validating_password: "There was an error validating the password! Please try again. If the error persists, please contact us!"
-  error_retrieving_data: "There was an error retrieving data associated with guest '{rsvpPassword}'! Please try again. If the error persists, please contact us!"
+  invalid_password: |
+    Oops! The password you entered is invalid. Check the invitation for your password. 
+    If you can’t find it, please <a href="/en/faq#contacts">contact us</a>!
+  error_validating_password: |
+    There was an error validating the password! Please try again. 
+    If the error persists, please <a href="/en/faq#contacts">contact us</a>!
+  error_retrieving_data: |
+    There was an error retrieving data associated with guest '{rsvpPassword}'! 
+    Please try again. If the error persists, please <a href="/en/faq#contacts">contact us</a>!
   error_name_not_empty: "The name field cannot be empty."
   error_no_only_extra_attend: "Plus-ones and children cannot attend unless a primary guest is also attending."
   error_update_limit: "Update limit reached. Please try again in {eta} min."
-  error_submission: "There was an error saving your RSVP. Please try again. If the error persists, please contact us!"
+  error_submission: |
+    There was an error saving your RSVP. Please try again. 
+    If the error persists, please <a href="/en/faq#contacts">contact us</a>!
   success_submission: "Your RSVP has been saved successfully!"
 menu:
   story: "Our Story"

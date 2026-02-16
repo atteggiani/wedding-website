@@ -175,9 +175,9 @@ async function getGuestJWT(rsvpPassword, supabaseClient) {
 
     if (res.error) {
         if (res.error.context?.status === 401) {
-            $passwordStatus.text({{ i18n "rsvp.invalid_password" | jsonify }});
+            $passwordStatus.html({{ i18n "rsvp.invalid_password" | jsonify }});
         } else {
-            $passwordStatus.text({{ i18n "rsvp.error_validating_password" | jsonify }});
+            $passwordStatus.html({{ i18n "rsvp.error_validating_password" | jsonify }});
         }
         return
     }
@@ -330,7 +330,7 @@ $loadRsvpBtn.on('click', async function () {
             if (!error) {
                 renderGuests(data);
             } else {
-                $passwordStatus.text(interpolateString(
+                $passwordStatus.html(interpolateString(
                     {{ i18n "rsvp.error_retrieving_data" | jsonify }},
                     { rsvpPassword }
                 ));
@@ -427,7 +427,7 @@ $rsvpForm.on('submit', async function (e) {
                     { eta }
                 ));
             } else {
-                $submitStatus.text({{ i18n "rsvp.error_submission" | jsonify }});
+                $submitStatus.html({{ i18n "rsvp.error_submission" | jsonify }});
             }
             throw new Error(error.message || 'Unknown error');
         }

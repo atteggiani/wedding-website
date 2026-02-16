@@ -78,4 +78,4 @@ title: "Viaje y Alojamiento"
     </div>
 </div>
 
-<h5>Si necesitas ayuda para organizar tu viaje, ¡no dudes en contactarnos!</h5>
+<h5>Si necesitas ayuda para organizar tu viaje, ¡no dudes en <a href="/es/faq#contacts">contactarnos</a>!</h5>

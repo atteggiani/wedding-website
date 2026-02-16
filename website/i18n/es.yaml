@@ -14,13 +14,21 @@ rsvp:
   child_name_label: "Nombre completo de tu niño"
   plusone_name_label: "Nombre completo de tu +1"
   dietary_requirements_label: "Restricciones alimentarias (alergias, intolerancias, etc.)"
-  invalid_password: "¡Ups! La contraseña que ingresaste no es válida. Revisa la invitación para encontrar tu código. Si no lo encuentras, ¡por favor contáctanos!"
-  error_validating_password: "Hubo un error al validar la contraseña. Por favor, inténtalo de nuevo. Si el error persiste, contáctanos."
-  error_retrieving_data: "Hubo un error al recuperar los datos asociados con el invitado '{rsvpPassword}'. Por favor, inténtalo de nuevo. Si el error persiste, contáctanos."
+  invalid_password: |
+    ¡Ups! La contraseña que ingresaste no es válida. Revisa la invitación para encontrar tu contraseña. 
+    Si no lo encuentras, ¡por favor <a href="/es/faq#contacts">contáctanos</a>!
+  error_validating_password: |
+    Hubo un error al validar la contraseña. Por favor, inténtalo de nuevo. 
+    Si el error persiste, por favor <a href="/es/faq#contacts">contáctanos</a>.
+  error_retrieving_data: |
+    Hubo un error al recuperar los datos asociados con el invitado '{rsvpPassword}'. 
+    Por favor, inténtalo de nuevo. Si el error persiste, <a href="/es/faq#contacts">contáctanos</a>.
   error_name_not_empty: "El campo de nombre no puede estar vacío."
   error_no_only_extra_attend: "Los +1 y niños no pueden asistir a menos que un invitado principal también asista."
   error_update_limit: "Límite de actualizaciones alcanzado. Por favor, inténtalo de nuevo en {eta} min."
-  error_submission: "Hubo un error al guardar tu confirmación. Por favor, inténtalo de nuevo. Si el error persiste, contáctanos."
+  error_submission: |
+    Hubo un error al guardar tu confirmación. Por favor, inténtalo de nuevo. 
+    Si el error persiste, por favor <a href="/es/faq#contacts">contáctanos</a>.
   success_submission: "¡Tu partecipación ha sido registrada exitosamente!"
 menu:
   story: "Nuestra Historia"

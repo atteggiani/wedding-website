@@ -43,14 +43,6 @@
     content: "+";
 }
 
-
-.faq-answer a {
-    text-decoration: none;
-}
-.faq-answer a:hover {
-    text-decoration: underline;
-}
-
 #contacts {
     display: flex;
     flex-direction: column;
