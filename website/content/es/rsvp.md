@@ -3,6 +3,11 @@ title: "Confirma"
 ---
 
 <div id="rsvp-section">
+    <h5>
+        Las confirmaciones de asistencia se pueden actualizar en qualquier momento, así que ¡no se preocupen si sus planes cambian!
+        <br>
+        Por favor, confirma tu asistencia antes de la <strong>fin de Abril</strong>.
+    </h5>
     <div id="page-loader" class="d-none">
         <div class="loader-inner">
         <div class="spinner-border text-primary" role="status"></div>
@@ -16,9 +21,6 @@ title: "Confirma"
         <div class="status-text"></div>
     </div>
     <form id="rsvp-form" class="d-none">
-        <h5>
-            Por favor, completa o actualiza la confirmación de asistencia para los siguientes invitados:
-        </h5>
         <div id="guests-container"></div>
         <button type="submit" class="btn btn-success mt-4" id="submit-rsvp">Envia</button>
         <div class="status-text"></div>

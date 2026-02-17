@@ -22,7 +22,11 @@ title: "Frequently Asked Questions"
     </div>
     <div class="collapse" id="howtogetthere">
         <div class="faq-answer">
-            You can find details about the dress code on the <a href="/en/ceremony">Ceremony & Reception</a> page.
+            Getting to <strong>Torre Ubaldo</strong> is pretty simple, even without a car! For all the details, check the <a href="/en/travel#travel">Travel & Stay</a> page.
+            <br><br>
+            For those without a car, getting back after the celebration might be a bit trickier - it’s going to be late, and taxis might not be available (it's Italy after all!). But don’t worry! Many guests will have cars and can easily give lifts to <strong>Cisterna di Latina</strong> or <strong>Latina</strong>. So make some new friends at the wedding and don’t be shy to ask for a ride! 😁
+            <br><br>
+            And if you’re worried about ending up stranded, let us know - we’ll do our best to organize a lift, even if you don’t make any new friends 🤪
         </div>
     </div>
 </div>
@@ -34,7 +38,7 @@ title: "Frequently Asked Questions"
     </div>
     <div class="collapse" id="parking">
         <div class="faq-answer">
-            You can find details about the dress code on the <a href="/en/ceremony">Ceremony & Reception</a> page.
+            Yes, there is plenty of free parking inside the venue.
         </div>
     </div>
 </div>
@@ -46,7 +50,9 @@ title: "Frequently Asked Questions"
     </div>
     <div class="collapse" id="rsvpdeadline">
         <div class="faq-answer">
-            You can find details about the dress code on the <a href="/en/ceremony">Ceremony & Reception</a> page.
+            We kindly ask our guests to RSVP by the <strong>end of April</strong>. This will help us plan the celebration and make sure the day is going to be amazing!
+            <br><br>
+            However, we completely understand that guests traveling from abroad might need a little extra time to organize their trip to Italy. If that’s the case, just let us know, and we’ll make it work for you.
         </div>
     </div>
 </div>

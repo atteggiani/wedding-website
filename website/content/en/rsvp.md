@@ -3,6 +3,11 @@ title: "RSVP"
 ---
 
 <div id="rsvp-section">
+    <h5>
+        RSVP responses can be updated at any time, so don't worry if plans change!
+        <br>
+        Please finalise your RSVP by the <strong>end of April</strong>.
+    </h5>
     <div id="page-loader" class="d-none">
         <div class="loader-inner">
         <div class="spinner-border" role="status"></div>
@@ -16,9 +21,6 @@ title: "RSVP"
         <div class="status-text"></div>
     </div>
     <form id="rsvp-form" class="d-none">
-        <h5>
-            Please complete or update the RSVP responses for the following guests:
-        </h5>
         <div id="guests-container"></div>
         <button type="submit" class="btn btn-success mt-4" id="submit-rsvp">Submit</button>
         <div class="status-text"></div>

@@ -98,3 +98,7 @@ input[id^="dietary-requirements-"]:disabled,
     height: 3em;
     /* color: blueviolet; */
 }
+
+h5 {
+    line-height: 1.5em;
+}
