@@ -6,11 +6,11 @@ title: "Frequently Asked Questions"
     <div data-bs-toggle="collapse" aria-expanded="false" class="faq-question collapsed"
     data-bs-target="#wheretostay" aria-controls="wheretostay"
     >
-        I am not from around the area, where is it best to stay?
+        I'm traveling from out of town. Where do you recommend I stay?
     </div>
     <div class="collapse" id="wheretostay">
         <div class="faq-answer">
-            You can find details about the dress code on the <a href="/en/ceremony">Ceremony & Reception</a> page.
+            More information about where to stay can be found in the <a href="/en/travel#stay">Travel & Stay</a> page.
         </div>
     </div>
 </div>
@@ -117,6 +117,18 @@ title: "Frequently Asked Questions"
         If I have trouble getting to the venue on the day of the wedding, who should I contact?
     </div>
     <div class="collapse" id="emergencycontact">
+        <div class="faq-answer">
+            You can find details about the dress code on the <a href="/en/ceremony">Ceremony & Reception</a> page.
+        </div>
+    </div>
+</div>
+<div class="faq-item">
+    <div data-bs-toggle="collapse" aria-expanded="false" class="faq-question collapsed"
+    data-bs-target="#plusone" aria-controls="plusone"
+    >
+        Can I bring a plus-one?
+    </div>
+    <div class="collapse" id="plusone">
         <div class="faq-answer">
             You can find details about the dress code on the <a href="/en/ceremony">Ceremony & Reception</a> page.
         </div>

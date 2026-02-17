@@ -70,10 +70,10 @@ title: "Viaje y Alojamiento"
             Para los invitados que viajan desde el extranjero, recomendamos alojarse en <strong>Roma</strong> durante los días previos a la boda, para disfrutar de la ciudad y aprovechar al máximo el viaje.
         </p>
         <p>
-            Como se espera que la celebración termine entre la <strong>medianoche y las 02:00 del Jueves 3 de Septiembre</strong>, recomendamos pasar la noche de la boda cerca de <strong>Torre Ubaldo</strong> para un regreso cómodo y sin estrés.
+            Para la noche de la boda (2-3 Septiembre) recomendamos reservar alojamiento <strong>cerca de Torre Ubaldo</strong>, ya que se espera que la celebración termine entre las 12:00 AM y las 2:00 AM.
         </p>
         <p>
-            Hay varias opciones de alojamiento disponibles en <strong>Cisterna di Latina</strong> o en la cercana <strong>Latina</strong> (la ciudad donde creció Davide). Ambas se encuentran a poca distancia en coche de la ubicación de la boda y ofrecen una amplia variedad de hoteles y Airbnb.
+            Hay varias opciones de alojamiento en <strong>Cisterna di Latina</strong> o en la ciudad cercana de <strong>Latina</strong> (la ciudad donde creció Davide). Ambas se encuentran a poca distancia en carro de la ubicación de la boda y ofrecen una amplia variedad de hoteles y Airbnb.
         </p>
     </div>
 </div>

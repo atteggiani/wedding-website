@@ -70,13 +70,13 @@ title: "Travel & Stay"
             <img src="/assets/travel/stay_icon.png" alt="Stay">
         </h3>
         <p>
-            For guests traveling from abroad, we suggest staying in <strong>Rome</strong> for the days leading up to the wedding, so you can enjoy the city and make the most of your trip.
+            For guests traveling from abroad, we recommend staying in <strong>Rome</strong> for the days leading up to the wedding, so you can enjoy the city and make the most of your trip.
         </p>
         <p>
-            As the celebration is expected to wrap up <strong>between 12:00 AM and 2:00 AM on Thu 03 Sep</strong>, we recommend staying <strong>close to Torre Ubaldo</strong> on the night of the wedding for a smooth and stress-free return.
+            For the night of the wedding (2-3 September) we suggest booking accommodation <strong>near Torre Ubaldo</strong>, as the celebration is expected to conclude between 12:00 AM and 2:00 AM.
         </p>
         <p>
-            There are several accommodation options in <strong>Cisterna di Latina</strong> or in the nearby town of <strong>Latina</strong> (Davide's hometown!). Both are just a short drive from the wedding venue and offer a variety of <strong>hotels and Airbnb options</strong>.
+            Several accommodation options are available in <strong>Cisterna di Latina</strong> or in the nearby town of <strong>Latina</strong> (Davide's hometown!). Both are just a short drive from the wedding venue and offer a variety of <strong>hotels and Airbnb options</strong>.
         </p>
     </div>
 </div>

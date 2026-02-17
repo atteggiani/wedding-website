@@ -71,7 +71,7 @@ title: "Viaggio e Alloggio"
             Per gli ospiti che viaggiano dall’estero, consigliamo di alloggiare a <strong>Roma</strong> nei giorni che precedono il matrimonio, così da poter godere della città e vivere al meglio il viaggio.
         </p>
         <p>
-            Poiché i festeggiamenti termineranno indicativamente <strong>tra mezzanotte e le 02:00 di Giovedì 3 Settembre</strong>, la notte del matrimonio consigliamo di pernottare <strong>nei pressi di Torre Ubaldo</strong>, per un rientro comodo e senza stress.
+            La notte del matrimonio (2-3 Settembre) consigliamo di pernottare <strong>nei pressi di Torre Ubaldo</strong>,   poiché i festeggiamenti termineranno indicativamente <strong>tra mezzanotte e le 02:00 di mattina</strong>.
         </p>
         <p>
             Sono disponibili diverse opzioni di alloggio a <strong>Cisterna di Latina</strong> o nella vicina <strong>Latina</strong> (la città dove Davide è cresciuto!). Entrambe si trovano a breve distanza in auto dalla location del matrimonio e offrono un’ampia scelta tra hotel e Airbnb.
