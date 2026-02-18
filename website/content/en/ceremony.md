@@ -14,7 +14,7 @@ title: "Ceremony & Reception"
             The symbolic ceremony will begin at 5:00 PM, followed by the wedding reception and a night of celebration!
         </div>
     </div>
-    <div class="dress-code">
+    <div id="dress-code">
         <h3>👗 Dress Code 👔</h3>
         <div class="info-text">
             We kindly invite our guests to dress in <strong>formal attire</strong> for our celebration.<br>

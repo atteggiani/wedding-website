@@ -91,3 +91,8 @@ strong {
 .page-content a:hover {
     text-decoration: underline;
 }
+
+/* Add a little margin for anchored links */
+[id] {
+  scroll-margin-top: 2rem;
+}

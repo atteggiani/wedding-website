@@ -14,7 +14,7 @@ title: "Ceremonia y Recepción"
             La ceremonia simbolica comenzará a las 5:00 PM, y será seguida de la recepción y de una noche de fiesta!
         </div>
     </div>
-    <div class="dress-code">
+    <div id="dress-code">
         <h3>👗 Etiqueta 👔</h3>
         <div class="info-text">
             Invitamos a nuestros invitados a vestir con atuendo <strong>formal</strong> para nuestra celebración.<br>

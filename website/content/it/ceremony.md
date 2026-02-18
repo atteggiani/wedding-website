@@ -14,7 +14,7 @@ title: "Cerimonia e Ricevimento"
             La cerimonia simbolica inizierà alle 17:00, seguita dal ricevimento e da una serata di festa!
         </div>
     </div>
-    <div class="dress-code">
+    <div id="dress-code">
         <h3>👗 Dress Code 👔</h3>
         <div class="info-text">
             Invitiamo gentilmente i nostri ospiti a indossare un abbigliamento <strong>formale</strong> per il nostro matrimonio.<br>

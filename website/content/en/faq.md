@@ -64,7 +64,7 @@ title: "Frequently Asked Questions"
     </div>
     <div class="collapse" id="dresscode">
         <div class="faq-answer">
-            You can find details about the dress code on the <a href="/en/ceremony">Ceremony & Reception</a> page.
+            You can find details about the dress code on the <a href="/en/ceremony#dress-code">Ceremony & Reception</a> page.
         </div>
     </div>
 </div>
@@ -72,11 +72,13 @@ title: "Frequently Asked Questions"
     <div data-bs-toggle="collapse" aria-expanded="false" class="faq-question collapsed"
     data-bs-target="#gifts" aria-controls="gifts"
     >
-        What gift to the couple?
+        What can we give as a wedding gift?
     </div>
     <div class="collapse" id="gifts">
         <div class="faq-answer">
-            You can find details about the dress code on the <a href="/en/ceremony">Ceremony & Reception</a> page.
+            Having you on our special day is what truly matters most to us, and a gift is completely optional!
+            <br><br>
+            If you would like to help us create unforgettable memories on our honeymoon, you can find all the details on the <a href="/en/gifts">Gifts</a> page.
         </div>
     </div>
 </div>
@@ -112,7 +114,9 @@ title: "Frequently Asked Questions"
     </div>
     <div class="collapse" id="visa">
         <div class="faq-answer">
-            You can find details about the dress code on the <a href="/en/ceremony">Ceremony & Reception</a> page.
+            Visa requirements depend on the passport you hold. If your passport is issued by a country outside the European Union (Schengen Area), you may need a Visa to enter Italy.
+            <br><br>
+            We recommend checking the specific requirements for your passport well in advance of your trip. You can find official and up-to-date information on the <a href="https://vistoperitalia.esteri.it/?lang=en_US" target="_blank" rel="noopener">Italian Ministry of Foreign Affairs website</a>.
         </div>
     </div>
 </div>
@@ -124,7 +128,11 @@ title: "Frequently Asked Questions"
     </div>
     <div class="collapse" id="emergencycontact">
         <div class="faq-answer">
-            You can find details about the dress code on the <a href="/en/ceremony">Ceremony & Reception</a> page.
+            On the wedding day, we’ll be in the middle of the preparations (and probably not checking our phones very often!).  
+            <br><br>
+            If you run into any issues getting to the venue, please reach out to Davide’s sibling, <strong>Ell</strong>, who will be happy to help! 😄
+            <br><br>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="Whatsapp" class="whatsapp-icon">📞 <strong>Ell:</strong> +393334331390
         </div>
     </div>
 </div>
