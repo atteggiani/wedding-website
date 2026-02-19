@@ -1,9 +1,17 @@
-/* :root {
-    --primary-color: #8b6f5a;
+:root {
+    --filter-color-orange:
+        saturate(100%)
+        invert(80%) sepia(45%)
+        saturate(750%) hue-rotate(340deg);
+    --filter-color-green: 
+        saturate(100%)
+        invert(50%) sepia(40%)
+        saturate(750%) hue-rotate(60deg);
+    /* --primary-color: #8b6f5a;
     --secondary-color: #e7edf1;
     --text-color: #3a3a3a;
-    --accent-color: #c1a58a;
-} */
+    --accent-color: #c1a58a; */
+}
 
 /* Smooth animation when transitioning to new pages */
 @view-transition {
@@ -95,4 +103,12 @@ strong {
 /* Add a little margin for anchored links */
 [id] {
   scroll-margin-top: 2rem;
+}
+
+.plusone-icon {
+    filter: var(--filter-color-green);
+}
+
+.child-icon {
+    filter: var(--filter-color-orange);
 }

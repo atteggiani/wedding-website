@@ -191,8 +191,8 @@ async function getGuestJWT(rsvpPassword, supabaseClient) {
 function renderCornerIcon(type) {
     if (!cornerIcons[type]) return '';
     return `
-    <div class="card-corner-icon" type=${type}>
-      <img src="${cornerIcons[type]}" alt="${type}" />
+    <div class="card-corner-icon">
+      <img src="${cornerIcons[type]}" alt="${type}" class="${type}-icon"/>
     </div>
   `;
 }

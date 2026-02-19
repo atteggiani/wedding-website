@@ -24,11 +24,11 @@ title: "Ceremony & Reception"
         </div>
     </div>
     <div class="venue-gallery">
-        <img src="/assets/ceremony/tavoli_su_erba.png" alt="Outdoor reception area">
-        <img src="/assets/ceremony/scale_edera.jpeg" alt="Outdoor reception area">
-        <img src="/assets/ceremony/corte_con_luci.jpeg" alt="Outdoor reception area">
-        <img src="/assets/ceremony/corte_con_tavoli.png" alt="Outdoor reception area">
-        <img src="/assets/ceremony/viale.jpeg" alt="Outdoor reception area">
-        <img src="/assets/ceremony/corte.png" alt="Outdoor reception area">
+        <img src="/assets/ceremony/tavoli_su_erba.png" alt="Outdoor reception area" loading="lazy">
+        <img src="/assets/ceremony/scale_edera.jpeg" alt="Outdoor reception area" loading="lazy">
+        <img src="/assets/ceremony/corte_con_luci.jpeg" alt="Outdoor reception area" loading="lazy">
+        <img src="/assets/ceremony/corte_con_tavoli.png" alt="Outdoor reception area" loading="lazy">
+        <img src="/assets/ceremony/viale.jpeg" alt="Outdoor reception area" loading="lazy">
+        <img src="/assets/ceremony/corte.png" alt="Outdoor reception area" loading="lazy">
     </div>
 </div>

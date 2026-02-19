@@ -1,14 +1,3 @@
-:root {
-    --filter-icon-orange:
-        saturate(100%)
-        invert(80%) sepia(45%)
-        saturate(750%) hue-rotate(340deg);
-    --filter-icon-green: 
-        saturate(100%)
-        invert(50%) sepia(40%)
-        saturate(750%) hue-rotate(60deg);
-}
-
 .status-text {
     color: rgb(204, 0, 0);
     margin-top: 1rem;
@@ -82,12 +71,6 @@ input[id^="dietary-requirements-"]:disabled,
 }
 .card-corner-icon > img {
     width: 2.3em;
-}
-[type='child'] > img {
-    filter: var(--filter-icon-orange);
-}
-[type='plusone'] > img {
-    filter: var(--filter-icon-green);
 }
 .form-check-input:focus {
   box-shadow: 0 0 0 0.15rem rgba(13, 110, 253, 0.25); /* thinner */

@@ -43,7 +43,7 @@ title: "Nuestra Historia"
             </div>
         </div>
         <div class="event-image">
-            <img src="/assets/story/relationship.jpeg" alt="Relationship">
+            <img src="/assets/story/relationship.jpeg" alt="Relationship" loading="lazy">
         </div>
     </div>
     <!-- SECTION 4 -->
@@ -57,7 +57,7 @@ title: "Nuestra Historia"
             </div>
         </div>
         <div class="event-image">
-            <img src="/assets/story/moving_together.jpeg" alt="Moved in together">
+            <img src="/assets/story/moving_together.jpeg" alt="Moved in together" loading="lazy">
         </div>
     </div>
     <!-- SECTION 5 -->
@@ -71,7 +71,7 @@ title: "Nuestra Historia"
             </div>
         </div>
         <div class="event-image">
-            <img src="/assets/story/colombia.jpeg" alt="Colombia">
+            <img src="/assets/story/colombia.jpeg" alt="Colombia" loading="lazy">
         </div>
     </div>
     <!-- SECTION 6 -->
@@ -85,7 +85,7 @@ title: "Nuestra Historia"
             </div>
         </div>
         <div class="event-image">
-            <img src="/assets/story/engagement.jpeg" alt="Engagement">
+            <img src="/assets/story/engagement.jpeg" alt="Engagement" loading="lazy">
         </div>
     </div>
     <!-- SECTION 7 -->
@@ -99,7 +99,7 @@ title: "Nuestra Historia"
             </div>
         </div>
         <div class="event-image">
-            <img src="/assets/story/wedding.jpeg" alt="Wedding">
+            <img src="/assets/story/wedding.jpeg" alt="Wedding" loading="lazy">
         </div>
     </div>
     <!-- SECTION 8 -->
@@ -113,7 +113,7 @@ title: "Nuestra Historia"
             </div>
         </div>
         <div class="event-image">
-            <img src="/assets/story/party.jpeg" alt="Party">
+            <img src="/assets/story/party.jpeg" alt="Party" loading="lazy">
         </div>
     </div>
 </div>

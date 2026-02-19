@@ -144,7 +144,7 @@ title: "Frequently Asked Questions"
     </div>
     <div class="collapse" id="plusone">
         <div class="faq-answer">
-            You can find details about the dress code on the <a href="/en/ceremony">Ceremony & Reception</a> page.
+            If your invitation includes a plus-one, you’ll see the option to complete their RSVP details in the <a href="/en/rsvp">RSVP page</a>. Their section is indicated by the icon: <img src="/assets/plusone.png" loading="lazy" class="plusone-icon" alt="plusone-icon">
         </div>
     </div>
 </div>
