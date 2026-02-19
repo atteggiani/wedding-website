@@ -9,7 +9,7 @@
     width: 100vw;
     height: 100vh;
     background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
-                url('/assets/background.jpeg') center/cover no-repeat;
+                url('../assets/background.jpeg') center/cover no-repeat;
     z-index: -1;
 }
 

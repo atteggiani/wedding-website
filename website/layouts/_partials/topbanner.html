@@ -2,7 +2,7 @@
     
   <!-- BANNER TEXT -->
   <div class="banner-title">
-    <a href="{{ "/main" | relLangURL }}">{{ .Site.Params.bannerTitle }}</a>
+    <a href="{{ relLangURL "main" }}">{{ .Site.Params.bannerTitle }}</a>
   </div>
 
   <!-- LEFT: MENU ITEMS (i18n translated) -->
@@ -41,7 +41,7 @@
     </div>
     <!-- RSVP button -->
     <div class="rsvp-button">
-        <a href="{{ "/rsvp/" | relLangURL }}" class="rsvp-btn">
+        <a href="{{ relLangURL "rsvp" }}" class="rsvp-btn">
             {{ i18n "rsvp.rsvp" }}
         </a>
     </div>
