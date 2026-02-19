@@ -80,7 +80,7 @@ title: "Viaggio e Alloggio"
 </div>
 
 <div class="section" id="activities">
-    <h2 class="section-title">Attrazioni e Attività nei dintorni</h2>
+    <h2 class="section-title">Attrazioni e Attività nei Dintorni</h2>
     <div class="subsection">
         <h3 class="subsection-title">
             <img src="/assets/travel/coliseum_icon.png" alt="Attractions">

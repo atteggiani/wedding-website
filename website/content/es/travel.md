@@ -79,13 +79,13 @@ title: "Viaje y Alojamiento"
 </div>
 
 <div class="section" id="activities">
-    <h2 class="section-title">Local Attractions & Activities</h2>
+    <h2 class="section-title">Atracciones y Actividades en la Zona</h2>
     <div class="subsection">
         <h3 class="subsection-title">
             <img src="/assets/travel/coliseum_icon.png" alt="Attractions">
         </h3>
         <p>
-            If you’re planning to spend a few extra days in the area, the region near the wedding venue offers a wonderful mix of nature, seaside relaxation, and charming historic villages. Here are some of our recommendations:
+            Si están pensando en quedarse unos días más, la zona cercana al lugar de la boda ofrece una maravillosa combinación de naturaleza, descanso junto al mar y encantadores pueblos históricos. Aquí les dejamos algunas de nuestras recomendaciones:
         </p>
         <div class="activities">
             <a 
@@ -94,7 +94,7 @@ title: "Viaje y Alojamiento"
             >
                 <h4 class="activity-title">🌿 Giardino di Ninfa</h4>
                 <p class="activity-description">
-                    A stunning romantic garden built among the ruins of a medieval town. Often described as one of the most beautiful gardens in the world.
+                    Un impresionante jardín romántico construido entre las ruinas de un pueblo medieval. A menudo es considerado uno de los jardines más hermosos del mundo.
                 </p>
             </a>
             <a 
@@ -103,7 +103,7 @@ title: "Viaje y Alojamiento"
             >
                 <h4 class="activity-title">🏞️ Parco Nazionale del Circeo</h4>
                 <p class="activity-description">
-                    A beautiful national park offering coastal scenery, forests, sand dunes, and walking trails.
+                    Un hermoso parque nacional que ofrece paisajes costeros, bosques, dunas de arena y senderos para caminar.
                 </p>
             </a>
             <a 
@@ -112,7 +112,7 @@ title: "Viaje y Alojamiento"
             >
                 <h4 class="activity-title">🏖️ Sabaudia</h4>
                 <p class="activity-description">
-                    A charming seaside town with long sandy beaches along the Tyrrhenian coast, perfect for a relaxing day by the sea.
+                    Un encantador pueblo costero con largas playas de arena a lo largo de la costa del mar Tirreno, perfecto para un día de descanso junto al mar.
                 </p>
             </a>
             <a 
@@ -121,7 +121,7 @@ title: "Viaje y Alojamiento"
             >
                 <h4 class="activity-title">🏝 Ponza</h4>
                 <p class="activity-description">
-                    A picturesque island accessible by ferry, famous for its crystal-clear waters and dramatic cliffs.
+                    Una isla pintoresca accesible en ferry, famosa por sus aguas cristalinas y sus impresionantes acantilados.
                 </p>
             </a>
             <a 
@@ -130,7 +130,7 @@ title: "Viaje y Alojamiento"
             >
                 <h4 class="activity-title">🏰 Sermoneta</h4>
                 <p class="activity-description">
-                    A beautiful medieval hilltop village with narrow streets and the impressive Castello Caetani.
+                    Un hermoso pueblo medieval en lo alto de una colina, con calles estrechas y el impresionante Castello Caetani.
                 </p>
             </a>
             <a 
@@ -139,7 +139,7 @@ title: "Viaje y Alojamiento"
             >
                 <h4 class="activity-title">🌾 Lago di Fogliano</h4>
                 <p class="activity-description">
-                    A peaceful coastal lake surrounded by lush nature, ideal for birdwatching, relaxing walks, or enjoying a quiet moment by the water.
+                    Un tranquilo lago costero rodeado de naturaleza, ideal para observar aves, dar paseos relajantes o disfrutar de un momento de tranquilidad junto al agua.
                 </p>
             </a>
         </div>
