@@ -84,4 +84,28 @@ title: "Travel & Stay"
     </div>
 </div>
 
+<div class="section" id="activities">
+    <h2 class="section-title">Local Attractions & Activities</h2>
+    <div class="subsection">
+        <h3 class="subsection-title">
+            <img src="/assets/travel/stay_icon.png" alt="Stay">
+        </h3>
+        <p>
+            If you’re planning to spend a few extra days in the area, the region near the wedding venue offers a wonderful mix of nature, seaside relaxation, and charming historic villages. Here are some of our recommendations:
+        </p>
+        <p>
+            🌿 Giardino di Ninfa – A stunning romantic garden built among the ruins of a medieval town. Often described as one of the most beautiful gardens in the world.
+            <br><br>
+            🏞️ Parco Nazionale del Circeo – A beautiful national park offering coastal scenery, forests, sand dunes, and walking trails.
+            <br><br>
+            🏖️ Sabaudia – A charming seaside town with long sandy beaches along the Tyrrhenian coast, perfect for a relaxing day by the sea.
+            <br><br>
+            🏝 Ponza – A picturesque island accessible by ferry, famous for its crystal-clear waters and dramatic cliffs.
+            <br><br>
+            🏰 Sermoneta – A beautiful medieval hilltop village with narrow streets and the impressive Castello Caetani.
+            <br><br>
+            🛶 Lago di Fogliano – A peaceful coastal lake surrounded by lush nature, ideal for birdwatching, relaxing walks, or enjoying a quiet moment by the water.
+        </p>
+</div>
+
 <h5>If you need any help planning your journey, please don’t hesitate to <a href="/en/faq#contacts">contact us</a>!</h5>

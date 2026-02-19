@@ -86,11 +86,15 @@ title: "Frequently Asked Questions"
     <div data-bs-toggle="collapse" aria-expanded="false" class="faq-question collapsed"
     data-bs-target="#whattodo" aria-controls="whattodo"
     >
-        What to do around the wedding venue?
+        What activities and attractions are available near the wedding venue?
     </div>
     <div class="collapse" id="whattodo">
         <div class="faq-answer">
-            You can find details about the dress code on the <a href="/en/ceremony">Ceremony & Reception</a> page.
+            The wedding venue is located in <strong>Cisterna di Latina</strong>, a small town near <strong>Latina</strong>.
+            <br><br>
+            While the area has fewer attractions than Rome, there are still enjoyable things to see and do nearby, especially if you’d like to explore a more local and less touristy side of Italy. 
+            <br><br>
+            For recommendations on activities and things to do around the wedding location, please visit the <a href="/en/travel#activities">Travel & Stay</a> page.
         </div>
     </div>
 </div>
@@ -98,11 +102,11 @@ title: "Frequently Asked Questions"
     <div data-bs-toggle="collapse" aria-expanded="false" class="faq-question collapsed"
     data-bs-target="#dietary" aria-controls="dietary"
     >
-        I have dietary requirements, will I be able to eat at the wedding?
+        I have specific dietary requirements. Will there be suitable food options for me at the wedding?
     </div>
     <div class="collapse" id="dietary">
         <div class="faq-answer">
-            You can find details about the dress code on the <a href="/en/ceremony">Ceremony & Reception</a> page.
+            Absolutely! Please include any dietary requirements or allergies in the dedicated field within the <a href="/en/rsvp">RSVP</a> page. This will help us ensure that appropriate meal options are arranged for you.
         </div>
     </div>
 </div>
@@ -128,7 +132,7 @@ title: "Frequently Asked Questions"
     </div>
     <div class="collapse" id="emergencycontact">
         <div class="faq-answer">
-            On the wedding day, we’ll be in the middle of the preparations (and probably not checking our phones very often!).  
+            On the wedding day, we’ll be in the middle of the preparations and probably not checking our phones very often!  
             <br><br>
             If you run into any issues getting to the venue, please reach out to Davide’s sibling, <strong>Ell</strong>, who will be happy to help! 😄
             <br><br>
@@ -144,7 +148,7 @@ title: "Frequently Asked Questions"
     </div>
     <div class="collapse" id="plusone">
         <div class="faq-answer">
-            If your invitation includes a plus-one, you’ll see the option to complete their RSVP details in the <a href="/en/rsvp">RSVP page</a>. Their section is indicated by the icon: <img src="/assets/plusone.png" loading="lazy" class="plusone-icon" alt="plusone-icon">
+            If your invitation includes a plus-one, you’ll see the option to complete their RSVP details in the <a href="/en/rsvp">RSVP</a> page. Their section is indicated by the icon: <img src="/assets/plusone.png" loading="lazy" class="plusone-icon" alt="plusone-icon">
         </div>
     </div>
 </div>
