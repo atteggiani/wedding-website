@@ -79,4 +79,71 @@ title: "Viaggio e Alloggio"
     </div>
 </div>
 
+<div class="section" id="activities">
+    <h2 class="section-title">Attrazioni e Attività nei dintorni</h2>
+    <div class="subsection">
+        <h3 class="subsection-title">
+            <img src="/assets/travel/coliseum_icon.png" alt="Attractions">
+        </h3>
+        <p>
+            Se avete in programma di fermarvi qualche giorno in più, la zona vicino alla location del matrimonio offre un meraviglioso mix di natura, relax al mare e affascinanti borghi storici. Ecco alcuni dei nostri suggerimenti:
+        </p>
+        <div class="activities">
+            <a 
+            href="https://www.giardinodininfa.eu/en-en" 
+            target="_blank" rel="noopener" class="activity-item"
+            >
+                <h4 class="activity-title">🌿 Giardino di Ninfa</h4>
+                <p class="activity-description">
+                    Uno splendido giardino romantico costruito tra le rovine di un borgo medievale. Spesso descritto come uno dei giardini più belli del mondo.
+                </p>
+            </a>
+            <a 
+            href="https://www.parcocirceo.it/Eindex.php" 
+            target="_blank" rel="noopener" class="activity-item"
+            >
+                <h4 class="activity-title">🏞️ Parco Nazionale del Circeo</h4>
+                <p class="activity-description">
+                    Un magnifico parco nazionale con paesaggi costieri, foreste, dune di sabbia e sentieri immersi nella natura.
+                </p>
+            </a>
+            <a 
+            href="" 
+            target="_blank" rel="noopener" class="activity-item"
+            >
+                <h4 class="activity-title">🏖️ Sabaudia</h4>
+                <p class="activity-description">
+                    Un’incantevole cittadina di mare con lunghe spiagge sabbiose lungo la costa tirrenica, perfetta per una giornata di relax al mare.
+                </p>
+            </a>
+            <a 
+            href="https://www.visitponza.it/en/" 
+            target="_blank" rel="noopener" class="activity-item"
+            >
+                <h4 class="activity-title">🏝 Ponza</h4>
+                <p class="activity-description">
+                    Un’isola pittoresca raggiungibile in traghetto, famosa per le sue acque cristalline e le spettacolari scogliere.
+                </p>
+            </a>
+            <a 
+            href="https://www.visitlazio.com/en/sermoneta/" 
+            target="_blank" rel="noopener" class="activity-item"
+            >
+                <h4 class="activity-title">🏰 Sermoneta</h4>
+                <p class="activity-description">
+                    Un bellissimo borgo medievale arroccato su una collina, con vicoli suggestivi e l’imponente Castello Caetani.
+                </p>
+            </a>
+            <a 
+            href="https://www.europeanheritagetimes.eu/2019/04/14/fogliano-a-lake-on-the-sea/" 
+            target="_blank" rel="noopener" class="activity-item"
+            >
+                <h4 class="activity-title">🌾 Lago di Fogliano</h4>
+                <p class="activity-description">
+                    Un tranquillo lago costiero immerso nella natura, ideale per il birdwatching, passeggiate rilassanti o per godersi un momento di pace vicino all’acqua.
+                </p>
+            </a>
+        </div>
+</div>
+
 <h5>Se avete bisogno di aiuto per organizzare il vostro viaggio, non esitate a <a href="/it/faq#contacts">contattarci</a>!</h5>

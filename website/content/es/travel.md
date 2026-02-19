@@ -78,4 +78,71 @@ title: "Viaje y Alojamiento"
     </div>
 </div>
 
+<div class="section" id="activities">
+    <h2 class="section-title">Local Attractions & Activities</h2>
+    <div class="subsection">
+        <h3 class="subsection-title">
+            <img src="/assets/travel/coliseum_icon.png" alt="Attractions">
+        </h3>
+        <p>
+            If you’re planning to spend a few extra days in the area, the region near the wedding venue offers a wonderful mix of nature, seaside relaxation, and charming historic villages. Here are some of our recommendations:
+        </p>
+        <div class="activities">
+            <a 
+            href="https://www.giardinodininfa.eu/en-en" 
+            target="_blank" rel="noopener" class="activity-item"
+            >
+                <h4 class="activity-title">🌿 Giardino di Ninfa</h4>
+                <p class="activity-description">
+                    A stunning romantic garden built among the ruins of a medieval town. Often described as one of the most beautiful gardens in the world.
+                </p>
+            </a>
+            <a 
+            href="https://www.parcocirceo.it/Eindex.php" 
+            target="_blank" rel="noopener" class="activity-item"
+            >
+                <h4 class="activity-title">🏞️ Parco Nazionale del Circeo</h4>
+                <p class="activity-description">
+                    A beautiful national park offering coastal scenery, forests, sand dunes, and walking trails.
+                </p>
+            </a>
+            <a 
+            href="" 
+            target="_blank" rel="noopener" class="activity-item"
+            >
+                <h4 class="activity-title">🏖️ Sabaudia</h4>
+                <p class="activity-description">
+                    A charming seaside town with long sandy beaches along the Tyrrhenian coast, perfect for a relaxing day by the sea.
+                </p>
+            </a>
+            <a 
+            href="https://www.visitponza.it/en/" 
+            target="_blank" rel="noopener" class="activity-item"
+            >
+                <h4 class="activity-title">🏝 Ponza</h4>
+                <p class="activity-description">
+                    A picturesque island accessible by ferry, famous for its crystal-clear waters and dramatic cliffs.
+                </p>
+            </a>
+            <a 
+            href="https://www.visitlazio.com/en/sermoneta/" 
+            target="_blank" rel="noopener" class="activity-item"
+            >
+                <h4 class="activity-title">🏰 Sermoneta</h4>
+                <p class="activity-description">
+                    A beautiful medieval hilltop village with narrow streets and the impressive Castello Caetani.
+                </p>
+            </a>
+            <a 
+            href="https://www.europeanheritagetimes.eu/2019/04/14/fogliano-a-lake-on-the-sea/" 
+            target="_blank" rel="noopener" class="activity-item"
+            >
+                <h4 class="activity-title">🌾 Lago di Fogliano</h4>
+                <p class="activity-description">
+                    A peaceful coastal lake surrounded by lush nature, ideal for birdwatching, relaxing walks, or enjoying a quiet moment by the water.
+                </p>
+            </a>
+        </div>
+</div>
+
 <h5>Si necesitas ayuda para organizar tu viaje, ¡no dudes en <a href="/es/faq#contacts">contactarnos</a>!</h5>
