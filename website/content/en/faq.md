@@ -14,6 +14,7 @@ title: "Frequently Asked Questions"
         </div>
     </div>
 </div>
+
 <div class="faq-item">
     <div data-bs-toggle="collapse" aria-expanded="false" class="faq-question collapsed"
     data-bs-target="#howtogetthere" aria-controls="howtogetthere"
@@ -30,6 +31,7 @@ title: "Frequently Asked Questions"
         </div>
     </div>
 </div>
+
 <div class="faq-item">
     <div data-bs-toggle="collapse" aria-expanded="false" class="faq-question collapsed"
     data-bs-target="#parking" aria-controls="parking"
@@ -42,6 +44,7 @@ title: "Frequently Asked Questions"
         </div>
     </div>
 </div>
+
 <div class="faq-item">
     <div data-bs-toggle="collapse" aria-expanded="false" class="faq-question collapsed"
     data-bs-target="#rsvpdeadline" aria-controls="rsvpdeadline"
@@ -56,6 +59,7 @@ title: "Frequently Asked Questions"
         </div>
     </div>
 </div>
+
 <div class="faq-item">
     <div data-bs-toggle="collapse" aria-expanded="false" class="faq-question collapsed"
     data-bs-target="#dresscode" aria-controls="dresscode"
@@ -68,6 +72,7 @@ title: "Frequently Asked Questions"
         </div>
     </div>
 </div>
+
 <div class="faq-item">
     <div data-bs-toggle="collapse" aria-expanded="false" class="faq-question collapsed"
     data-bs-target="#gifts" aria-controls="gifts"
@@ -82,6 +87,7 @@ title: "Frequently Asked Questions"
         </div>
     </div>
 </div>
+
 <div class="faq-item">
     <div data-bs-toggle="collapse" aria-expanded="false" class="faq-question collapsed"
     data-bs-target="#whattodo" aria-controls="whattodo"
@@ -98,6 +104,7 @@ title: "Frequently Asked Questions"
         </div>
     </div>
 </div>
+
 <div class="faq-item">
     <div data-bs-toggle="collapse" aria-expanded="false" class="faq-question collapsed"
     data-bs-target="#dietary" aria-controls="dietary"
@@ -110,20 +117,22 @@ title: "Frequently Asked Questions"
         </div>
     </div>
 </div>
+
 <div class="faq-item">
     <div data-bs-toggle="collapse" aria-expanded="false" class="faq-question collapsed"
     data-bs-target="#visa" aria-controls="visa"
     >
-        Do I need a Visa to enter Italy?
+        Do I need a visa to enter Italy?
     </div>
     <div class="collapse" id="visa">
         <div class="faq-answer">
-            Visa requirements depend on the passport you hold. If your passport is issued by a country outside the European Union (Schengen Area), you may need a Visa to enter Italy.
+            visa requirements depend on the passport you hold. If your passport is issued by a country outside the European Union (Schengen Area), you may need a visa to enter Italy.
             <br><br>
             We recommend checking the specific requirements for your passport well in advance of your trip. You can find official and up-to-date information on the <a href="https://vistoperitalia.esteri.it/?lang=en_US" target="_blank" rel="noopener">Italian Ministry of Foreign Affairs website</a>.
         </div>
     </div>
 </div>
+
 <div class="faq-item">
     <div data-bs-toggle="collapse" aria-expanded="false" class="faq-question collapsed"
     data-bs-target="#emergencycontact" aria-controls="emergencycontact"
@@ -140,6 +149,7 @@ title: "Frequently Asked Questions"
         </div>
     </div>
 </div>
+
 <div class="faq-item">
     <div data-bs-toggle="collapse" aria-expanded="false" class="faq-question collapsed"
     data-bs-target="#plusone" aria-controls="plusone"

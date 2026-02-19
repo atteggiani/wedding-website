@@ -6,11 +6,11 @@ title: "Preguntas Frecuentes"
     <div data-bs-toggle="collapse" aria-expanded="false" class="faq-question collapsed"
     data-bs-target="#wheretostay" aria-controls="wheretostay"
     >
-        I'm traveling from out of town. Where do you recommend I stay?
+        Viajo desde fuera de Italia. ¿Dónde recomiendan hospedarme?
     </div>
     <div class="collapse" id="wheretostay">
         <div class="faq-answer">
-            More information about where to stay can be found in the <a href="/en/travel#stay">Travel & Stay</a> page.
+            Pueden encontrar más información sobre dónde alojarse en la página <a href="/es/travel#stay">Viaje y Alojamiento</a>.
         </div>
     </div>
 </div>
@@ -18,15 +18,15 @@ title: "Preguntas Frecuentes"
     <div data-bs-toggle="collapse" aria-expanded="false" class="faq-question collapsed"
     data-bs-target="#howtogetthere" aria-controls="howtogetthere"
     >
-        How can I get to the wedding venue?
+        ¿Cómo puedo llegar al lugar de la boda?
     </div>
     <div class="collapse" id="howtogetthere">
         <div class="faq-answer">
-            Getting to <strong>Torre Ubaldo</strong> is pretty simple, even without a car! For all the details, check the <a href="/en/travel#travel">Travel & Stay</a> page.
+            Llegar a <strong>Torre Ubaldo</strong> es bastante sencillo, ¡incluso sin carro! Para todos los detalles, revisen la página <a href="/es/travel#travel">Viaje y Alojamiento</a>.
             <br><br>
-            For those without a car, getting back after the celebration might be a bit trickier - it’s going to be late, and taxis might not be available (it's Italy after all!). But don’t worry! Many guests will have cars and can easily give lifts to <strong>Cisterna di Latina</strong> or <strong>Latina</strong>. So make some new friends at the wedding and don’t be shy to ask for a ride! 😁
+            Si no tienen carro, el regreso después de la fiesta podria ser un poco más complicado — será tarde y es posible que no haya taxis disponibles (¡al fin y al cabo estamos en Italia!). Pero tranquilos 😊 Muchos invitados tendrán carro y podrán dar un aventón hacia <strong>Cisterna di Latina</strong> o <strong>Latina</strong>. ¡Hagan nuevos amigos en la boda y no les dé pena pedir un aventón! 😁
             <br><br>
-            And if you’re worried about ending up stranded, let us know - we’ll do our best to organize a lift, even if you don’t make any new friends 🤪
+            Y si les preocupa quedarse sin transporte, avísennos — haremos todo lo posible por ayudarles a organizar un aventón, incluso si no hacen nuevos amigos 🤪
         </div>
     </div>
 </div>
@@ -34,11 +34,11 @@ title: "Preguntas Frecuentes"
     <div data-bs-toggle="collapse" aria-expanded="false" class="faq-question collapsed"
     data-bs-target="#parking" aria-controls="parking"
     >
-        Is parking available at the venue?
+        ¿Hay estacionamiento en el lugar?
     </div>
     <div class="collapse" id="parking">
         <div class="faq-answer">
-            Yes, there is plenty of free parking inside the venue.
+            Sí, el lugar cuenta con amplio estacionamiento gratuito dentro de sus instalaciones.
         </div>
     </div>
 </div>
@@ -46,13 +46,13 @@ title: "Preguntas Frecuentes"
     <div data-bs-toggle="collapse" aria-expanded="false" class="faq-question collapsed"
     data-bs-target="#rsvpdeadline" aria-controls="rsvpdeadline"
     >
-        What is the deadline for the RSVP?
+        ¿Cuál es la fecha límite para confirmar asistencia?
     </div>
     <div class="collapse" id="rsvpdeadline">
         <div class="faq-answer">
-            We kindly ask our guests to RSVP by the <strong>end of April</strong>. This will help us plan the celebration and make sure the day is going to be amazing!
+            Les pedimos amablemente que confirmen su asistencia antes de <strong>finales de Abril</strong>. Esto nos ayudará a organizar todo de la mejor manera y a que el día sea realmente especial.
             <br><br>
-            However, we completely understand that guests traveling from abroad might need a little extra time to organize their trip to Italy. If that’s the case, just let us know, and we’ll make it work for you.
+            Sin embargo, entendemos perfectamente que quienes viajan desde el extranjero puedan necesitar un poco más de tiempo para organizar su viaje a Italia. En ese caso, avísennos y les ayudaremos en todo lo que sea posible.
         </div>
     </div>
 </div>
@@ -60,11 +60,11 @@ title: "Preguntas Frecuentes"
     <div data-bs-toggle="collapse" aria-expanded="false" class="faq-question collapsed"
     data-bs-target="#dresscode" aria-controls="dresscode"
     >
-        Is there a dress code for the event?
+        ¿Hay una etiqueta?
     </div>
     <div class="collapse" id="dresscode">
         <div class="faq-answer">
-            You can find details about the dress code on the <a href="/en/ceremony#dress-code">Ceremony & Reception</a> page.
+            Pueden encontrar todos los detalles sobre la etiqueta en la página <a href="/es/ceremony#dress-code">Ceremonia y Recepción</a>.
         </div>
     </div>
 </div>
@@ -72,13 +72,13 @@ title: "Preguntas Frecuentes"
     <div data-bs-toggle="collapse" aria-expanded="false" class="faq-question collapsed"
     data-bs-target="#gifts" aria-controls="gifts"
     >
-        What can we give as a wedding gift?
+        ¿Qué podemos regalarles por el matrimonio?
     </div>
     <div class="collapse" id="gifts">
         <div class="faq-answer">
-            Having you on our special day is what truly matters most to us, and a gift is completely optional!
+            Tenerlos con nosotros en nuestro día especial es lo que más valoramos, ¡y el regalo es completamente opcional!
             <br><br>
-            If you would like to help us create unforgettable memories on our honeymoon, you can find all the details on the <a href="/en/gifts">Gifts</a> page.
+            Si desean ayudarnos a crear recuerdos inolvidables durante nuestra luna de miel, pueden encontrar todos los detalles en la página <a href="/es/gifts">Regalos</a>.
         </div>
     </div>
 </div>
@@ -86,15 +86,15 @@ title: "Preguntas Frecuentes"
     <div data-bs-toggle="collapse" aria-expanded="false" class="faq-question collapsed"
     data-bs-target="#whattodo" aria-controls="whattodo"
     >
-        What activities and attractions are available near the wedding venue?
+        ¿Qué actividades y lugares para visitar hay cerca del lugar de la boda?
     </div>
     <div class="collapse" id="whattodo">
         <div class="faq-answer">
-            The wedding venue is located in <strong>Cisterna di Latina</strong>, a small town near <strong>Latina</strong>.
+            El lugar de la boda está ubicado en <strong>Cisterna di Latina</strong>, un pequeño municipio cerca de <strong>Latina</strong>.
             <br><br>
-            While the area has fewer attractions than Rome, there are still enjoyable things to see and do nearby, especially if you’d like to explore a more local and less touristy side of Italy. 
+            Aunque la zona tiene menos atracciones que Roma, igualmente hay planes agradables para hacer y sitios interesantes para conocer, especialmente si quieren descubrir una parte más auténtica y menos turística de Italia.
             <br><br>
-            For recommendations on activities and things to do around the wedding location, please visit the <a href="/en/travel#activities">Travel & Stay</a> page.
+            Para recomendaciones sobre actividades y lugares para visitar cerca del lugar de la boda, visiten la página <a href="/es/travel#activities">Viaje y Alojamiento</a>.
         </div>
     </div>
 </div>
@@ -102,11 +102,11 @@ title: "Preguntas Frecuentes"
     <div data-bs-toggle="collapse" aria-expanded="false" class="faq-question collapsed"
     data-bs-target="#dietary" aria-controls="dietary"
     >
-        I have specific dietary requirements. Will there be suitable food options for me at the wedding?
+        Tengo requerimientos alimentarios específicos. ¿Habrá opciones adecuadas para mí?
     </div>
     <div class="collapse" id="dietary">
         <div class="faq-answer">
-            Absolutely! Please include any dietary requirements or allergies in the dedicated field within the <a href="/en/rsvp">RSVP</a> page. This will help us ensure that appropriate meal options are arranged for you.
+            ¡Claro que sí! Por favor indiquen cualquier requerimiento alimentario o alergia en el campo correspondiente de la página de <a href="/es/rsvp">Confirmación</a>. Esto nos ayudará a asegurar que haya una opción adecuada para ustedes.
         </div>
     </div>
 </div>
@@ -114,13 +114,13 @@ title: "Preguntas Frecuentes"
     <div data-bs-toggle="collapse" aria-expanded="false" class="faq-question collapsed"
     data-bs-target="#visa" aria-controls="visa"
     >
-        Do I need a Visa to enter Italy?
+        ¿Necesito visa para entrar a Italia?
     </div>
     <div class="collapse" id="visa">
         <div class="faq-answer">
-            Visa requirements depend on the passport you hold. If your passport is issued by a country outside the European Union (Schengen Area), you may need a Visa to enter Italy.
+            Los requisitos de visa dependen del pasaporte que tengan. Si su pasaporte fue emitido por un país fuera de la Unión Europea (Área Schengen), es posible que necesiten visa para ingresar a Italia.
             <br><br>
-            We recommend checking the specific requirements for your passport well in advance of your trip. You can find official and up-to-date information on the <a href="https://vistoperitalia.esteri.it/?lang=en_US" target="_blank" rel="noopener">Italian Ministry of Foreign Affairs website</a>.
+            Les recomendamos revisar con suficiente anticipación los requisitos específicos para su pasaporte. Pueden encontrar información oficial y actualizada en el sitio del <a href="https://vistoperitalia.esteri.it/?lang=en_US" target="_blank" rel="noopener">Ministerio de Asuntos Exteriores de Italia</a>.
         </div>
     </div>
 </div>
@@ -128,13 +128,13 @@ title: "Preguntas Frecuentes"
     <div data-bs-toggle="collapse" aria-expanded="false" class="faq-question collapsed"
     data-bs-target="#emergencycontact" aria-controls="emergencycontact"
     >
-        If I have trouble getting to the venue on the day of the wedding, who should I contact?
+        Si tengo dificultades para llegar al lugar el día de la boda, ¿a quién puedo contactar?
     </div>
     <div class="collapse" id="emergencycontact">
         <div class="faq-answer">
-            On the wedding day, we’ll be in the middle of the preparations and probably not checking our phones very often!  
+            El día de la boda estaremos ocupados con los preparativos y probablemente no estaremos revisando mucho el celular.
             <br><br>
-            If you run into any issues getting to the venue, please reach out to Davide’s sibling, <strong>Ell</strong>, who will be happy to help! 😄
+            Si tienen algún problema para llegar al lugar, por favor contacten a la hermana de Davide, <strong>Ell</strong>, quien estará feliz de ayudarles 😄
             <br><br>
             <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="Whatsapp" class="whatsapp-icon">📞 <strong>Ell:</strong> +393334331390
         </div>
@@ -144,11 +144,11 @@ title: "Preguntas Frecuentes"
     <div data-bs-toggle="collapse" aria-expanded="false" class="faq-question collapsed"
     data-bs-target="#plusone" aria-controls="plusone"
     >
-        Can I bring a plus-one?
+        ¿Puedo llevar un invitado adicional?
     </div>
     <div class="collapse" id="plusone">
         <div class="faq-answer">
-            If your invitation includes a plus-one, you’ll see the option to complete their RSVP details in the <a href="/en/rsvp">RSVP</a> page. Their section is indicated by the icon: <img src="/assets/plusone.png" loading="lazy" class="plusone-icon" alt="plusone-icon">
+            Si su invitación incluye un invitado adicional, encontrarán la opción para ingresar sus datos en la página de <a href="/es/rsvp">Confirmación</a>. La sección correspondiente está indicada con el ícono: <img src="/assets/plusone.png" loading="lazy" class="plusone-icon" alt="plusone-icon">
         </div>
     </div>
 </div>
@@ -156,8 +156,8 @@ title: "Preguntas Frecuentes"
 
 <!-- Contacts -->
 <div id="contacts">
-    <h2>Still Have Questions?</h2>
-    <h4>Don't hesitate to reach out to us!</h4>
+    <h2>¿Tienen más preguntas?</h2>
+    <h4>¡No duden en contactarnos!</h4>
     <div class="contacts-info">
         <p>
             <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="Whatsapp" class="whatsapp-icon">

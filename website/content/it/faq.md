@@ -78,7 +78,7 @@ title: "Domande Frequenti"
         <div class="faq-answer">
             La vostra presenza nel nostro giorno speciale è ciò che conta di più per noi, ed un regalo è completamente facoltativo!
             <br><br>
-            Se desiderate aiutarci a creare ricordi indimenticabili durante il nostro viaggio di nozze, trovate tutti i dettagli nella pagina <a href="/it/gifts">Ragali</a>.
+            Se desiderate aiutarci a creare ricordi indimenticabili durante il nostro viaggio di nozze, trovate tutti i dettagli nella pagina <a href="/it/gifts">Regali</a>.
         </div>
     </div>
 </div>
