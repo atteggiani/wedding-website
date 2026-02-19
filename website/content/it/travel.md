@@ -90,7 +90,7 @@ title: "Viaggio e Alloggio"
         </p>
         <div class="activities">
             <a 
-            href="https://www.giardinodininfa.eu/en-en" 
+            href="https://www.giardinodininfa.eu/" 
             target="_blank" rel="noopener" class="activity-item"
             >
                 <h4 class="activity-title">🌿 Giardino di Ninfa</h4>
@@ -99,7 +99,7 @@ title: "Viaggio e Alloggio"
                 </p>
             </a>
             <a 
-            href="https://www.parcocirceo.it/Eindex.php" 
+            href="https://www.parcocirceo.it/index.php" 
             target="_blank" rel="noopener" class="activity-item"
             >
                 <h4 class="activity-title">🏞️ Parco Nazionale del Circeo</h4>
@@ -108,7 +108,7 @@ title: "Viaggio e Alloggio"
                 </p>
             </a>
             <a 
-            href="" 
+            href="https://www.visitlazio.com/sabaudia/" 
             target="_blank" rel="noopener" class="activity-item"
             >
                 <h4 class="activity-title">🏖️ Sabaudia</h4>
@@ -117,7 +117,7 @@ title: "Viaggio e Alloggio"
                 </p>
             </a>
             <a 
-            href="https://www.visitponza.it/en/" 
+            href="https://www.visitponza.it/" 
             target="_blank" rel="noopener" class="activity-item"
             >
                 <h4 class="activity-title">🏝 Ponza</h4>
@@ -126,7 +126,7 @@ title: "Viaggio e Alloggio"
                 </p>
             </a>
             <a 
-            href="https://www.visitlazio.com/en/sermoneta/" 
+            href="https://www.visitlazio.com/sermoneta/" 
             target="_blank" rel="noopener" class="activity-item"
             >
                 <h4 class="activity-title">🏰 Sermoneta</h4>
@@ -135,7 +135,7 @@ title: "Viaggio e Alloggio"
                 </p>
             </a>
             <a 
-            href="https://www.europeanheritagetimes.eu/2019/04/14/fogliano-a-lake-on-the-sea/" 
+            href="https://www.visitlazio.com/lago-di-fogliano-a-latina/" 
             target="_blank" rel="noopener" class="activity-item"
             >
                 <h4 class="activity-title">🌾 Lago di Fogliano</h4>
