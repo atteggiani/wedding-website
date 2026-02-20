@@ -21,7 +21,7 @@ section.main-section {
     height: 100vh;
     margin-top: -5rem; /* Adjust for top banner height */
     background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
-                url('/assets/background.jpeg') center/cover no-repeat;
+                url('../assets/background.jpeg') center/cover no-repeat;
     overflow: hidden;
     z-index: 0;
     top: 0;
