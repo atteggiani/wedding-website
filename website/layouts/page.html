@@ -31,10 +31,9 @@
     {{ partial "topbanner.html" . }}
     <div class="page-content page-margins">
         <div class="container">
-            {{ if .Title }}
-                <h1>{{ .Title }}</h1>
+            {{ with .Params.customLayout }}
+                {{ partial (printf "content/%s.html" .) $ }}
             {{ end }}
-            {{ .Content }}
         </div>
     </div>
     {{ partial "footer.html" . }}

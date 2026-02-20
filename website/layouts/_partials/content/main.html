@@ -1,0 +1,78 @@
+<!-- Main Section -->
+<section class="main-section">
+    <h1 class="main-title text-shadow">
+        {{ .Site.Title }}
+    </h1>
+    <h2 class="main-title text-shadow">
+        {{ .Params.subtitle }}
+    </h2>
+    <div class="main-info">
+        <div class="info-box">
+            <div class="info-label text-shadow">{{ .Params.when }}</div>
+            <div class="info-value text-shadow">{{ i18n "global.fullDate" }}</div>
+        </div>
+        <div class="info-box">
+            <div class="info-label text-shadow">{{ .Params.where }}</div>
+            <div class="info-value text-shadow">{{ i18n "global.fullLocation" }}</div>
+        </div>
+    </div>
+</section>
+<!-- Ceremony Section -->
+<section>
+    <div class="section-image">
+        <img src="{{ relURL "assets/main/dressup.jpeg" }}" alt="Ceremony">
+    </div>
+    <div class="section-content centered">
+        <h2>{{ i18n "menu.ceremony" }}</h2>
+        <h3>{{ .Site.Params.location }}</h3>
+        <h3>{{ i18n "global.time" }}</h3>
+        <h4>
+            {{ i18n "global.address" }}
+        </h4>
+        <a href="{{ relLangURL "ceremony" }}">{{ .Params.moreInfo }}</a>
+    </div>
+</section>
+<!-- Travel Section -->
+<section>
+    <div class="section-image">
+        <img src="{{ relURL "assets/main/colosseum.jpeg" }}" alt="Travel">
+    </div>
+    <div class="section-content centered">
+        <h2>{{ i18n "menu.travel" }}</h2>
+        {{ .Site.Params.mapsPreview | markdownify }}
+        <a href="{{ relLangURL "travel" }}">{{ .Params.moreInfo }}</a>
+    </div>
+</section>
+<!-- Story Section -->
+<section>
+    <div class="section-image">
+        <img src="{{ relURL "assets/main/tongue.jpeg" }}" alt="Story" style="object-position: center 30%;">
+    </div>
+    <div class="section-content centered">
+        <h2>{{ i18n "menu.story" }}</h2>
+        <h3>{{ .Params.storySubtitle }}</h3>
+        <a href="{{ relLangURL "story" }}">{{ .Params.moreInfo }}</a>
+    </div>
+</section>
+<!-- Gifts Section -->
+<section>
+    <div class="section-image">
+        <img src="{{ relURL "assets/main/beach.jpg" }}" alt="Gifts">
+    </div>
+    <div class="section-content centered">
+        <h2>{{ i18n "menu.gifts" }}</h2>
+        <h3>{{ .Params.giftsSubtitle }}</h3>
+        <a href="{{ relLangURL "gifts" }}">{{ .Params.moreInfo }}</a>
+    </div>
+</section>
+<!-- FAQ Section -->
+<section>
+    <div class="section-image">
+        <img src="{{ relURL "assets/main/oodies.jpg" }}" alt="FAQ">
+    </div>
+    <div class="section-content centered">
+        <h2>{{ i18n "menu.faq" }}</h2>
+        <h3>{{ .Params.faqSubtitle }}</h3>
+        <a href="{{ relLangURL "faq" }}">{{ .Params.moreInfo }}</a>
+    </div>
+</section>

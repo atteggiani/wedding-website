@@ -1,0 +1,25 @@
+<h1>{{ i18n "menu.ceremony" }}</h1>
+<div class="section centered">
+    <h2 id="venue-title">{{ .Site.Params.location }}</h2>
+    <div class="venue-info">
+        <div class="info">📅 {{ i18n "global.fullDate" }}, {{ i18n "global.time" }}</div>
+        <div class="info">
+            <a id="get-there" href="{{ relLangURL "travel" }}">📍</a> {{ i18n "global.address" }}
+        </div>
+        <div class="info-text">
+            {{ .Params.info | markdownify }}
+        </div>
+    </div>
+    <div id="dress-code">
+        <h3>👗 {{ .Params.dressCode }} 👔</h3>
+        <div class="info-text"> {{ .Params.dressCodeInfo | markdownify }}</div>
+    </div>
+    <div class="venue-gallery">
+        <img src="{{ relURL "assets/ceremony/tavoli_su_erba.png" }}" alt="Location Picture 1" loading="lazy">
+        <img src="{{ relURL "assets/ceremony/scale_edera.jpeg" }}" alt="Location Picture 2" loading="lazy">
+        <img src="{{ relURL "assets/ceremony/corte_con_luci.jpeg" }}" alt="Location Picture 3" loading="lazy">
+        <img src="{{ relURL "assets/ceremony/corte_con_tavoli.png" }}" alt="Location Picture 4" loading="lazy">
+        <img src="{{ relURL "assets/ceremony/viale.jpeg" }}" alt="Location Picture 5" loading="lazy">
+        <img src="{{ relURL "assets/ceremony/corte.png" }}" alt="Location Picture 6" loading="lazy">
+    </div>
+</div>

@@ -1,5 +1,14 @@
 ---
-title: "Cerimonia e Ricevimento"
+customLayout: ceremony
+info: |
+    La cerimonia e il ricevimento si svolgeranno entrambi presso Torre Ubaldo.<br>
+    La cerimonia simbolica inizierà alle 17:00, seguita dal ricevimento e da una serata di festa!
+dressCode: Dress Code
+dressCodeInfo: |
+    Invitiamo gentilmente i nostri ospiti a indossare un abbigliamento <strong>formale</strong> per il nostro matrimonio.<br>
+    Trattandosi di un matrimonio estivo, vi chiediamo gentilmente di <strong>evitare il nero ed il bianco</strong> così da contribuire a creare un'atmosfera festiva e luminosa.<br>
+    Vi invitiamo invece a scegliere <strong>colori vivaci ed eleganti</strong>, in sintonia con lo spirito gioioso della giornata.<br>
+    Soprattutto, indossate ciò che vi fa sentire a vostro agio, sicuri di voi e pronti a festeggiare con noi!
 ---
 
 <div class="section">

@@ -25,10 +25,6 @@
   display: none;
 }
 
-.loader-inner {
-  text-align: center;
-}
-
 #rsvp-section {
     position: relative;
     margin-bottom: 2rem;
@@ -84,4 +80,11 @@ input[id^="dietary-requirements-"]:disabled,
 
 h5 {
     line-height: 1.5em;
+}
+
+.form-label {
+    font-size: 1.2em;
+}
+.form-label > span {
+    font-size: 0.8em;
 }

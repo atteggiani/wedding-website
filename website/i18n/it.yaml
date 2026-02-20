@@ -1,5 +1,4 @@
 rsvp:
-  rsvp: "Conferma"
   yes: "Si"
   no: "No"
   verifying: "Verificando..."
@@ -34,6 +33,14 @@ menu:
   story: "La Nostra Storia"
   travel: "Viaggio e Alloggio"
   gifts: "Regali"
-  ceremony: "Cerimonia e Ricevimento"  
+  ceremony: "Cerimonia e Ricevimento"
+  faq: "Domande Frequenti"
 banner_text:
   other: "Non vediamo l’ora di condividere il nostro giorno speciale con voi!"
+global:
+  fullDate: Mercoledì, 2 Settembre 2026
+  fullLocation: Torre Ubaldo, Cisterna di Latina, LT, Italia
+  address: 35, SS7, 04012 Cisterna di Latina, Latina (LT), Italia
+  time: 17:00
+  rsvp: Conferma
+  contactUs: contattarci

@@ -1,0 +1,64 @@
+<h1>{{ i18n "menu.travel" }}</h1>
+<h5>{{ .Params.subtitle }}</h5>
+<div class="section centered" id="travel">
+  <h2 class="section-title">{{ .Params.getThere }}</h2>
+
+  <div class="subsection">
+    <h3 class="subsection-title">
+        <img src="{{ relURL "assets/travel/airplane_icon.png" }}" alt="Plane">
+        {{ .Params.plane }}
+    </h3>
+    {{ .Params.planeInfo | markdownify }}
+  </div>
+
+  <div class="subsection">
+    <h3 class="subsection-title">
+      <img src="{{ relURL "assets/travel/train_icon.png" }}" alt="Train">
+      {{ .Params.train }}
+    </h3>
+    {{ .Params.trainInfo | markdownify }}
+  </div>
+
+  <div class="subsection">
+    <h3 class="subsection-title">
+        <img src="{{ relURL "assets/travel/car_icon.png" }}" alt="Car">
+        {{ .Params.car }}
+    </h3>
+    {{ .Params.carInfo | markdownify }}
+    {{ .Site.Params.mapsPreview | markdownify }}
+  </div>
+</div>
+
+<div class="section centered" id="stay">
+    <h2 class="section-title">{{ .Params.stay }}</h2>
+    <div class="subsection">
+        <h3 class="subsection-title">
+            <img src="{{ relURL "assets/travel/stay_icon.png" }}" alt="Stay">
+        </h3>
+        {{ .Params.stayInfo | markdownify }}
+    </div>
+</div>
+
+<div class="section centered" id="activities">
+    <h2 class="section-title">{{ .Params.activities }}</h2>
+    <div class="subsection">
+        <h3 class="subsection-title">
+            <img src="{{ relURL "assets/travel/coliseum_icon.png" }}" alt="Attractions">
+        </h3>
+        {{ .Params.activitiesInfo | markdownify }}
+        <div class="activities">
+            {{ range .Params.activityList }}
+                <a 
+                href="{{ .url }}" 
+                target="_blank" rel="noopener" class="activity-item"
+                >
+                    <h4 class="activity-title">{{ .title }}</h4>
+                    <p class="activity-description">
+                        {{ .description }}
+                    </p>
+                </a>
+            {{ end }}
+        </div>
+</div>
+
+<h5>{{ .Params.contact }} <a href="{{ relLangURL "faq#contacts" }}">{{ i18n "global.contactUs" }}</a>!</h5>

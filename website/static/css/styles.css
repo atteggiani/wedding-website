@@ -112,3 +112,7 @@ strong {
 .child-icon {
     filter: var(--filter-color-orange);
 }
+
+.centered {
+    text-align: center;
+}

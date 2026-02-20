@@ -2,13 +2,8 @@ h4 {
     margin-bottom: 1em;
 }
 
-.centered {
-    text-align: center;
-}
-
-.highlight {
+.main-text {
     font-size: 1.3em;
-    margin: 2.5rem 4rem;
 }
 
 .bank-details {

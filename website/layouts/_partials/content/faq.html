@@ -1,0 +1,174 @@
+<h1>{{ i18n "menu.faq" }}</h1>
+<div class="faq-item">
+    <div data-bs-toggle="collapse" aria-expanded="false" class="faq-question collapsed"
+    data-bs-target="#wheretostay" aria-controls="wheretostay"
+    >
+        {{ .Params.whereToStayQuestion }}
+    </div>
+    <div class="collapse" id="wheretostay">
+        <div class="faq-answer">
+            {{ .Params.whereToStayAnswer }} <a href="{{ relLangURL "travel#stay" }}">{{ i18n "menu.travel" }}</a>{{ .Params.page }}.
+        </div>
+    </div>
+</div>
+
+<div class="faq-item">
+    <div data-bs-toggle="collapse" aria-expanded="false" class="faq-question collapsed"
+    data-bs-target="#howtogetthere" aria-controls="howtogetthere"
+    >
+        {{ .Params.howToGetThereQuestion }}
+    </div>
+    <div class="collapse" id="howtogetthere">
+        <div class="faq-answer">
+            <p>
+                {{ .Params.howToGetThereAnswer1 | markdownify }} <a href="{{ relLangURL "travel#travel" }}">{{ i18n "menu.travel" }}</a>{{ .Params.page }}.
+            </p>
+            {{ .Params.howToGetThereAnswer2 | markdownify }}
+        </div>
+    </div>
+</div>
+
+<div class="faq-item">
+    <div data-bs-toggle="collapse" aria-expanded="false" class="faq-question collapsed"
+    data-bs-target="#parking" aria-controls="parking"
+    >
+        {{ .Params.parkingQuestion }}
+    </div>
+    <div class="collapse" id="parking">
+        <div class="faq-answer">
+            {{ .Params.parkingAnswer | markdownify }}
+        </div>
+    </div>
+</div>
+
+<div class="faq-item">
+    <div data-bs-toggle="collapse" aria-expanded="false" class="faq-question collapsed"
+    data-bs-target="#rsvpdeadline" aria-controls="rsvpdeadline"
+    >
+        {{ .Params.rsvpDeadlineQuestion }}
+    </div>
+    <div class="collapse" id="rsvpdeadline">
+        <div class="faq-answer">
+            {{ .Params.rsvpDeadlineAnswer | markdownify }}
+        </div>
+    </div>
+</div>
+
+<div class="faq-item">
+    <div data-bs-toggle="collapse" aria-expanded="false" class="faq-question collapsed"
+    data-bs-target="#dresscode" aria-controls="dresscode"
+    >
+        {{ .Params.dressCodeQuestion }}
+    </div>
+    <div class="collapse" id="dresscode">
+        <div class="faq-answer">
+            {{ .Params.dressCodeAnswer }} <a href="{{ relLangURL "ceremony#dress-code" }}">{{ i18n "menu.ceremony" }}</a>{{ .Params.page }}.
+        </div>
+    </div>
+</div>
+
+<div class="faq-item">
+    <div data-bs-toggle="collapse" aria-expanded="false" class="faq-question collapsed"
+    data-bs-target="#gifts" aria-controls="gifts"
+    >
+        {{ .Params.giftsQuestion }}
+    </div>
+    <div class="collapse" id="gifts">
+        <div class="faq-answer">
+            <p>
+                {{ .Params.giftsAnswer1 }}
+            </p>
+            {{ .Params.giftsAnswer2 | markdownify }} <a href="{{ relLangURL "gifts" }}">{{ i18n "menu.gifts" }}</a>{{ .Params.page }}.
+        </div>
+    </div>
+</div>
+
+<div class="faq-item">
+    <div data-bs-toggle="collapse" aria-expanded="false" class="faq-question collapsed"
+    data-bs-target="#whattodo" aria-controls="whattodo"
+    >
+        {{ .Params.whatToDoQuestion }}    
+    </div>
+    <div class="collapse" id="whattodo">
+        <div class="faq-answer">
+            {{ .Params.whatToDoAnswer1 | markdownify }}
+            {{ .Params.whatToDoAnswer2 | markdownify }} <a href="{{ relLangURL "travel#activities" }}">Travel & Stay</a> page.
+        </div>
+    </div>
+</div>
+
+<div class="faq-item">
+    <div data-bs-toggle="collapse" aria-expanded="false" class="faq-question collapsed"
+    data-bs-target="#dietary" aria-controls="dietary"
+    >
+        {{ .Params.dietaryQuestion }}
+    </div>
+    <div class="collapse" id="dietary">
+        <div class="faq-answer">
+            {{ .Params.dietaryAnswer1 }} <a href="{{ relLangURL "rsvp" }}">{{ .Params.rsvp }}</a>{{ .Params.page }}. 
+            {{ .Params.dietaryAnswer2 }}
+        </div>
+    </div>
+</div>
+
+<div class="faq-item">
+    <div data-bs-toggle="collapse" aria-expanded="false" class="faq-question collapsed"
+    data-bs-target="#visa" aria-controls="visa"
+    >
+        {{ .Params.visaQuestion }}
+    </div>
+    <div class="collapse" id="visa">
+        <div class="faq-answer">
+            {{ .Params.visaAnswer | markdownify }}
+        </div>
+    </div>
+</div>
+
+<div class="faq-item">
+    <div data-bs-toggle="collapse" aria-expanded="false" class="faq-question collapsed"
+    data-bs-target="#emergencycontact" aria-controls="emergencycontact"
+    >
+        {{ .Params.emergencyContactQuestion }}
+    </div>
+    <div class="collapse" id="emergencycontact">
+        <div class="faq-answer">
+            <p>{{ .Params.emergencyContactAnswer | markdownify }}</p>
+            <img 
+            src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" 
+            alt="Whatsapp" class="whatsapp-icon">
+            📞 <strong>Ell:</strong> +393334331390
+        </div>
+    </div>
+</div>
+
+<div class="faq-item">
+    <div data-bs-toggle="collapse" aria-expanded="false" class="faq-question collapsed"
+    data-bs-target="#plusone" aria-controls="plusone"
+    >
+        {{ .Params.plusOneQuestion }}
+    </div>
+    <div class="collapse" id="plusone">
+        <div class="faq-answer">
+            {{ .Params.plusOneAnswer1 }} <a href="{{ relLangURL "rsvp" }}">{{ .Params.rsvp }}</a>{{ .Params.page }}.
+            {{ .Params.plusOneAnswer2 }} <img src="{{ relURL "assets/plusone.png" }}" loading="lazy" class="plusone-icon" alt="plusone-icon">
+        </div>
+    </div>
+</div>
+
+
+<!-- Contacts -->
+<div id="contacts">
+    <h2>{{ .Params.contactsTitle }}</h2>
+    <h4>{{ .Params.contactsSubtitle }}</h4>
+    <div class="contacts-info">
+        <p>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="Whatsapp" class="whatsapp-icon">
+            📞 +61433995492 (<strong>Davide</strong>)
+        </p>
+        <p>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="Whatsapp" class="whatsapp-icon">
+            📞 +61468586558 (<strong>Jen</strong>)
+        </p>
+        <p>✉️ davideandjennifer@gmail.com</p>
+    </div>
+</div>

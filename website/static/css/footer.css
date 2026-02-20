@@ -4,7 +4,7 @@ footer {
     align-items: stretch;
     justify-content: center;
     background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
-                url('/assets/ring.png') center calc(50% + 15px)/cover no-repeat;
+                url('../assets/ring.png') center calc(50% + 15px)/cover no-repeat;
 }
 
 .footer-content {
@@ -17,7 +17,6 @@ footer {
 }
 
 .footer-text {
-    text-align: center;
     color: white;
 }
 

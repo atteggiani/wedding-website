@@ -1,0 +1,116 @@
+<h1>{{ i18n "menu.story" }}</h1>
+<h5>{{ .Params.subtitle }}</h5>
+<div class="timeline">
+    <!-- SECTION 1 -->
+    <div class="timeline-event" id="meeting">
+        <div class="event-text">
+            <div class="event-date">
+                18.03.2022
+            </div>
+            <div class="event-title">
+                {{ .Params.meeting }}
+            </div>
+        </div>
+        <div class="event-image">
+            <img src="{{ relURL "assets/story/meeting.png" }}" alt="We met">
+        </div>
+    </div>
+    <!-- SECTION 2 -->
+    <div class="timeline-event reverse" id="friends">
+        <div class="event-text">
+            <div class="event-date">
+                04.2022 – 09.2022
+            </div>
+            <div class="event-title">
+                {{ .Params.friends }}
+            </div>
+        </div>
+        <div class="event-image">
+            <img src="{{ relURL "assets/story/friends.jpeg" }}" alt="Friends">
+        </div>
+    </div>
+    <!-- SECTION 3 -->
+    <div class="timeline-event" id="relationship">
+        <div class="event-text">
+            <div class="event-date">
+                02.09.2022
+            </div>
+            <div class="event-title">
+                {{ .Params.relationship }}
+            </div>
+        </div>
+        <div class="event-image">
+            <img src="{{ relURL "assets/story/relationship.jpeg" }}" alt="Relationship" loading="lazy">
+        </div>
+    </div>
+    <!-- SECTION 4 -->
+    <div class="timeline-event reverse" id="house">
+        <div class="event-text">
+            <div class="event-date">
+                27.12.2023
+            </div>
+            <div class="event-title">
+                {{ .Params.house }}
+            </div>
+        </div>
+        <div class="event-image">
+            <img src="{{ relURL "assets/story/moving_together.jpeg" }}" alt="Moved in together" loading="lazy">
+        </div>
+    </div>
+    <!-- SECTION 5 -->
+    <div class="timeline-event" id="colombia">
+        <div class="event-text">
+            <div class="event-date">
+                12.2024 – 01.2025
+            </div>
+            <div class="event-title">
+                {{ .Params.colombia }}
+            </div>
+        </div>
+        <div class="event-image">
+            <img src="{{ relURL "assets/story/colombia.jpeg" }}" alt="Colombia" loading="lazy">
+        </div>
+    </div>
+    <!-- SECTION 6 -->
+    <div class="timeline-event reverse" id="engagement">
+        <div class="event-text">
+            <div class="event-date">
+                19.06.2025
+            </div>
+            <div class="event-title">
+                {{ .Params.engagement }}
+            </div>
+        </div>
+        <div class="event-image">
+            <img src="{{ relURL "assets/story/engagement.jpeg" }}" alt="Engagement" loading="lazy">
+        </div>
+    </div>
+    <!-- SECTION 7 -->
+    <div class="timeline-event" id="wedding">
+        <div class="event-text">
+            <div class="event-date">
+                27.12.2025
+            </div>
+            <div class="event-title">
+                {{ .Params.wedding }}
+            </div>
+        </div>
+        <div class="event-image">
+            <img src="{{ relURL "assets/story/wedding.jpeg" }}" alt="Wedding" loading="lazy">
+        </div>
+    </div>
+    <!-- SECTION 8 -->
+    <div class="timeline-event reverse" id="party">
+        <div class="event-text">
+            <div class="event-date">
+                02.09.2026
+            </div>
+            <div class="event-title">
+                {{ .Params.continue }}
+            </div>
+        </div>
+        <div class="event-image">
+            <img src="{{ relURL "assets/story/party.jpeg" }}" alt="Party" loading="lazy">
+        </div>
+    </div>
+</div>

@@ -1,7 +1,7 @@
 <div class="top-banner">
     
   <!-- BANNER TEXT -->
-  <div class="banner-title">
+  <div class="banner-title centered">
     <a href="{{ relLangURL "main" }}">{{ .Site.Params.bannerTitle }}</a>
   </div>
 
@@ -10,7 +10,7 @@
     <ul>
       {{ range .Site.Menus.main }}
         <li>
-          <a href="{{ .URL }}">
+          <a href="{{ .URL }}" class="centered">
             {{ i18n .Identifier | default .Identifier }}
           </a>
         </li>
@@ -42,7 +42,7 @@
     <!-- RSVP button -->
     <div class="rsvp-button">
         <a href="{{ relLangURL "rsvp" }}" class="rsvp-btn">
-            {{ i18n "rsvp.rsvp" }}
+            {{ i18n "global.rsvp" }}
         </a>
     </div>
 

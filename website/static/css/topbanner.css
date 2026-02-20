@@ -32,16 +32,14 @@
   text-decoration: none;
   font-weight: 500;
   color: #444;
-  text-align: center;
 }
 
 .banner-menu a:hover {
   color: #000;
 }
 
-/* CENTER TITLE */
+/* TITLE */
 .banner-title {
-  text-align: center;
   font-size: 1.7rem;
   font-weight: 600;
   letter-spacing: 0.5px;
