@@ -23,16 +23,30 @@
     <div class="language-switcher">
         <!-- Language switcher -->
         {{ $currentLang := .Site.Language.Lang }}
-        {{ $flags := .Site.Params.flags }}
         <div class="dropdown">
-            <button class="btn btn-secondary dropdown-toggle" type="button" id="langDropdown" data-bs-toggle="dropdown" aria-expanded="false">
-                {{ index $flags $currentLang }} {{ $currentLang | upper }}
+            <button 
+            class="btn btn-secondary dropdown-toggle" 
+            type="button" id="langDropdown" 
+            data-bs-toggle="dropdown" aria-expanded="false">
+                <img 
+                src="{{ printf "assets/emojis/flag_%s.svg" $currentLang | relURL }}"
+                alt="flag-icon"
+                class="emoji">
+                {{ $currentLang | upper }}
             </button>
             <ul class="dropdown-menu" aria-labelledby="langDropdown">
                 {{ range .Translations }}
+                    {{ $flag := resources.Get (printf "flags/%s.svg" .Language.Lang) }}
                     <li>
-                        <a class="dropdown-item" href="{{ .RelPermalink }}" hreflang="{{ .Language.LanguageCode }}">
-                            {{ index $flags .Lang }} {{ .Lang | upper }}
+                        <a 
+                        class="dropdown-item" 
+                        href="{{ .RelPermalink }}" 
+                        hreflang="{{ .Language.LanguageCode }}">
+                            <img 
+                            src="{{ printf "assets/emojis/flag_%s.svg" .Language.Lang | relURL }}"
+                            alt="flag-icon"
+                            class="emoji">
+                            {{ .Language.Lang | upper }}
                         </a>
                     </li>
                 {{ end }}

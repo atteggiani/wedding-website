@@ -80,3 +80,15 @@
     height: 80%;
 }
 
+.language-switcher .emoji {
+    width: 1.5em;
+    height: 1.5em;
+}
+
+.dropdown-item,
+.dropdown > button {
+    display: flex;
+    align-items: center;
+    gap: 0.1rem;
+}
+

@@ -1,0 +1,31 @@
+<svg id='Red_Heart_24' width='24' height='24' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'><rect width='24' height='24' stroke='none' fill='#000000' opacity='0'/>
+
+
+<g transform="matrix(0.42 0 0 0.42 12 12)" >
+<g style="" >
+<g transform="matrix(1 0 0 1 0 -0.01)" >
+<radialGradient id="SVGID_wBu7DkhSZawQbCc~Elq7ha_1" gradientUnits="userSpaceOnUse" gradientTransform="matrix(1 0 0 1 0 0)" cx="16.806" cy="16.701" r="23.479" fx="16.806" fy="16.701">
+<stop offset="0%" style="stop-color:rgb(255,118,102);stop-opacity: 1"/>
+<stop offset="12.6%" style="stop-color:rgb(251,108,89);stop-opacity: 1"/>
+<stop offset="71.39999999999999%" style="stop-color:rgb(236,64,35);stop-opacity: 1"/>
+<stop offset="100%" style="stop-color:rgb(230,47,14);stop-opacity: 1"/>
+</radialGradient>
+<path style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: url(#SVGID_wBu7DkhSZawQbCc~Elq7ha_1); fill-rule: nonzero; opacity: 1;" transform=" translate(-24, -23.99)" d="M 32.589 8.533 C 27.476 8.533 24 11.969 24 11.969 C 24 11.969 20.543 8.533 15.411 8.533 C 9.719 8.533 5.103999999999999 13.148 5.103999999999999 18.84 C 5.104 29.147 24 39.454 24 39.454 C 24 39.454 42.896 29.147 42.896 18.84 C 42.896 13.147 38.282 8.533 32.589 8.533 z" stroke-linecap="round" />
+</g>
+<g transform="matrix(1 0 0 1 0 -0.01)" >
+<linearGradient id="SVGID_wBu7DkhSZawQbCc~Elq7hb_2" gradientUnits="userSpaceOnUse" gradientTransform="matrix(1 0 0 1 0 0)" x1="24.224" y1="10.495" x2="23.474" y2="38.413">
+<stop offset="14.7%" style="stop-color:rgb(244,82,61);stop-opacity: 0"/>
+<stop offset="84.5%" style="stop-color:rgb(165,37,16);stop-opacity: 1"/>
+</linearGradient>
+<path style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: url(#SVGID_wBu7DkhSZawQbCc~Elq7hb_2); fill-rule: nonzero; opacity: 1;" transform=" translate(-24, -23.99)" d="M 32.589 8.533 C 27.476 8.533 24 11.969 24 11.969 C 24 11.969 20.543 8.533 15.411 8.533 C 9.719 8.533 5.103999999999999 13.148 5.103999999999999 18.84 C 5.104 29.147 24 39.454 24 39.454 C 24 39.454 42.896 29.147 42.896 18.84 C 42.896 13.147 38.282 8.533 32.589 8.533 z" stroke-linecap="round" />
+</g>
+<g transform="matrix(1 0 0 1 -8.84 -8.58)" >
+<radialGradient id="SVGID_wBu7DkhSZawQbCc~Elq7hc_3" gradientUnits="userSpaceOnUse" gradientTransform="matrix(0.82 -0.57 0.38 0.55 4.51 33.1)" cx="18.796" cy="-12.671" r="7.589" fx="18.796" fy="-12.671">
+<stop offset="12.9%" style="stop-color:rgb(249,162,155);stop-opacity: 1"/>
+<stop offset="83.39999999999999%" style="stop-color:rgb(249,162,155);stop-opacity: 0"/>
+</radialGradient>
+<path style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: url(#SVGID_wBu7DkhSZawQbCc~Elq7hc_3); fill-rule: nonzero; opacity: 0.69;" transform=" translate(-15.16, -15.42)" d="M 21.164 11.949 C 22.431 14.144 20.769000000000002 17.477 17.450000000000003 19.393 C 14.131000000000004 21.309 10.414000000000003 21.083000000000002 9.147000000000002 18.887 C 7.880000000000001 16.691 9.542000000000002 13.359000000000002 12.861000000000002 11.443000000000001 C 16.180000000000003 9.527000000000001 19.897 9.753 21.164 11.949 z" stroke-linecap="round" />
+</g>
+</g>
+</g>
+</svg>

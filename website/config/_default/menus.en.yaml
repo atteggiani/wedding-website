@@ -1,0 +1,16 @@
+main:
+  - identifier: menu.ceremony
+    pageRef: /ceremony
+    weight: 1
+  - identifier: menu.travel
+    pageRef: "/travel"
+    weight: 2
+  - identifier: menu.story
+    pageRef: /story
+    weight: 3
+  - identifier: menu.gifts
+    pageRef: "/gifts"
+    weight: 4
+  - identifier: FAQ
+    pageRef: "/faq"
+    weight: 5

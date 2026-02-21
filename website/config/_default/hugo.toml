@@ -8,17 +8,14 @@ title = "Davide & Jennifer"
     weight = 0
     languageName = "English"
     contentDir = "content/en"
-    flag = "🇦🇺"
   [languages.it]
     weight = 1
     languageName = "Italiano"
     contentDir = "content/it"
-    flag = "🇮🇹"
   [languages.es]
     weight = 2
     languageName = "Español"
     contentDir = "content/es"
-    flag = "🇨🇴"
 
 [markup]
   [markup.goldmark]

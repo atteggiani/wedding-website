@@ -6,13 +6,17 @@
 <div class="background-image"></div>
 
 <div class="language-buttons d-flex flex-wrap gap-2">
-  {{ $flags := .Site.Params.flags }}
-  {{ range .Site.Languages }}
-    <a href="{{ printf "%s/main/" .Lang | relURL }}"
-       class="btn btn-primary flex-fill flex-sm-grow-0 text-center fs-2 text-shadow">
-      {{ index $flags .Lang }} {{ .LanguageName }}
+    {{ range .Site.Languages }}
+    <a 
+    href="{{ printf "%s/main/" .Lang | relURL }}"
+    class="btn btn-primary">
+        <img 
+        src="{{ printf "assets/emojis/flag_%s.svg" .Lang | relURL}}"
+        alt="flag-icon"
+        class="emoji">
+        {{ .LanguageName }}
     </a>
-  {{ end }}
+    {{ end }}  
 </div>
 
 
