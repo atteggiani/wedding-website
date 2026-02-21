@@ -1,6 +1,13 @@
 <h1>{{ i18n "menu.gifts" }}</h1>
 <div class="main-text centered">
-    {{ .Params.mainText | markdownify }}
+    {{ .Params.mainText1 | markdownify }}
+    <p>
+        {{ .Params.mainText2 }}
+        <img
+        src="{{ relURL "assets/emojis/heart.svg" }}"
+        alt="activity-icon"
+        class="emoji">
+    </p>
 </div>
 <div class="bank-details">
     <h4 class="centered">{{ .Params.bankDetailsTitle }}</h4>

@@ -59,3 +59,9 @@ h4 {
     border-radius: 0.5rem;
     height: 15rem;
 }
+
+.emoji {
+    width: 1.7em;
+    height: 1.7em;
+    vertical-align: -0.4em;
+}
