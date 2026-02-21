@@ -1,0 +1,20 @@
+<svg id='Location_Pin_24' width='24' height='24' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'><rect width='24' height='24' stroke='none' fill='#000000' opacity='0'/>
+
+
+<g transform="matrix(0.2 0 0 0.2 12 12)" >
+<g style="" >
+<g transform="matrix(1 0 0 1 2 2)" >
+<path style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 0.35;" transform=" translate(-52, -52)" d="M 52 96 C 50.264 96 48.632 95.324 47.403999999999996 94.096 C 44.26499999999999 90.956 16.744999999999997 62.812000000000005 16.776999999999997 41.618 C 16.807 21.509 35.014 8 52 8 C 68.98400000000001 8 87.191 21.509 87.22399999999999 41.618 C 87.25699999999999 62.859 59.731999999999985 90.965 56.593999999999994 94.099 C 55.362 95.326 53.732 96 52 96 z" stroke-linecap="round" />
+</g>
+<g transform="matrix(1 0 0 1 0 0)" >
+<path style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(242,242,242); fill-rule: nonzero; opacity: 1;" transform=" translate(-50, -50)" d="M 50 94 C 48.264 94 46.632 93.324 45.403999999999996 92.096 C 42.26499999999999 88.956 14.744999999999997 60.812000000000005 14.776999999999997 39.618 C 14.807 19.509 33.014 6 50 6 C 66.98400000000001 6 85.191 19.509 85.22399999999999 39.618 C 85.25699999999999 60.859 57.731999999999985 88.965 54.593999999999994 92.099 C 53.362 93.326 51.732 94 50 94 z" stroke-linecap="round" />
+</g>
+<g transform="matrix(1 0 0 1 0 0)" >
+<path style="stroke: rgb(64,57,110); stroke-width: 3; stroke-dasharray: none; stroke-linecap: round; stroke-dashoffset: 0; stroke-linejoin: round; stroke-miterlimit: 10; fill: rgb(244,102,92); fill-rule: nonzero; opacity: 1;" transform=" translate(-50, -50)" d="M 50 12.5 C 35.957 12.5 21.301 23.651 21.277 39.628 C 21.248 58.746 50 87.5 50 87.5 C 50 87.5 78.754 58.786 78.723 39.628 C 78.698 23.675 64.043 12.5 50 12.5 z" stroke-linecap="round" />
+</g>
+<g transform="matrix(1 0 0 1 0 -9.85)" >
+<circle style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(242,242,242); fill-rule: nonzero; opacity: 1;" cx="0" cy="0" r="13.147" />
+</g>
+</g>
+</g>
+</svg>

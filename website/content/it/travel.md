@@ -34,29 +34,35 @@ activities: Attrazioni e Attività nei Dintorni
 activitiesInfo: |
     Se avete in programma di fermarvi qualche giorno in più, la zona vicino alla location del matrimonio offre un meraviglioso mix di natura, relax al mare e affascinanti borghi storici. Ecco alcuni dei nostri suggerimenti:
 activityList:
-  - title: 🌿 Giardino di Ninfa
+  - title: Giardino di Ninfa
     url: https://www.giardinodininfa.eu/
-    description: |
+    icon: |
         Uno splendido giardino romantico costruito tra le rovine di un borgo medievale. Spesso descritto come uno dei giardini più belli del mondo.
-  - title: 🏞️ Parco Nazionale del Circeo
+    identifier: ninfa
+  - title: Parco Nazionale del Circeo
     url: https://www.parcocirceo.it/index.php
-    description: |
+    icon: |
         Un magnifico parco nazionale con paesaggi costieri, foreste, dune di sabbia e sentieri immersi nella natura.
-  - title: 🏖️ Sabaudia
+    identifier: circeo
+  - title: Sabaudia
     url: https://www.visitlazio.com/sabaudia/
-    description: |
+    icon: |
         Un’incantevole cittadina di mare con lunghe spiagge sabbiose lungo la costa tirrenica, perfetta per una giornata di relax al mare.
-  - title: 🏝 Ponza
+    identifier: sabaudia
+  - title: Ponza
     url: https://www.visitponza.it/
-    description: |
+    icon: |
         Un’isola pittoresca raggiungibile in traghetto, famosa per le sue acque cristalline e le spettacolari scogliere.
-  - title: 🏰 Sermoneta
+    identifier: ponza
+  - title: Sermoneta
     url: https://www.visitlazio.com/sermoneta/
-    description: |
+    icon: |
         Un bellissimo borgo medievale arroccato su una collina, con vicoli suggestivi e l’imponente Castello Caetani.
-  - title: 🌾 Lago di Fogliano
+    identifier: sermoneta
+  - title: Lago di Fogliano
     url: https://www.visitlazio.com/lago-di-fogliano-a-latina/
-    description: |
+    icon: |
         Un tranquillo lago costiero immerso nella natura, ideale per il birdwatching, passeggiate rilassanti o per godersi un momento di pace vicino all’acqua.
+    identifier: fogliano
 contact: Se avete bisogno di aiuto per organizzare il vostro viaggio, non esitate a
 ---

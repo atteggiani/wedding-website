@@ -96,3 +96,8 @@ section a {
     width: 80%;
     margin-bottom: 1em;
 }
+
+.emoji {
+    width: 1.1em;
+    height: 1.1em;
+}

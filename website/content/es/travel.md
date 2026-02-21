@@ -34,29 +34,35 @@ activities: Atracciones y Actividades en la Zona
 activitiesInfo: |
     Si están pensando en quedarse unos días más, la zona cercana al lugar de la boda ofrece una maravillosa combinación de naturaleza, descanso junto al mar y encantadores pueblos históricos. Aquí les dejamos algunas de nuestras recomendaciones:
 activityList:
-  - title: 🌿 Giardino di Ninfa
+  - title: Giardino di Ninfa
     url: https://www.giardinodininfa.eu/en-en
-    description: |
+    icon: |
         Un impresionante jardín romántico construido entre las ruinas de un pueblo medieval. A menudo es considerado uno de los jardines más hermosos del mundo.
-  - title: 🏞️ Parco Nazionale del Circeo
+    identifier: ninfa
+  - title: Parco Nazionale del Circeo
     url: https://www.parcocirceo.it/Eindex.php
-    description: |
+    icon: |
         Un hermoso parque nacional que ofrece paisajes costeros, bosques, dunas de arena y senderos para caminar.
-  - title: 🏖️ Sabaudia
+    identifier: circeo
+  - title: Sabaudia
     url: https://wheretogoin.net/seaside-town-beaches-near-rome-sabaudia-weekend/
-    description: |
+    icon: |
         Un encantador pueblo costero con largas playas de arena a lo largo de la costa del mar Tirreno, perfecto para un día de descanso junto al mar.
-  - title: 🏝 Ponza
+    identifier: sabaudia
+  - title: Ponza
     url: https://www.visitponza.it/en/
-    description: |
+    icon: |
         Una isla pintoresca accesible en ferry, famosa por sus aguas cristalinas y sus impresionantes acantilados.
-  - title: 🏰 Sermoneta
+    identifier: ponza
+  - title: Sermoneta
     url: https://www.visitlazio.com/en/sermoneta/
-    description: |
+    icon: |
         Un hermoso pueblo medieval en lo alto de una colina, con calles estrechas y el impresionante Castello Caetani.
-  - title: 🌾 Lago di Fogliano
+    identifier: sermoneta
+  - title: Lago di Fogliano
     url: https://www.europeanheritagetimes.eu/2019/04/14/fogliano-a-lake-on-the-sea/
-    description: |
+    icon: |
         Un tranquilo lago costero rodeado de naturaleza, ideal para observar aves, dar paseos relajantes o disfrutar de un momento de tranquilidad junto al agua.
+    identifier: fogliano
 contact: Si necesitas ayuda para organizar tu viaje, ¡no dudes en
 ---

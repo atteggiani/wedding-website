@@ -2,16 +2,35 @@
 <div class="section centered">
     <h2 id="venue-title">{{ .Site.Params.location }}</h2>
     <div class="venue-info">
-        <div class="info">📅 {{ i18n "global.fullDate" }}, {{ i18n "global.time" }}</div>
         <div class="info">
-            <a id="get-there" href="{{ relLangURL "travel" }}">📍</a> {{ i18n "global.address" }}
+            <img 
+            src="{{ relURL "assets/emojis/calendar.svg" }}" 
+            alt="calendar-icon"
+            class="emoji">
+            {{ i18n "global.fullDate" }}, {{ i18n "global.time" }}
+        </div>
+        <div class="info">
+            <a id="get-there" href="{{ relLangURL "travel" }}">
+                <img 
+                src="{{ relURL "assets/emojis/location.svg" }}" 
+                alt="location-icon"
+                class="emoji">
+            </a> {{ i18n "global.address" }}
         </div>
         <div class="info-text">
             {{ .Params.info | markdownify }}
         </div>
     </div>
     <div id="dress-code">
-        <h3>👗 {{ .Params.dressCode }} 👔</h3>
+        <h3>
+            <img 
+            src="{{ relURL "assets/emojis/dress.svg" }}" 
+            alt="dress-icon"
+            class="emoji">{{ .Params.dressCode }}<img 
+            src="{{ relURL "assets/emojis/suit.svg" }}" 
+            alt="suit-icon"
+            class="emoji">
+        </h3>
         <div class="info-text"> {{ .Params.dressCodeInfo | markdownify }}</div>
     </div>
     <div class="venue-gallery">

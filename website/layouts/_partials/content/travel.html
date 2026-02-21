@@ -52,7 +52,12 @@
                 href="{{ .url }}" 
                 target="_blank" rel="noopener" class="activity-item"
                 >
-                    <h4 class="activity-title">{{ .title }}</h4>
+                    <h4 class="activity-title">
+                        <img 
+                        src="{{ printf "assets/emojis/activities/%s.svg" .icon | relURL }}" 
+                        alt="activity-icon"
+                        class="emoji">{{ .title | markdownify }}
+                    </h4>
                     <p class="activity-description">
                         {{ .description }}
                     </p>
