@@ -29,6 +29,19 @@
     margin-left: 4rem;
 }
 
+.emoji {
+    width: 1.5em;
+    height: 1.5em;
+    vertical-align: -0.4em;
+}
+
+.emoji.whatsapp-icon {
+    width: 2em;
+    height: 2em;
+    vertical-align: -0.6em;
+}
+
+
 .faq-question::before {
     content: "−";
     display: inline-block;
@@ -73,11 +86,6 @@
 
 .contacts-info > ::nth-child(3) {
     flex-basis: 100%;
-}
-
-.whatsapp-icon {
-    width: 1.4em;
-    height: auto;
 }
 
 .plusone-icon {
