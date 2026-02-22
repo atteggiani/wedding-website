@@ -1,5 +1,5 @@
 :root {
-    --primary-color: #007bff;
+  --primary-color: var(--color-blue-600);
 }
 
 .background-image {
