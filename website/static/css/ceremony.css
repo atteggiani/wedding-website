@@ -39,3 +39,16 @@
 #get-there {
     text-decoration: none;
 }
+
+.emoji {
+    width: 1.5em;
+    height: 1.5em;
+}
+
+.info,
+#dress-code > h3 {
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+    justify-content: center;
+}

@@ -7,9 +7,9 @@ howToGetThereQuestion: Come posso raggiungere la location del matrimonio?
 howToGetThereAnswer1: |
     Raggiungere <strong>Torre Ubaldo</strong> è piuttosto semplice, anche senza auto! Per tutti i dettagli, consultate la pagina
 howToGetThereAnswer2: |
-    Per chi non ha l’auto, il rientro dopo la festa potrebbe essere un po’ più complicato — sarà tardi e i taxi potrebbero non essere disponibili (siamo pur sempre in Italia!). Ma niente paura! Molti invitati avranno la macchina e potranno offrire un passaggio verso <strong>Cisterna di Latina</strong> o <strong>Latina</strong>. Fate nuove amicizie al matrimonio e non siate timidi nel chiedere un passaggio! 😁
-
-    E se temete di rimanere a piedi, fatecelo sapere — faremo del nostro meglio per organizzarvi un passaggio, anche nel caso in cui non farete nuove amicizie 🤪
+    Per chi non ha l’auto, il rientro dopo la festa potrebbe essere un po’ più complicato — sarà tardi e i taxi potrebbero non essere disponibili (siamo pur sempre in Italia!). Ma niente paura! Molti invitati avranno la macchina e potranno offrire un passaggio verso <strong>Cisterna di Latina</strong> o <strong>Latina</strong>. Fate nuove amicizie al matrimonio e non siate timidi nel chiedere un passaggio!
+howToGetThereAnswer3: |
+    E se temete di rimanere a piedi, fatecelo sapere — faremo del nostro meglio per organizzarvi un passaggio, anche nel caso in cui non farete nuove amicizie!
 parkingQuestion: È disponibile il parcheggio presso la location?
 parkingAnswer: Sì, la location dispone di un ampio parcheggio gratuito all’interno.
 rsvpDeadlineQuestion: Qual è la scadenza per confermare la partecipazione?
@@ -43,7 +43,7 @@ visaAnswer: |
 emergencyContactQuestion: Se ho difficoltà a raggiungere la location il giorno del matrimonio, chi posso contattare?
 emergencyContactAnswer: |
     Il giorno del matrimonio saremo impegnati nei preparativi e probabilmente non controlleremo spesso il telefono!<br>
-    Se doveste avere problemi nel raggiungere la location, vi chiediamo di contattare la sorella di Davide, <strong>Ell</strong>, che sarà felice di aiutarvi! 😄
+    Se doveste avere problemi nel raggiungere la location, vi chiediamo di contattare la sorella di Davide, <strong>Ell</strong>, che sarà felice di aiutarvi!
 plusOneQuestion: Posso portare un invitato aggiuntivo?
 plusOneAnswer1: Se la vostra partecipazione include un invitato aggiuntivo, troverete l’opzione per inserire i suoi dati nella pagina di
 plusOneAnswer2: "La sezione dedicata è indicata dall’icona:"

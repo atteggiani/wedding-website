@@ -7,9 +7,9 @@ howToGetThereQuestion: How can I get to the wedding venue?
 howToGetThereAnswer1: |
     Getting to <strong>Torre Ubaldo</strong> is pretty simple, even without a car! For all the details, check the
 howToGetThereAnswer2: |
-    For those without a car, getting back after the celebration might be a bit trickier - it’s going to be late, and taxis might not be available (it's Italy after all!). But don’t worry! Many guests will have cars and can easily give lifts to <strong>Cisterna di Latina</strong> or <strong>Latina</strong>. So make some new friends at the wedding and don’t be shy to ask for a ride! 😁
-
-    And if you’re worried about ending up stranded, let us know - we’ll do our best to organize a lift, even if you don’t make any new friends 🤪
+    For those without a car, getting back after the celebration might be a bit trickier - it’s going to be late, and taxis might not be available (it's Italy after all!). But don’t worry! Many guests will have cars and can easily give lifts to <strong>Cisterna di Latina</strong> or <strong>Latina</strong>. So make some new friends at the wedding and don’t be shy to ask for a ride!
+howToGetThereAnswer3: |
+    And if you’re worried about ending up stranded, let us know - we’ll do our best to organize a lift, even if you don’t make any new friends!
 parkingQuestion: Is parking available at the venue?
 parkingAnswer: Yes, there is plenty of free parking inside the venue.
 rsvpDeadlineQuestion: What is the deadline for the RSVP?
@@ -43,7 +43,7 @@ visaAnswer: |
 emergencyContactQuestion: If I have trouble getting to the venue on the day of the wedding, who should I contact?
 emergencyContactAnswer: |
     On the wedding day, we’ll be in the middle of the preparations and probably not checking our phones very often!<br>
-    If you run into any issues getting to the venue, please reach out to Davide’s sibling, <strong>Ell</strong>, who will be happy to help! 😄
+    If you run into any issues getting to the venue, please reach out to Davide’s sibling, <strong>Ell</strong>, who will be happy to help!
 plusOneQuestion: Can I bring a plus-one?
 plusOneAnswer1: If your invitation includes a plus-one, you’ll see the option to complete their RSVP details in the
 plusOneAnswer2: "Their section is indicated by the icon:"

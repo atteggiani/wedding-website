@@ -36,29 +36,35 @@ activities: Local Attractions & Activities
 activitiesInfo: |
     If you’re planning to spend a few extra days in the area, the region near the wedding venue offers a wonderful mix of nature, seaside relaxation, and charming historic villages. Here are some of our recommendations:
 activityList:
-  - title: 🌿 Giardino di Ninfa
+  - title: Giardino di Ninfa
     url: https://www.giardinodininfa.eu/en-en
     description: |
         A stunning romantic garden built among the ruins of a medieval town. Often described as one of the most beautiful gardens in the world.
-  - title: 🏞️ Parco Nazionale del Circeo
+    icon: ninfa
+  - title: Parco Nazionale del Circeo
     url: https://www.parcocirceo.it/Eindex.php
     description: |
         A beautiful national park offering coastal scenery, forests, sand dunes, and walking trails.
-  - title: 🏖️ Sabaudia
+    icon: circeo
+  - title: Sabaudia
     url: https://wheretogoin.net/seaside-town-beaches-near-rome-sabaudia-weekend/
     description: |
         A charming seaside town with long sandy beaches along the Tyrrhenian coast, perfect for a relaxing day by the sea.
-  - title: 🏝 Ponza
+    icon: sabaudia
+  - title: Ponza
     url: https://www.visitponza.it/en/
     description: |
         A picturesque island accessible by ferry, famous for its crystal-clear waters and dramatic cliffs.
-  - title: 🏰 Sermoneta
+    icon: ponza
+  - title: Sermoneta
     url: https://www.visitlazio.com/en/sermoneta/
     description: |
         A beautiful medieval hilltop village with narrow streets and the impressive Castello Caetani.
-  - title: 🌾 Lago di Fogliano
+    icon: sermoneta
+  - title: Lago di Fogliano
     url: https://www.europeanheritagetimes.eu/2019/04/14/fogliano-a-lake-on-the-sea/
     description: |
         A peaceful coastal lake surrounded by lush nature, ideal for birdwatching, relaxing walks, or enjoying a quiet moment by the water.
+    icon: fogliano
 contact: If you need any help planning your journey, please don’t hesitate to
 ---

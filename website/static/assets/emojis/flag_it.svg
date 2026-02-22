@@ -1,0 +1,17 @@
+<svg id='Italy_24' width='24' height='24' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'><rect width='24' height='24' stroke='none' fill='#000000' opacity='0'/>
+
+
+<g transform="matrix(0.42 0 0 0.42 12 12)" >
+<g style="" >
+<g transform="matrix(1 0 0 1 0 0)" >
+<path style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(236,239,241); fill-rule: nonzero; opacity: 1;" transform=" translate(-24, -24)" d="M 16 9 L 32 9 L 32 39 L 16 39 z" stroke-linecap="round" />
+</g>
+<g transform="matrix(1 0 0 1 15 0)" >
+<path style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(255,61,0); fill-rule: nonzero; opacity: 1;" transform=" translate(-39, -24)" d="M 32 9 L 46 9 L 46 39 L 32 39 z" stroke-linecap="round" />
+</g>
+<g transform="matrix(1 0 0 1 -15 0)" >
+<path style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(104,159,56); fill-rule: nonzero; opacity: 1;" transform=" translate(-9, -24)" d="M 2 9 L 16 9 L 16 39 L 2 39 z" stroke-linecap="round" />
+</g>
+</g>
+</g>
+</svg>

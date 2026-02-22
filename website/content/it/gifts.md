@@ -1,13 +1,13 @@
 ---
 customLayout: gifts
-mainText: |
+mainText1: |
     Non abbiamo una lista di nozze tradizionale.<br>
     Sappiamo che per alcuni di voi raggiungere l'Italia per il nostro matrimonio è un viaggio importante, ed è per questo che la vostra presenza alla nostra festa è davvero il regalo più grande per noi!
     
-    Se però vi va di contribuire a rendere ancora più speciale la nostra luna di miele in Messico 🇲🇽 🌮 🌴 (prevista per il 2027), potete farlo tramite bonifico bancario, Wise or PayPal.<br>
+    Se però vi va di contribuire a rendere ancora più speciale la nostra luna di miele in Messico (prevista per il 2027), potete farlo tramite bonifico bancario, Wise or PayPal.<br>
     Trovate tutti i dettagli qui sotto.
-    
-    Grazie di cuore a chi vorrà accompagnarci anche in questa avventura! ❤️
+mainText2:
+    Grazie di cuore a chi vorrà accompagnarci anche in questa avventura!
 bankDetailsTitle: Dettagli per il contributo
 bankTransfer: Bonifico bancario
 accountName: "Intestatario:"

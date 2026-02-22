@@ -23,7 +23,18 @@
             <p>
                 {{ .Params.howToGetThereAnswer1 | markdownify }} <a href="{{ relLangURL "travel#travel" }}">{{ i18n "menu.travel" }}</a>{{ .Params.page }}.
             </p>
-            {{ .Params.howToGetThereAnswer2 | markdownify }}
+            <p>
+                {{ .Params.howToGetThereAnswer2 | markdownify }}<img
+                src="{{ relURL "assets/emojis/smile.svg" }}"
+                alt="smile-icon"
+                class="emoji">
+            </p>
+            <p>
+                {{ .Params.howToGetThereAnswer3 }}<img
+                src="{{ relURL "assets/emojis/tongue.svg" }}"
+                alt="tongue-icon"
+                class="emoji">
+            </p>
         </div>
     </div>
 </div>
@@ -133,10 +144,17 @@
     <div class="collapse" id="emergencycontact">
         <div class="faq-answer">
             <p>{{ .Params.emergencyContactAnswer | markdownify }}</p>
-            <img 
-            src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" 
-            alt="Whatsapp" class="whatsapp-icon">
-            📞 <strong>Ell:</strong> +393334331390
+            <p>
+                <img
+                src="{{ relURL "assets/emojis/phone.svg" }}"
+                alt="phone-icon"
+                class="emoji">
+                <img
+                src="{{ relURL "assets/emojis/whatsapp.svg" }}"
+                alt="whatsapp-icon"
+                class="emoji whatsapp-icon">
+                <strong>Ell:</strong> +393334331390
+            </p>
         </div>
     </div>
 </div>
@@ -162,13 +180,33 @@
     <h4>{{ .Params.contactsSubtitle }}</h4>
     <div class="contacts-info">
         <p>
-            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="Whatsapp" class="whatsapp-icon">
-            📞 +61433995492 (<strong>Davide</strong>)
+            <img
+            src="{{ relURL "assets/emojis/phone.svg" }}"
+            alt="phone-icon"
+            class="emoji">
+            <img
+            src="{{ relURL "assets/emojis/whatsapp.svg" }}"
+            alt="whatsapp-icon"
+            class="emoji whatsapp-icon">
+            +61433995492 (<strong>Davide</strong>)
         </p>
         <p>
-            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="Whatsapp" class="whatsapp-icon">
-            📞 +61468586558 (<strong>Jen</strong>)
+            <img
+            src="{{ relURL "assets/emojis/phone.svg" }}"
+            alt="phone-icon"
+            class="emoji">
+            <img
+            src="{{ relURL "assets/emojis/whatsapp.svg" }}"
+            alt="whatsapp-icon"
+            class="emoji whatsapp-icon">
+            +61468586558 (<strong>Jen</strong>)
         </p>
-        <p>✉️ davideandjennifer@gmail.com</p>
+        <p>
+            <img
+            src="{{ relURL "assets/emojis/email.svg" }}"
+            alt="email-icon"
+            class="emoji">
+            davideandjennifer@gmail.com
+        </p>
     </div>
 </div>

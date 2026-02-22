@@ -7,9 +7,9 @@ howToGetThereQuestion: ¿Cómo puedo llegar al lugar de la boda?
 howToGetThereAnswer1: |
     Llegar a <strong>Torre Ubaldo</strong> es bastante sencillo, ¡incluso sin carro! Para todos los detalles, revisen la página
 howToGetThereAnswer2: |
-    Si no tienen carro, el regreso después de la fiesta podria ser un poco más complicado — será tarde y es posible que no haya taxis disponibles (¡al fin y al cabo estamos en Italia!). Pero tranquilos 😊 Muchos invitados tendrán carro y podrán dar un aventón hacia <strong>Cisterna di Latina</strong> o <strong>Latina</strong>. ¡Hagan nuevos amigos en la boda y no les dé pena pedir un aventón! 😁
-    
-    Y si les preocupa quedarse sin transporte, avísennos — haremos todo lo posible por ayudarles a organizar un aventón, incluso si no hacen nuevos amigos 🤪
+    Si no tienen carro, el regreso después de la fiesta podria ser un poco más complicado — será tarde y es posible que no haya taxis disponibles (¡al fin y al cabo estamos en Italia!). ¡Pero tranquilos! Muchos invitados tendrán carro y podrán dar un aventón hacia <strong>Cisterna di Latina</strong> o <strong>Latina</strong>. ¡Hagan nuevos amigos en la boda y no les dé pena pedir un aventón!
+howToGetThereAnswer3: |
+    Y si les preocupa quedarse sin transporte, avísennos — haremos todo lo posible por ayudarles a organizar un aventón, ¡incluso si no hacen nuevos amigos!
 parkingQuestion: ¿Hay estacionamiento en el lugar?
 parkingAnswer: Sí, el lugar cuenta con amplio estacionamiento gratuito dentro de sus instalaciones.
 rsvpDeadlineQuestion: ¿Cuál es la fecha límite para confirmar asistencia?
@@ -43,7 +43,7 @@ visaAnswer: |
 emergencyContactQuestion: Si tengo dificultades para llegar al lugar el día de la boda, ¿a quién puedo contactar?
 emergencyContactAnswer: |
     El día de la boda estaremos ocupados con los preparativos y probablemente no estaremos revisando mucho el celular.<br>
-    Si tienen algún problema para llegar al lugar, por favor contacten a la hermana de Davide, <strong>Ell</strong>, quien estará feliz de ayudarles 😄
+    Si tienen algún problema para llegar al lugar, por favor contacten a la hermana de Davide, <strong>Ell</strong>, !quien estará feliz de ayudarles!
 plusOneQuestion: ¿Puedo llevar un invitado adicional?
 plusOneAnswer1: Si su invitación incluye un invitado adicional, encontrarán la opción para ingresar sus datos en la página de
 plusOneAnswer2: "La sección correspondiente está indicada con el ícono:"
