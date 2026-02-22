@@ -36,33 +36,33 @@ activitiesInfo: |
 activityList:
   - title: Giardino di Ninfa
     url: https://www.giardinodininfa.eu/
-    icon: |
+    description: |
         Uno splendido giardino romantico costruito tra le rovine di un borgo medievale. Spesso descritto come uno dei giardini più belli del mondo.
-    identifier: ninfa
+    icon: ninfa
   - title: Parco Nazionale del Circeo
     url: https://www.parcocirceo.it/index.php
-    icon: |
+    description: |
         Un magnifico parco nazionale con paesaggi costieri, foreste, dune di sabbia e sentieri immersi nella natura.
-    identifier: circeo
+    icon: circeo
   - title: Sabaudia
     url: https://www.visitlazio.com/sabaudia/
-    icon: |
+    description: |
         Un’incantevole cittadina di mare con lunghe spiagge sabbiose lungo la costa tirrenica, perfetta per una giornata di relax al mare.
-    identifier: sabaudia
+    icon: sabaudia
   - title: Ponza
     url: https://www.visitponza.it/
-    icon: |
+    description: |
         Un’isola pittoresca raggiungibile in traghetto, famosa per le sue acque cristalline e le spettacolari scogliere.
-    identifier: ponza
+    icon: ponza
   - title: Sermoneta
     url: https://www.visitlazio.com/sermoneta/
-    icon: |
+    description: |
         Un bellissimo borgo medievale arroccato su una collina, con vicoli suggestivi e l’imponente Castello Caetani.
-    identifier: sermoneta
+    icon: sermoneta
   - title: Lago di Fogliano
     url: https://www.visitlazio.com/lago-di-fogliano-a-latina/
-    icon: |
+    description: |
         Un tranquillo lago costiero immerso nella natura, ideale per il birdwatching, passeggiate rilassanti o per godersi un momento di pace vicino all’acqua.
-    identifier: fogliano
+    icon: fogliano
 contact: Se avete bisogno di aiuto per organizzare il vostro viaggio, non esitate a
 ---
