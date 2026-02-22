@@ -36,33 +36,33 @@ activitiesInfo: |
 activityList:
   - title: Giardino di Ninfa
     url: https://www.giardinodininfa.eu/en-en
-    icon: |
+    description: |
         Un impresionante jardín romántico construido entre las ruinas de un pueblo medieval. A menudo es considerado uno de los jardines más hermosos del mundo.
-    identifier: ninfa
+    icon: ninfa
   - title: Parco Nazionale del Circeo
     url: https://www.parcocirceo.it/Eindex.php
-    icon: |
+    description: |
         Un hermoso parque nacional que ofrece paisajes costeros, bosques, dunas de arena y senderos para caminar.
-    identifier: circeo
+    icon: circeo
   - title: Sabaudia
     url: https://wheretogoin.net/seaside-town-beaches-near-rome-sabaudia-weekend/
-    icon: |
+    description: |
         Un encantador pueblo costero con largas playas de arena a lo largo de la costa del mar Tirreno, perfecto para un día de descanso junto al mar.
-    identifier: sabaudia
+    icon: sabaudia
   - title: Ponza
     url: https://www.visitponza.it/en/
-    icon: |
+    description: |
         Una isla pintoresca accesible en ferry, famosa por sus aguas cristalinas y sus impresionantes acantilados.
-    identifier: ponza
+    icon: ponza
   - title: Sermoneta
     url: https://www.visitlazio.com/en/sermoneta/
-    icon: |
+    description: |
         Un hermoso pueblo medieval en lo alto de una colina, con calles estrechas y el impresionante Castello Caetani.
-    identifier: sermoneta
+    icon: sermoneta
   - title: Lago di Fogliano
     url: https://www.europeanheritagetimes.eu/2019/04/14/fogliano-a-lake-on-the-sea/
-    icon: |
+    description: |
         Un tranquilo lago costero rodeado de naturaleza, ideal para observar aves, dar paseos relajantes o disfrutar de un momento de tranquilidad junto al agua.
-    identifier: fogliano
+    icon: fogliano
 contact: Si necesitas ayuda para organizar tu viaje, ¡no dudes en
 ---
