@@ -1,11 +1,11 @@
 .status-text {
-    color: rgb(204, 0, 0);
+    color: var(--color-red);
     margin-top: 1rem;
     min-height: 2em;
     font-weight: 500;
 }
 .status-text.success {
-    color: rgb(0, 153, 0);
+    color: var(--color-green);
     margin-top: 1rem;
     min-height: 2em;
 }
@@ -13,7 +13,6 @@
 #page-loader {
   position: relative;
   inset: 0;
-  background: white;
   z-index: 9999;
   display: flex;
   align-items: center;
@@ -68,14 +67,14 @@ input[id^="dietary-requirements-"]:disabled,
 .card-corner-icon > img {
     width: 2.3em;
 }
-.form-check-input:focus {
-  box-shadow: 0 0 0 0.15rem rgba(13, 110, 253, 0.25); /* thinner */
+.form-check-input:focus,
+.form-control:focus {
+  box-shadow: 0 0 0 0.15em color-mix(in srgb, var(--heading-color) 100%, transparent 60%);
 }
 
 .loader-inner .spinner-border {
     width: 3em;
     height: 3em;
-    /* color: blueviolet; */
 }
 
 h5 {
@@ -87,4 +86,14 @@ h5 {
 }
 .form-label > span {
     font-size: 0.8em;
+}
+
+.card,
+.form-control {
+    border: solid 1px var(--border-color);
+}
+
+.form-check-input:checked {
+    background-color: var(--color-green);
+    border-color: var(--color-green);
 }

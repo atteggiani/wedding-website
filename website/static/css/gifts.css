@@ -9,12 +9,14 @@ h4 {
 .bank-details {
     border-radius: 1rem;
     padding: 1rem;
-    background: #e8e8e8;
+    background-color: var(--color-white);
+    border: solid 1px var(--border-color);
 }
 
 .bank-method .title {
     font-size: 1.3em;
     margin-bottom: 1em;
+    color: var(--heading-color);
 }
 
 .bank-details-container{

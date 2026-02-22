@@ -11,6 +11,6 @@ mainText2: |
 bankDetailsTitle: Contribution Details
 bankTransfer: Bank Transfer
 accountName: "Account Name:"
-accountNnumber: "Account Number:"
+accountNumber: "Account Number:"
 nonAustralianBanks: (non-Australian banks)
 ---
