@@ -1,7 +1,3 @@
-:root {
-  --primary-color: var(--color-blue-600);
-}
-
 .background-image {
     position: fixed;
     top: 0;

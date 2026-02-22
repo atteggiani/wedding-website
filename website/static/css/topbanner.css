@@ -8,8 +8,17 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   box-sizing: border-box;
   position: sticky;
-  background: var(--color-white);
+  background: var(--color-green);
   z-index: 100;
+}
+
+.top-banner a {
+    text-decoration: none;
+    color: var(--color-white);
+    transition: color 0.2s ease;
+}
+.top-banner a:hover {
+    opacity: 85%;
 }
 
 /* LEFT MENU */
@@ -27,13 +36,7 @@
 }
 
 .banner-menu a {
-  text-decoration: none;
   font-weight: 500;
-  color: var(--color-text);
-}
-
-.banner-menu a:hover {
-  color: var(--link-hover-color);
 }
 
 /* TITLE */
@@ -41,11 +44,6 @@
   font-size: 1.7rem;
   font-weight: 600;
   letter-spacing: 0.5px;
-  color: var(--heading-color);
-}
-.banner-title a {
-  text-decoration: none;
-  color: inherit;
 }
 
 /* RIGHT ACTIONS */
@@ -64,6 +62,7 @@
 
 .language-switcher .dropdown-menu {
     min-width: auto;
+    background-color: var(--color-bg);
 }
 
 .language-switcher > .dropdown,
@@ -88,20 +87,6 @@
     display: flex;
     align-items: center;
     gap: 0.1rem;
-}
-
-.language-switcher .btn-secondary {
-  background: var(--button-bg);
-  border-color: var(--button-bg);
-  color: var(--button-text);
-}
-
-.language-switcher .btn-secondary:hover,
-.language-switcher .btn-secondary:focus,
-.language-switcher .btn-secondary:active {
-  background: var(--button-hover-bg);
-  border-color: var(--button-hover-bg);
-  color: var(--button-text);
 }
 
 .language-switcher .dropdown-item {

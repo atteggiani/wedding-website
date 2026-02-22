@@ -12,12 +12,12 @@
     <div id="password-input" class="d-none">
         <label class="form-label">{{ .Params.passwordLabel | markdownify }}</label>
         <input type="text" id="rsvp-password" class="form-control mb-3" value="FZF5UU">
-        <button class="btn btn-primary" id="load-rsvp">{{ i18n "rsvp.continue" }}</button>
+        <button class="button" id="load-rsvp">{{ i18n "rsvp.continue" }}</button>
         <div class="status-text"></div>
     </div>
     <form id="rsvp-form" class="d-none">
         <div id="guests-container"></div>
-        <button type="submit" class="btn btn-success mt-4" id="submit-rsvp">{{ i18n "rsvp.submit" }}</button>
+        <button type="submit" class="button mt-4" id="submit-rsvp">{{ i18n "rsvp.submit" }}</button>
         <div class="status-text"></div>
     </form>
 </div>

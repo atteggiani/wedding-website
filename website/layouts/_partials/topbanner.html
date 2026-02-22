@@ -25,7 +25,7 @@
         {{ $currentLang := .Site.Language.Lang }}
         <div class="dropdown">
             <button 
-            class="btn btn-secondary dropdown-toggle" 
+            class="button dropdown-toggle" 
             type="button" id="langDropdown" 
             data-bs-toggle="dropdown" aria-expanded="false">
                 <img 
@@ -55,7 +55,7 @@
     </div>
     <!-- RSVP button -->
     <div class="rsvp-button">
-        <a href="{{ relLangURL "rsvp" }}" class="rsvp-btn">
+        <a href="{{ relLangURL "rsvp" }}" class="button">
             {{ i18n "global.rsvp" }}
         </a>
     </div>
