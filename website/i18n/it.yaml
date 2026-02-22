@@ -23,7 +23,7 @@ rsvp:
     Si è verificato un errore durante il recupero dei dati associati all'ospite '{rsvpPassword}'! 
     Per favore riprova. Se l'errore persiste, <a href="/it/faq#contacts">contattaci</a>!
   error_name_not_empty: "Il campo nome non può essere vuoto."
-  error_no_only_extra_attend: "I +1 e i bambini non possono partecipare a meno che un ospite principale non partecipi."
+  error_no_only_extra_attend: "I +1 e i bambini non possono partecipare se non è presente anche un ospite principale."
   error_update_limit: "Limite di aggiornamenti raggiunto. Per favore riprova tra {eta} min."
   error_submission: |
     Si è verificato un errore durante il salvataggio della tua conferma. Per favore riprova. 

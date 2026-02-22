@@ -38,7 +38,7 @@ section.main-section {
 }
 
 .info-box {
-    color: white;
+    color: var(--color-white);
     display: flex;
     flex-direction: column;
     align-items: center;

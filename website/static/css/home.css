@@ -10,10 +10,28 @@
 }
 
 .language-buttons {
-  position: relative;
-  margin: 0.5em auto;
-  top: 5vh;
-  justify-content: space-around;
-  align-items: center;
-  width: 80vw;
+    position: relative;
+    top: 5vh;
+    margin: 0.5em auto;
+    width: 80vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+
+.language-buttons > .button {
+    font-size: 2em;
+    background-color: var(--color-green);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    gap: 0.2em ;
+}
+
+.language-buttons .emoji {
+    width: 1.5em;
+    height: 1.5em;
 }

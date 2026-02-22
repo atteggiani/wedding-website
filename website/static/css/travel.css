@@ -1,13 +1,11 @@
 .section {
     margin: 3rem 0;
+    padding-top: 1rem;
 }
 
 .subsection {
     font-size: 1.3em;
     padding: 2rem;
-    margin-bottom: 2rem;
-    border-radius: 12px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
 }
 
 .subsection-title {
@@ -20,6 +18,7 @@
 
 .subsection-title img {
   width: 1.2em;
+  filter: var(--filter-black-to-green);
 }
 
 #maps-preview {
@@ -42,7 +41,7 @@
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
     transition: all 0.3s ease;
-    border-left: 4px solid #d4af37;
+    border-left: 4px solid var(--color-green);
     cursor: pointer;
 }
 
@@ -53,7 +52,6 @@
 .activity-title {
     font-size: 1.3rem;
     font-weight: 600;
-    color: var(--color-text);
     margin: 0 0 0.75rem 0;
     display: flex;
     align-items: center;
@@ -63,7 +61,7 @@
 .activity-description {
     font-size: 1rem;
     line-height: 1.6;
-    color: #666;
+    color: var(--color-text);
     margin: 0;
 }
 

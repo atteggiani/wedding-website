@@ -11,7 +11,7 @@ mainText2:
 bankDetailsTitle: Dettagli per il contributo
 bankTransfer: Bonifico bancario
 accountName: "Intestatario:"
-accountNnumber: "Numero di conto:"
+accountNumber: "Numero di conto:"
 nonAustralianBanks: (banche non australiane)
 ---
 

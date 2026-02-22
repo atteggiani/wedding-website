@@ -1,6 +1,6 @@
 .faq-item {
     margin-bottom: 1rem;
-    border: 1.5px solid #dbdbdb;
+    border: 1px solid var(--border-color);
     border-radius: 8px;
     overflow: hidden;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
@@ -21,6 +21,7 @@
     align-items: center;
     width: 100%;
     padding: 1rem;
+    color: var(--heading-color);
 }
 
 .faq-answer {
@@ -28,19 +29,6 @@
     padding: 0.5em 2em 1em 0;
     margin-left: 4rem;
 }
-
-.emoji {
-    width: 1.5em;
-    height: 1.5em;
-    vertical-align: -0.4em;
-}
-
-.emoji.whatsapp-icon {
-    width: 2em;
-    height: 2em;
-    vertical-align: -0.6em;
-}
-
 
 .faq-question::before {
     content: "−";
@@ -62,8 +50,6 @@
     align-items: center;
     padding: 1rem;
     margin-top: 3rem;
-    border-radius: 12px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
 }
 
 .contacts-info {
@@ -88,6 +74,22 @@
     flex-basis: 100%;
 }
 
+.whatsapp-icon {
+    width: 1.4em;
+    height: auto;
+}
+
 .plusone-icon {
     width: 1.5em;
+}
+
+.emoji {
+    width: 1.5em;
+    height: 1.5em;
+    vertical-align: -0.4em;
+}
+.whatsapp-icon {
+    width: 1.8em;
+    height: 1.8em;
+    vertical-align: -0.4em;
 }

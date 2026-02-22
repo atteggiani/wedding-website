@@ -12,7 +12,7 @@
     top: 0;
     bottom: 0;
     width: 6px;
-    background: #d9bfa7;
+    background-color: var(--color-green);
     transform: translateX(-50%);
 }
 
@@ -44,8 +44,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: white;
-    border: solid 4px #d9bfa7;
+    background-color: var(--color-white);
+    border: solid 4px var(--color-green);
     border-radius: 50%;
     z-index: 2;
     background-repeat: no-repeat;
@@ -70,7 +70,7 @@
 
 .event-date {
     font-size: 2rem;
-    color: #a07c5b;
+    color: var(--color-green);
     font-weight: 600;
     justify-content: flex-end;
 }
