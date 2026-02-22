@@ -10,8 +10,8 @@ const COOKIE_JWT = 'guest_jwt';
 const COOKIE_JWT_EXP = 'guest_jwt_exp';
 
 const cornerIcons = {
-  child: '/assets/child_icon.png',
-  plusone: '/assets/plusone.png',
+  child: 'child_icon.png',
+  plusone: 'plusone.png',
 };
 
 // =====================
@@ -189,10 +189,9 @@ async function getGuestJWT(rsvpPassword, supabaseClient) {
 // =====================
 
 function renderCornerIcon(type) {
-    if (!cornerIcons[type]) return '';
     return `
     <div class="card-corner-icon">
-      <img src="${cornerIcons[type]}" alt="${type}" class="${type}-icon"/>
+      <img src="{{ relURL "assets/${cornerIcons[type]}"}}" loading="lazy" alt="${type}" class="${type}-icon"/>
     </div>
   `;
 }
