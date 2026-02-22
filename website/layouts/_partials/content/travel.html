@@ -20,11 +20,18 @@
   </div>
 
   <div class="subsection">
-    <h3 class="subsection-title">
+    <h3 class="subsection-title" id="taxi-info">
         <img src="{{ relURL "assets/travel/car_icon.png" }}" alt="Car">
         {{ .Params.car }}
     </h3>
     {{ .Params.carInfo | markdownify }}
+    <p>
+        <img
+        src="{{ relURL "assets/emojis/phone.svg" }}"
+        alt="phone-icon"
+        class="emoji">
+        <strong>Latin Radio Taxi:</strong> +3907731881
+    </p>
     {{ .Site.Params.mapsPreview | markdownify }}
   </div>
 </div>

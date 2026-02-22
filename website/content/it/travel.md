@@ -10,19 +10,21 @@ planeInfo: |
     
     Da Roma Termini, prendete un treno regionale per <strong>Cisterna di Latina</strong>. I treni regionali sono frequenti e la durata del viaggio è di circa <strong>30 minuti</strong>. Il miglior modo per comprare il biglietto del treno è tramite il <a href="https://www.trenitalia.com/it.html" target="_blank" rel="noopener noreferrer">sito di Trenitalia</a>.
     
-    Dalla stazione dei treni di Cisterna di Latina, potete prendere un Uber o un Taxi fino a <strong><a href="https://maps.app.goo.gl/E1yVqkmkosNbQRTf7" target="_blank" rel="noopener noreferrer">Torre Ubaldo</a></strong>! Ci dovrebbero volere circa <strong>10 minuti</strong>.
+    Dalla stazione dei treni di Cisterna di Latina, potete prendere un [taxi](travel/#taxi-info) fino a <strong><a href="https://maps.app.goo.gl/E1yVqkmkosNbQRTf7" target="_blank" rel="noopener noreferrer">Torre Ubaldo</a></strong>! Ci dovrebbero volere circa <strong>10 minuti</strong>.
 train: In Treno
 trainInfo: |
     La stazione dei treni più vicina alla location del matrimonio è <strong>Cisterna di Latina</strong>.
 
     Vi consigliamo di prendere il trento per Cisterna di Latina o da <strong>Roma Termini</strong> (circa 30 minuti con treno regionale) o da <strong>Napoli Centrale</strong> (circa 2 ore e mezza con treno regionale). Il miglior modo per comprare il biglietto del treno è tramite il <a href="https://www.trenitalia.com/it.html" target="_blank" rel="noopener noreferrer">sito di Trenitalia</a>.
     
-    Dalla stazione dei treni di Cisterna di Latina, potete prendere un Uber o un Taxi fino a <strong><a href="https://maps.app.goo.gl/E1yVqkmkosNbQRTf7" target="_blank" rel="noopener noreferrer">Torre Ubaldo</a></strong>! Ci dovrebbero volere circa <strong>10 minuti</strong>.
-car: In Macchina
+    Dalla stazione dei treni di Cisterna di Latina, potete prendere un [taxi](travel/#taxi-info) fino a <strong><a href="https://maps.app.goo.gl/E1yVqkmkosNbQRTf7" target="_blank" rel="noopener noreferrer">Torre Ubaldo</a></strong>! Ci dovrebbero volere circa <strong>10 minuti</strong>.
+car: In Macchina / Taxi
 carInfo: |
     Se viaggiate in macchina, potete seguire le direzioni di Google Maps per <strong><a href="https://www.google.com/maps/dir//Torre+Ubaldo,+35,+SS7,+04012+Cisterna+di+Latina+LT,+Italy/@41.5723936,12.8336098,14z/data=!4m9!4m8!1m0!1m5!1m1!1s0x132574686c1587ff:0xcaa9ed4e66798233!2m2!1d12.8807421!2d41.5578294!3e0?entry=ttu&g_ep=EgoyMDI2MDEyOC4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener noreferrer">Torre Ubaldo</a></strong>!
     
     Un ampio parcheggio è dispobibile presso la location.
+
+    Se vi occorre un taxi, potete chiamare il seguente servizio:
 stay: Dove Alloggiare
 stayInfo: |
     Per gli ospiti che viaggiano dall’estero, consigliamo di alloggiare a <strong>Roma</strong> nei giorni che precedono il matrimonio, così da poter godere della città e vivere al meglio il viaggio.
