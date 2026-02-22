@@ -36,7 +36,6 @@
 /* Timeline dot */
 .timeline-event::after {
     content: '';
-    font-size: 2.5em;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
@@ -45,10 +44,15 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background: white;
+    background-color: white;
     border: solid 4px #d9bfa7;
     border-radius: 50%;
     z-index: 2;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-size: 2.5em;
+    background-size: contain;
+    background-size: 80%;
 }
 
 .event-text {
@@ -107,26 +111,26 @@
 
 /* Emojis for timeline dots */
 #meeting.timeline-event::after {
-    content: '👋'
+    background-image: url('../assets/emojis/story/meeting.svg');
 }
 #friends.timeline-event::after {
-    content: '🍻'
+    background-image: url('../assets/emojis/story/friends.svg');
 }
 #relationship.timeline-event::after {
-    content: '💑'
+    background-image: url('../assets/emojis/story/relationship.svg');
 }
 #house.timeline-event::after {
-    content: '🏠'
+    background-image: url('../assets/emojis/story/house.svg');
 }
 #colombia.timeline-event::after {
-    content: '🇨🇴'
+    background-image: url('../assets/emojis/flag_es.svg');
 }
 #engagement.timeline-event::after {
-    content: '💍'
+    background-image: url('../assets/emojis/story/ring.svg');
 }
 #wedding.timeline-event::after {
-    content: '🥂'
+    background-image: url('../assets/emojis/story/wedding.svg');
 }
 #party.timeline-event::after {
-    content: '🎉'
+    background-image: url('../assets/emojis/story/party.svg');
 }
