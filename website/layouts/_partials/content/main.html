@@ -1,9 +1,12 @@
 <!-- Main Section -->
 <section class="main-section">
-    <h1 class="main-title text-shadow">
-        {{ .Site.Title }}
+    <h1 class="main-title text-shadow centered">
+        {{ $words := split .Site.Title " " }}
+        {{ range $words }}
+            <span>{{ . }}</span>
+        {{ end }}
     </h1>
-    <h2 class="main-title text-shadow">
+    <h2 class="main-title text-shadow centered">
         {{ .Params.subtitle }}
     </h2>
     <div class="main-info">

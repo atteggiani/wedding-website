@@ -28,6 +28,7 @@
     justify-content: center;
     flex-wrap: nowrap;
     gap: 0.2em;
+    z-index: 1;
 }
 
 .language-buttons .emoji {
@@ -35,6 +36,7 @@
     height: 1.5em;
 }
 
+/* Mobiles */
 @media (max-width: 1000px) {
     .language-buttons {
         flex-direction: column;
