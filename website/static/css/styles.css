@@ -152,7 +152,7 @@ strong {
 
 /* Mobiles */
 @media (max-device-width: 600px) {
-    .main-title {
+    h1.main-title {
         width: 0;
     }
     h2.main-title {
