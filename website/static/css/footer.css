@@ -30,7 +30,7 @@ footer {
 }
 
 /* Mobiles */
-@media (max-device-width: 600px) {
+@media (max-width: 992px) {
     .footer-text p {
         font-size: 2rem;
     }

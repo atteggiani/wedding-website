@@ -74,7 +74,7 @@ a.activity-item:hover {
     width: 1.5em;
 }
 
-@media (max-device-width: 600px) {
+@media (max-width: 992px) {
     .activities {
         grid-template-columns: 1fr;
         gap: 1rem;

@@ -54,7 +54,7 @@
 }
 
 /* Mobile */
-@media (max-device-width: 600px) {
+@media (max-width: 992px) {
     .venue-gallery {
         grid-template-columns: 1fr;
         margin: 2rem 0;

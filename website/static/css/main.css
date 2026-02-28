@@ -105,7 +105,7 @@ section a {
 }
 
 /* Mobiles */
-@media (max-device-width: 600px) {
+@media (max-width: 992px) {
     h1.main-title {
         font-size: 3em;
     }
@@ -129,6 +129,7 @@ section a {
         padding: 1rem 6rem;
         margin-top: 3rem;
         gap: 1rem;
+        height: auto;
     }
 
     /* Don't reverse layout */
@@ -146,5 +147,13 @@ section a {
     }
     .section-content > h3 {
         font-size: 1.8em;
+    }
+    
+    .section-image {
+        max-height: 50vh;
+    }
+    .section-image img {
+        max-height: 50vh;
+        max-width: 50vw;
     }
 }

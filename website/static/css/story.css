@@ -135,7 +135,7 @@
     background-image: url('../assets/emojis/story/party.svg');
 }
 
-@media (max-device-width: 600px) {
+@media (max-width: 992px) {
     /* Move green line to left */
     .timeline::before {
         left: 4%;
