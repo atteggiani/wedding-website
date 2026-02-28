@@ -111,6 +111,9 @@ h5.offcanvas-title {
     filter: var(--filter-black-to-blue);
 }
 
+.banner-title.collapsed {
+    display: none;
+}
 
 /* When the banner is not collapsed, show RSVP button last */
 @media (min-width: 992px) {
@@ -138,5 +141,11 @@ h5.offcanvas-title {
     }
     .language-switcher {
         margin-top: 1rem;
+    }
+    .banner-title.collapsed {
+        display: block;
+    }
+    .banner-title:not(.collapsed) {
+        display: none;
     }
 }
