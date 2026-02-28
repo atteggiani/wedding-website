@@ -52,3 +52,11 @@
     gap: 0.3rem;
     justify-content: center;
 }
+
+/* Mobile */
+@media (max-device-width: 600px) {
+    .venue-gallery {
+        grid-template-columns: 1fr;
+        margin: 2rem 0;
+    }
+}

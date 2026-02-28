@@ -158,5 +158,7 @@ strong {
     h2.main-title {
         margin-top: 6em;
     }
-
+    .page-margins {
+       margin: 0 2rem 2rem;
+    }
 }

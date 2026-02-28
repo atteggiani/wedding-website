@@ -29,7 +29,7 @@
 /* Activities List */
 .activities {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(3, 1fr);
     gap: 1.5rem;
     margin-top: 2rem;
     text-align: left;
@@ -72,4 +72,11 @@ a.activity-item:hover {
 .activity-title .emoji {
     height: 1.5em;
     width: 1.5em;
+}
+
+@media (max-device-width: 600px) {
+    .activities {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
 }
