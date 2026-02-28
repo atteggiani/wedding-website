@@ -15,7 +15,7 @@
     },
     "hook": {},
     "profile": {
-      "common": "  alias hs='hugo server --noHTTPCache -D --destination \"$(mktemp -d)\"'\n"
+      "common": "  alias hs='hugo server --noHTTPCache -D --destination \"$(mktemp -d)\" --disableFastRender'\n"
     },
     "options": {}
   },

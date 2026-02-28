@@ -52,20 +52,29 @@ input[id^="dietary-requirements-"]:disabled,
 }
 
 .form-check-label {
-    /* font-size: 1.2em; */
     margin-left: 1.5em;
     font-weight: bold;
+    display: inline-block;
+    min-width: 3ch;
 }
 
-.card-corner-icon {
-    position: absolute;
-    top: 0.6rem;
-    right: 1.8rem;
-    z-index: 1;
-    pointer-events: none; /* avoids blocking clicks */
+.card-title {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+    gap: 0.5rem;
+    margin-bottom: 0;
 }
-.card-corner-icon > img {
-    width: 2.3em;
+
+.card-title > .title {
+    font-size: 1.5em;
+    font-weight: 500;
+    color: var(--heading-color);
+}
+
+.card-icon > img {
+    width: 2em;
 }
 .form-check-input:focus,
 .form-control:focus {
@@ -85,6 +94,7 @@ h5 {
     font-size: 1.2em;
 }
 .form-label > span {
+    display: block;
     font-size: 0.8em;
 }
 
@@ -96,4 +106,28 @@ h5 {
 .form-check-input:checked {
     background-color: var(--color-green);
     border-color: var(--color-green);
+}
+
+.card {
+    gap: 0.5rem;
+}
+
+@media (max-width: 992px) {
+  .form-floating > label {
+    white-space: normal;
+    height: auto;
+    line-height: 1;
+    font-size: 0.8em;
+  }
+
+  .form-floating > .form-control {
+    height: auto;
+    min-height: 4.5rem;
+    padding-top: 1.8rem;
+  }
+
+  .form-floating > .form-control:focus,
+  .form-floating > .form-control:not(:placeholder-shown) {
+    padding-top: 2rem;
+  }
 }

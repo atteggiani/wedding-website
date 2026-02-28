@@ -57,7 +57,7 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    gap: 0 2rem;
+    gap: 0.5rem 2rem;
     margin: 0.5em 0;
     font-size: 1.5em;
 }
@@ -74,11 +74,6 @@
     flex-basis: 100%;
 }
 
-.whatsapp-icon {
-    width: 1.4em;
-    height: auto;
-}
-
 .plusone-icon {
     width: 1.5em;
 }
@@ -92,4 +87,12 @@
     width: 1.8em;
     height: 1.8em;
     vertical-align: -0.4em;
+}
+
+/* Mobile */
+@media (max-width: 992px) {
+    .contacts-info {
+        flex-direction: column;
+        font-size: 1em;
+    }
 }

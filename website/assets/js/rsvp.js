@@ -188,9 +188,9 @@ async function getGuestJWT(rsvpPassword, supabaseClient) {
 // Rendering helpers
 // =====================
 
-function renderCornerIcon(type) {
+function renderCardIcon(type) {
     return `
-    <div class="card-corner-icon">
+    <div class="card-icon">
       <img src="{{ relURL "assets/${cornerIcons[type]}"}}" loading="lazy" alt="${type}" class="${type}-icon"/>
     </div>
   `;
@@ -225,25 +225,37 @@ function renderGuests(data) {
         } else if (hasChild) {
             attendanceLabel = {{ i18n "rsvp.child_attending_label" | jsonify }};
         }
+
+        let cardIconHTML = '';
+        if (hasChild) {
+            cardIconHTML = renderCardIcon('child');
+        } else if (hasPlusOne) {
+            cardIconHTML = renderCardIcon('plusone');
+        }
         // Build HTML sections
-        const nameSection = !showPlusOneNameInput
-            ? `<h4>${memberName}</h4>` : 
-            `<div class="form-floating mb-3">
-                <input 
-                type="text" 
-                maxlength="50"
-                class="form-control" 
-                id="plusoneName_${member.id}"
-                value="${memberName}"
-                ${attendance ? '' : 'disabled'}
-                >
-                <label for="plusoneName_${member.id}">
-                    ${plusOneNameLabel}
-                </label>
-            </div>`;
+        const titleSection = `
+        <div class="card-title">
+            <div class="title">${hasPlusOne ? '' : memberName}</div>
+            ${cardIconHTML}
+        </div>`;
+
+        const nameSection = `
+        <div class="form-floating">
+            <input 
+            type="text" 
+            maxlength="50"
+            class="form-control" 
+            id="plusoneName_${member.id}"
+            value="${memberName}"
+            ${attendance ? '' : 'disabled'}
+            >
+            <label for="plusoneName_${member.id}">
+                ${plusOneNameLabel}
+            </label>
+        </div>`;
         
         const attendanceSection = `
-        <div class="d-flex align-items-center gap-3 attending-form mt-2 mb-2">
+        <div class="d-flex align-items-center gap-3 attending-form mt-2">
             <span>${attendanceLabel}</span>
             <div class="form-check form-switch m-0">
                 <input
@@ -253,13 +265,13 @@ function renderGuests(data) {
                 ${attendance ? 'checked' : ''}
                 >
                 <label class="form-check-label" for="attending-switch-${member.id}" id="attendingLabel_${member.id}">
-                    ${attendance ? {{ i18n "rsvp.yes" | jsonify }} : {{ i18n "rsvp.no" | jsonify }}}
+                    ${attendance ? {{ i18n "rsvp.yes" | upper | jsonify }} : {{ i18n "rsvp.no" | upper |jsonify }}}
                 </label>
             </div>
         </div>`;
         
         const dietarySection = `
-        <div class="form-floating mb-3">
+        <div class="form-floating">
             <input 
             type="text" 
             maxlength="50"
@@ -274,17 +286,11 @@ function renderGuests(data) {
         </div>`;
         // Assemble card depending on the order
         let cardHTML;
-        let cornerIconHTML = '';
-        if (hasPlusOne) {
-            cornerIconHTML = renderCornerIcon(hasChild ? 'child' : 'plusone');
-        } else if (hasChild) {
-            cornerIconHTML = renderCornerIcon('child');
-        }
         if (hasPlusOne) {
             // Attendance first, then name, then dietary
             cardHTML = `
                 <div class="card mb-3 p-3">
-                    ${cornerIconHTML}
+                    ${titleSection}
                     ${attendanceSection}
                     ${nameSection}
                     ${dietarySection}
@@ -294,8 +300,7 @@ function renderGuests(data) {
             // Name first, then attendance, then dietary
             cardHTML = `
                 <div class="card mb-3 p-3">
-                    ${cornerIconHTML}
-                    ${nameSection}
+                    ${titleSection}
                     ${attendanceSection}
                     ${dietarySection}
                 </div>
@@ -447,7 +452,7 @@ $(document).on('change', 'input[id^="attending-switch-"]', function () {
     const isAttending = this.checked;
 
     // Update label
-    $(`#attendingLabel_${id}`).text(isAttending ? {{ i18n "rsvp.yes" | jsonify }} : {{ i18n "rsvp.no" | jsonify }});
+    $(`#attendingLabel_${id}`).text(isAttending ? {{ i18n "rsvp.yes" | upper | jsonify }} : {{ i18n "rsvp.no" | upper | jsonify }});
     // Enable / disable 
     $(`#dietary-requirements-${id}`).prop('disabled', !isAttending);
     const $nameText = $(`#plusoneName_${id}`);

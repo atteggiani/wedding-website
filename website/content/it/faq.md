@@ -7,7 +7,7 @@ howToGetThereQuestion: Come posso raggiungere la location del matrimonio?
 howToGetThereAnswer1: |
     Raggiungere <strong>Torre Ubaldo</strong> è piuttosto semplice, anche senza auto! Per tutti i dettagli, consultate la pagina
 howToGetThereAnswer2: |
-    Per chi non ha l’auto, il rientro dopo la festa potrebbe essere un po’ più complicato — sarà tardi e i taxi potrebbero non essere disponibili (siamo pur sempre in Italia!). Ma niente paura! Molti invitati avranno la macchina e potranno offrire un passaggio verso <strong>Cisterna di Latina</strong> o <strong>Latina</strong>. Fate nuove amicizie al matrimonio e non siate timidi nel chiedere un passaggio!
+    Per chi è senza auto, il rientro dopo la festa potrebbe essere un po’ più complicato — sarà tardi e i taxi potrebbero non essere disponibili (siamo pur sempre in Italia!). Ma niente paura! Molti invitati avranno la macchina e potranno offrire un passaggio verso <strong>Cisterna di Latina</strong> o <strong>Latina</strong>. Fate nuove amicizie al matrimonio e non siate timidi nel chiedere un passaggio!
 howToGetThereAnswer3: |
     E se temete di rimanere a piedi, fatecelo sapere — faremo del nostro meglio per organizzarvi un passaggio, anche nel caso in cui non farete nuove amicizie!
 parkingQuestion: È disponibile il parcheggio presso la location?

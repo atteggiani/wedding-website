@@ -23,6 +23,7 @@ h4 {
     display: flex;
     justify-content: center;
     align-items: stretch;
+    gap: 1.5rem 1rem;
 }
 
 .bank-details-container > * {
@@ -46,9 +47,8 @@ h4 {
 
 .smaller-text {
     display: inline-block;
-    position: absolute;
     font-size: 0.7em;
-    transform: translateX(-100%) translateY(100%);
+    transform: translateY(-0.5em);
 }
 
 .qr-code {
@@ -66,4 +66,25 @@ h4 {
     width: 1.7em;
     height: 1.7em;
     vertical-align: -0.4em;
+}
+
+/* Mobile */
+@media (max-width: 992px) {
+    .bank-details-container {
+        flex-direction: column;
+    }
+
+    .details-grid {
+        grid-template-columns: 1fr;
+        gap: 0.5rem;
+    }
+
+    .label {
+        text-align: left;
+        font-weight: 600;
+    }
+
+    .bank-method .title {
+        margin-bottom: 0.5rem;
+    }
 }

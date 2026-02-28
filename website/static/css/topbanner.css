@@ -1,62 +1,48 @@
 .top-banner {
-  width: 100%;
-  height: 5rem;
-  padding: 0.8rem 1.6rem;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  box-sizing: border-box;
-  position: sticky;
-  background: var(--color-green);
-  z-index: 100;
+    height: var(--banner-height);
+    z-index: 1;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    background-color: var(--color-green);
+    padding: 0.5rem 1rem;
 }
 
 .top-banner a {
     text-decoration: none;
     color: var(--color-white);
 }
-.top-banner a:hover {
+.top-banner a:hover,
+.top-banner a:focus {
+    color: var(--color-white);
     filter: brightness(0.93);
 }
 
-/* LEFT MENU */
-.banner-menu ul {
-  display: flex;
-  align-items: center;
-  gap: 1.5rem;
-  list-style: none;
-  margin: 0;
-  padding: 0;
+.container-fluid {
+    gap: 1rem;
 }
 
-.banner-menu li {
-    display: flex;
+/* MENU */
+.banner-menu {
+    align-items: center;
+    gap: 0 0.5rem;
+}
+
+.banner-menu > ul {
+    gap: 0.5rem 1rem;
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
 }
 
 .banner-menu a {
-  font-weight: 500;
+    font-weight: 500;
 }
 
 /* TITLE */
 .banner-title {
-  font-size: 1.7rem;
-  font-weight: 600;
-  letter-spacing: 0.5px;
-}
-
-/* RIGHT ACTIONS */
-.banner-buttons {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  gap: 1rem;
-  height: 100%;
-}
-
-/* language switcher */
-.language-switcher {
-    height: 100%;
+    font-size: 1.7rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
 }
 
 .language-switcher .dropdown-menu {
@@ -69,12 +55,6 @@
 .rsvp-button {
     display: flex;
     align-items: center;
-    height: 100%;
-}
-
-.language-switcher > .dropdown > button ,
-.rsvp-button > a {
-    height: 80%;
 }
 
 .language-switcher .emoji {
@@ -96,6 +76,76 @@
 .language-switcher .dropdown-item:hover,
 .language-switcher .dropdown-item:focus,
 .language-switcher .dropdown-item:active {
+    color: var(--color-text);
     background-color: color-mix(in srgb, var(--color-bg) 99%, black 1%);
 }
 
+/* Burger menu slider */
+.offcanvas.offcanvas-end {
+    background-color: var(--color-bg);
+    width: 60vw;
+}
+
+h5.offcanvas-title {
+    font-weight: 700;
+    font-size: 1.5em;
+    color: var(--color-white);
+}
+
+/* Close button within burger menu */
+.offcanvas-header .btn-close {
+    filter: var(--filter-black-to-white);
+}
+
+/* Burger icon */
+.navbar-toggler {
+    border-color: var(--border-color);
+}
+.navbar-toggler:hover,
+.navbar-toggler:focus,
+.navbar-toggler:active {
+    box-shadow: none;
+    filter: brightness(0.93);
+}
+.navbar-toggler-icon {
+    filter: var(--filter-black-to-blue);
+}
+
+.banner-title.collapsed {
+    display: none;
+}
+
+/* When the banner is not collapsed, show RSVP button last */
+@media (min-width: 992px) {
+  .rsvp-button {
+    order: 99;
+  }
+}
+
+/* When the banner is collapsed, make title occupy as much space as possible */
+@media (max-width: 992px) {
+    .banner-title {
+        flex-grow: 1;
+    }
+    .banner-menu a {
+        text-decoration: none;
+        color: var(--color-text);
+    }
+    .banner-menu a:hover,
+    .banner-menu a:focus {
+        color: var(--link-hover-color);
+    }
+    .banner-menu > ul {
+        align-items: start;
+        text-align: left;
+    }
+    .language-switcher {
+        margin-top: 1rem;
+    }
+    .banner-title.collapsed {
+        display: block;
+    }
+    .banner-title:not(.collapsed) {
+        display: none;
+    }
+}

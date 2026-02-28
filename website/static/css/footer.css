@@ -4,7 +4,7 @@ footer {
     align-items: stretch;
     justify-content: center;
     background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
-                url('../assets/ring.png') center calc(50% + 15px)/cover no-repeat;
+                url('../assets/ring.png') center/cover no-repeat;
 }
 
 .footer-content {
@@ -22,9 +22,16 @@ footer {
 
 .footer-text p {
     font-size: 3rem;
-    font-weight: 300;
+    font-weight: 400;
 }
 
 .footer-button {
     font-size: 3rem;
+}
+
+/* Mobiles */
+@media (max-width: 992px) {
+    .footer-text p {
+        font-size: 2rem;
+    }
 }

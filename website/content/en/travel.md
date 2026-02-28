@@ -11,7 +11,7 @@ planeInfo: |
 
     From Roma Termini, take a regional train to <strong>Cisterna di Latina</strong>. The regional trains are frequent and the journey time is approximately <strong>30 minutes</strong>. The best way to buy a train ticket is through <a href="https://italiatren.com/en/" target="_blank" rel="noopener noreferrer">Trenitalia website</a>.
 
-    From Cisterna di Latina train station, you can take an Uber or Taxi to <strong><a href="https://maps.app.goo.gl/E1yVqkmkosNbQRTf7" target="_blank" rel="noopener noreferrer">Torre Ubaldo</a></strong>! It should be about <strong>10 minutes</strong>.
+    From Cisterna di Latina train station, you can take a [taxi](travel/#taxi-info) to <strong><a href="https://maps.app.goo.gl/E1yVqkmkosNbQRTf7" target="_blank" rel="noopener noreferrer">Torre Ubaldo</a></strong>! It should be about <strong>10 minutes</strong>.
 train: By Train
 trainInfo: |
     The closest train station to the wedding venue is
@@ -19,12 +19,14 @@ trainInfo: |
 
     We suggest getting to Cisterna di Latina either from <strong>Roma Termini</strong> (about 30 minutes by regional train) or <strong>Napoli Centrale</strong> (about 2.5 hours by regional train). The best way to buy a train ticket is through <a href="https://italiatren.com/en/" target="_blank" rel="noopener noreferrer">Trenitalia website</a>.
     
-    From Cisterna di Latina train station, you can take an Uber or Taxi to <strong><a href="https://maps.app.goo.gl/E1yVqkmkosNbQRTf7" target="_blank" rel="noopener noreferrer">Torre Ubaldo</a></strong>! It should be about <strong>10 minutes</strong>.
-car: By Car
+    From Cisterna di Latina train station, you can take a [taxi](travel/#taxi-info) to <strong><a href="https://maps.app.goo.gl/E1yVqkmkosNbQRTf7" target="_blank" rel="noopener noreferrer">Torre Ubaldo</a></strong>! It should be about <strong>10 minutes</strong>.
+car: By Car / Taxi
 carInfo: |
     If you are traveling by car, you can follow Google Maps directions to <strong><a href="https://www.google.com/maps/dir//Torre+Ubaldo,+35,+SS7,+04012+Cisterna+di+Latina+LT,+Italy/@41.5723936,12.8336098,14z/data=!4m9!4m8!1m0!1m5!1m1!1s0x132574686c1587ff:0xcaa9ed4e66798233!2m2!1d12.8807421!2d41.5578294!3e0?entry=ttu&g_ep=EgoyMDI2MDEyOC4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener noreferrer">Torre Ubaldo</a></strong>!
 
     Ample parking is available at the venue.
+
+    If you need a taxi, you can call the following service:<br>
 stay: Where to Stay
 stayInfo: |
     For guests traveling from abroad, we recommend staying in <strong>Rome</strong> for the days leading up to the wedding, so you can enjoy the city and make the most of your trip.

@@ -24,6 +24,19 @@
         hue-rotate(104deg) 
         brightness(89%) 
         contrast(87%);
+    --filter-black-to-blue:
+        invert(31%)
+        sepia(60%)
+        saturate(550%)
+        hue-rotate(170deg)
+        brightness(83%)
+        contrast(93%);
+    --filter-black-to-white:
+        invert(100%)
+        sepia(100%)
+        grayscale(100%)
+        brightness(200%);
+    --banner-height: 5rem;
 }
 
 /* Smooth animation when transitioning to new pages */
@@ -51,31 +64,27 @@ h2, h3, h4, h6 {
 }
 
 .main-title {
-    color: white;
+    color: var(--color-white);
     position: absolute;
+    padding: 0 0.5em;
     left: 50%;
-    transform: translate(-50%, 0%);
-    overflow: hidden;
-    width: max-content;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.2em 0.4em;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
 }
 
 h1.main-title {
-    top: 40vh;
     font-size: 8rem;
 }
 
 h2.main-title {
-    top: 58vh;
     font-size: 4rem;
-}
-
-.main-title {
-    color: white;
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%, 0%);
-    overflow: hidden;
-    width: max-content;
+    margin-top: 2em;
 }
 
 .page-margins {
@@ -139,4 +148,17 @@ strong {
 
 .centered {
     text-align: center;
+}
+
+/* Mobiles */
+@media (max-width: 992px) {
+    h1.main-title {
+        width: 0;
+    }
+    h2.main-title {
+        margin-top: 6em;
+    }
+    .page-margins {
+       margin: 0 2rem 2rem;
+    }
 }

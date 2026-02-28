@@ -10,19 +10,21 @@ planeInfo: |
     
     Desde Roma Termini, toma un tren regional hacia <strong>Cisterna di Latina</strong>. Los trenes regionales son frecuentes y el viaje dura aproximadamente <strong>30 minutos</strong>. La mejor manera de comprar el billete es a través del <a href="https://italiatren.com/es/" target="_blank" rel="noopener noreferrer">sitio de Trenitalia</a>.
     
-    Desde la estación de tren de Cisterna di Latina, puedes tomar un Uber o un taxi hasta <strong><a href="https://maps.app.goo.gl/E1yVqkmkosNbQRTf7" target="_blank" rel="noopener noreferrer">Torre Ubaldo</a></strong>. El trayecto dura aproximadamente <strong>10 minutos</strong>.
+    Desde la estación de tren de Cisterna di Latina, puedes tomar un [taxi](travel/#taxi-info) hasta <strong><a href="https://maps.app.goo.gl/E1yVqkmkosNbQRTf7" target="_blank" rel="noopener noreferrer">Torre Ubaldo</a></strong>. El trayecto dura aproximadamente <strong>10 minutos</strong>.
 train: En Tren
 trainInfo: |
     La estación de tren más cercana a la ubicación de la boda es <strong>Cisterna di Latina</strong>.
     
     Te recomendamos tomar el tren hacia Cisterna di Latina desde <strong>Roma Termini</strong> (aproximadamente 30 minutos en tren regional) o desde <strong>Nápoles Central</strong> (aproximadamente 2 horas y media en tren regional). La mejor manera de comprar el billete es a través del <a href="https://italiatren.com/es" target="_blank" rel="noopener noreferrer">sitio de Trenitalia</a>.
     
-    Desde la estación de tren de Cisterna di Latina, puedes tomar un Uber o un taxi hasta <strong><a href="https://maps.app.goo.gl/E1yVqkmkosNbQRTf7" target="_blank" rel="noopener noreferrer">Torre Ubaldo</a></strong>. El trayecto dura aproximadamente <strong>10 minutos</strong>.
-car: En Carro
+    Desde la estación de tren de Cisterna di Latina, puedes tomar un [taxi](travel/#taxi-info) hasta <strong><a href="https://maps.app.goo.gl/E1yVqkmkosNbQRTf7" target="_blank" rel="noopener noreferrer">Torre Ubaldo</a></strong>. El trayecto dura aproximadamente <strong>10 minutos</strong>.
+car: En Carro / Taxi
 carInfo: |
     Si viajas en carro, puedes seguir las indicaciones de Google Maps hasta <strong><a href="https://www.google.com/maps/dir//Torre+Ubaldo,+35,+SS7,+04012+Cisterna+di+Latina+LT,+Italy/@41.5723936,12.8336098,14z/data=!4m9!4m8!1m0!1m5!1m1!1s0x132574686c1587ff:0xcaa9ed4e66798233!2m2!1d12.8807421!2d41.5578294!3e0?entry=ttu&g_ep=EgoyMDI2MDEyOC4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener noreferrer">Torre Ubaldo</a></strong>!
     
     Hay un amplio estacionamiento disponible en la ubicación.
+
+    Si necesitas un taxi, puedes llamar al siguiente servicio:
 stay: Dónde Alojarse
 stayInfo: |
     Para los invitados que viajan desde el extranjero, recomendamos alojarse en <strong>Roma</strong> durante los días previos a la boda, para disfrutar de la ciudad y aprovechar al máximo el viaje.
