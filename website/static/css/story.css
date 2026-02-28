@@ -134,3 +134,58 @@
 #party.timeline-event::after {
     background-image: url('../assets/emojis/story/party.svg');
 }
+
+@media (max-device-width: 600px) {
+    /* Move green line to left */
+    .timeline::before {
+        left: 4%;
+    }
+
+    /* Stack events vertically */
+    .timeline-event {
+        flex-direction: column;
+        height: auto;
+        gap: 1.5rem;
+        padding-left: 20%;
+        position: relative;
+    }
+
+    /* Remove reverse behavior on mobile */
+    .reverse {
+        flex-direction: column;
+    }
+
+    .reverse > .event-text {
+        text-align: left;
+    }
+
+    /* Position dot on the left line */
+    .timeline-event::after {
+        left: 4%;
+    }
+
+    /* Text layout */
+    .event-text {
+        text-align: left;
+        gap: 0.5rem;
+    }
+
+    .event-date {
+        font-size: 1.5rem;
+        justify-content: flex-start;
+    }
+
+    .event-title {
+        font-size: 1.3rem;
+    }
+
+    /* Image below text */
+    .event-image {
+        justify-content: flex-start;
+    }
+
+    .event-image img {
+        width: 100%;
+        height: auto;
+    }
+}
