@@ -49,4 +49,5 @@ plusOneAnswer1: Se la vostra partecipazione include un invitato aggiuntivo, trov
 plusOneAnswer2: "La sezione dedicata è indicata dall’icona:"
 contactsTitle: Avete altre domande?
 contactsSubtitle: Non esitate a contattarci!
+showNumber: Inserisci la tua password per rivelare il numero
 ---

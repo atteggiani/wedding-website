@@ -49,4 +49,5 @@ plusOneAnswer1: If your invitation includes a plus-one, you’ll see the option 
 plusOneAnswer2: "Their section is indicated by the icon:"
 contactsTitle: Still have questions?
 contactsSubtitle: Don't hesitate to reach out to us!
+showNumber: Enter your password to show the number
 ---

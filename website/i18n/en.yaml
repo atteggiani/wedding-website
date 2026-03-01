@@ -5,7 +5,6 @@ rsvp:
   continue: "Continue"
   submit: "Submit"
   submitting: "Submitting..."
-  session_expired: "Your session expired. Please enter your password again."
   adult_attending_label: "Are you attending?"
   child_attending_label: "Is this child attending?"
   plusone_child_attending_label: "Is a child attending?"

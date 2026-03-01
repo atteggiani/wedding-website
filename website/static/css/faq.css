@@ -62,7 +62,7 @@
     font-size: 1.5em;
 }
 
-.contacts-info > * {
+.contacts-item {
     flex: 1 1 calc(50% - 1rem);
     min-width: fit-content;
     display: flex;
@@ -70,7 +70,7 @@
     justify-content: center;
 }
 
-.contacts-info > ::nth-child(3) {
+.contacts-item:nth-child(3) {
     flex-basis: 100%;
 }
 
@@ -87,6 +87,20 @@
     width: 1.8em;
     height: 1.8em;
     vertical-align: -0.4em;
+}
+
+.contact-number {
+    margin-left: 0.5rem;
+}
+.contact-number.hidden {
+    font-size: 0.6em;
+    background-color: var(--color-white);
+    border: 1px solid var(--border-color);
+    padding: 0.4em 0.6em;
+    border-radius: 5px;
+}
+.contact-number > a:hover {
+    text-decoration: none;
 }
 
 /* Mobile */

@@ -5,7 +5,6 @@ rsvp:
   continue: "Continúa"
   submit: "Envía"
   submitting: "Enviando..."
-  session_expired: "Tu sesión ha expirado. Por favor, ingresa tu contraseña nuevamente."
   adult_attending_label: "¿Asistirás?"
   child_attending_label: "¿Asistirá este niño?"
   plusone_child_attending_label: "¿Asistirá un niño?"

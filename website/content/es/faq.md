@@ -49,4 +49,5 @@ plusOneAnswer1: Si su invitación incluye un invitado adicional, encontrarán la
 plusOneAnswer2: "La sección correspondiente está indicada con el ícono:"
 contactsTitle: ¿Tienen más preguntas?
 contactsSubtitle: ¡No duden en contactarnos!
+showNumber: Ingresa tu contraseña para mostrar el numero
 ---

@@ -144,7 +144,7 @@
     <div class="collapse" id="emergencycontact">
         <div class="faq-answer">
             <p>{{ .Params.emergencyContactAnswer | markdownify }}</p>
-            <p>
+            <p class="contacts-item justify-content-start">
                 <img
                 src="{{ relURL "assets/emojis/phone.svg" }}"
                 alt="phone-icon"
@@ -153,7 +153,12 @@
                 src="{{ relURL "assets/emojis/whatsapp.svg" }}"
                 alt="whatsapp-icon"
                 class="emoji whatsapp-icon">
-                <strong>Ell:</strong> +393334331390
+                <strong>Ell:</strong>
+                <span id="phone_ell" class="contact-number hidden">
+                    <a href="{{ relLangURL "rsvp" }}">
+                        {{ .Params.showNumber }}
+                    </a>
+                </span>
             </p>
         </div>
     </div>
@@ -179,7 +184,7 @@
     <h2>{{ .Params.contactsTitle }}</h2>
     <h4>{{ .Params.contactsSubtitle }}</h4>
     <div class="contacts-info">
-        <p>
+        <p class="contacts-item">
             <img
             src="{{ relURL "assets/emojis/phone.svg" }}"
             alt="phone-icon"
@@ -188,9 +193,14 @@
             src="{{ relURL "assets/emojis/whatsapp.svg" }}"
             alt="whatsapp-icon"
             class="emoji whatsapp-icon">
-            +61433995492 (<strong>Davide</strong>)
+            <strong>Davide:</strong>
+            <span id="phone_davide" class="contact-number hidden">
+                <a href="{{ relLangURL "rsvp" }}">
+                    {{ .Params.showNumber }}
+                </a>
+            </span>
         </p>
-        <p>
+        <p class="contacts-item">
             <img
             src="{{ relURL "assets/emojis/phone.svg" }}"
             alt="phone-icon"
@@ -199,9 +209,14 @@
             src="{{ relURL "assets/emojis/whatsapp.svg" }}"
             alt="whatsapp-icon"
             class="emoji whatsapp-icon">
-            +61468586558 (<strong>Jen</strong>)
+            <strong>Jen:</strong>
+            <span id="phone_jen" class="contact-number hidden">
+                <a href="{{ relLangURL "rsvp" }}">
+                    {{ .Params.showNumber }}
+                </a>
+            </span>
         </p>
-        <p>
+        <p class="contacts-item">
             <img
             src="{{ relURL "assets/emojis/email.svg" }}"
             alt="email-icon"
