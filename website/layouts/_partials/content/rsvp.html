@@ -1,4 +1,10 @@
-<h1>{{ i18n "global.rsvp" }}</h1>
+<h1 
+{{ if eq .Lang "en" }}
+    style="letter-spacing: 0.3em;"
+{{ end }}
+>
+    {{ i18n "global.rsvp" }}
+</h1>
 <div id="rsvp-section">
     <h5>
         {{ .Params.instructions | markdownify }}
