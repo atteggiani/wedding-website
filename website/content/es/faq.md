@@ -14,7 +14,7 @@ parkingQuestion: ¿Hay estacionamiento en el lugar?
 parkingAnswer: Sí, el lugar cuenta con amplio estacionamiento gratuito dentro de sus instalaciones.
 rsvpDeadlineQuestion: ¿Cuál es la fecha límite para confirmar asistencia?
 rsvpDeadlineAnswer: |
-    Les pedimos amablemente que confirmen su asistencia antes de <strong>finales de Abril</strong>. Esto nos ayudará a organizar todo de la mejor manera y a que el día sea realmente especial.
+    Les pedimos amablemente que confirmen su asistencia a más tardar el <strong>30 de Abril 2026</strong>. Esto nos ayudará a organizar todo de la mejor manera y a que el día sea realmente especial.
 
     Sin embargo, entendemos perfectamente que quienes viajan desde el extranjero puedan necesitar un poco más de tiempo para organizar su viaje a Italia. En ese caso, avísennos y les ayudaremos en todo lo que sea posible.
 dressCodeQuestion: ¿Hay un codigo de vestimenta?
