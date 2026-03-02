@@ -2,7 +2,8 @@
 customLayout: ceremony
 info: |
     Both the ceremony and the reception will take place at Torre Ubaldo.<br>
-    The symbolic ceremony will begin at 5:00 PM, followed by the wedding reception and a night of celebration!
+    Guests are welcome to arrive from 5:00PM.<br>
+    The symbolic ceremony will begin at 5:30 PM, followed by the wedding reception and a night of celebration!
 dressCode: Dress Code
 dressCodeInfo: |
     We kindly invite our guests to dress in <strong>formal attire</strong> for our celebration.<br>

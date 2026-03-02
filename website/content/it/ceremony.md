@@ -2,7 +2,8 @@
 customLayout: ceremony
 info: |
     La cerimonia e il ricevimento si svolgeranno entrambi presso Torre Ubaldo.<br>
-    La cerimonia simbolica inizierà alle 17:00, seguita dal ricevimento e da una serata di festa!
+    Gli ospiti sono invitati ad arrivare dalle 17:00.<br>
+    La cerimonia simbolica inizierà alle 17:30, seguita dal ricevimento e da una serata di festa!
 dressCode: Dress Code
 dressCodeInfo: |
     Invitiamo gentilmente i nostri ospiti a indossare un abbigliamento <strong>formale</strong> per il nostro matrimonio.<br>

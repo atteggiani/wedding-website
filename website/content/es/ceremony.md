@@ -2,7 +2,8 @@
 customLayout: ceremony
 info: |
     La ceremonia y la recepción se llevaran a cabo en Torre Ubaldo.<br>
-    La ceremonia simbolica comenzará a las 5:00 PM, y será seguida de la recepción y de una noche de fiesta!
+    Los invitados pueden llegar desde las 5:00PM.<br>
+    La ceremonia simbolica comenzará a las 5:30 PM, y será seguida de la recepción y de una noche de fiesta!
 dressCode: Codigo de Vestimenta
 dressCodeInfo: |
     Invitamos a nuestros invitados a vestir con atuendo <strong>formal</strong> para nuestra celebración.<br>
