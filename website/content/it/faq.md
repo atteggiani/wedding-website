@@ -14,7 +14,7 @@ parkingQuestion: È disponibile il parcheggio presso la location?
 parkingAnswer: Sì, la location dispone di un ampio parcheggio gratuito all’interno.
 rsvpDeadlineQuestion: Qual è la scadenza per confermare la partecipazione?
 rsvpDeadlineAnswer: |
-    Vi chiediamo gentilmente di confermare la vostra partecipazione entro <strong>fine Aprile</strong>. Questo ci aiuterà ad organizzare tutto al meglio e a rendere la giornata davvero speciale!
+    Vi chiediamo gentilmente di confermare la vostra partecipazione entro il <strong>30 Aprile 2026</strong>. Questo ci aiuterà ad organizzare tutto al meglio e a rendere la giornata davvero speciale!
     
     Tuttavia, comprendiamo perfettamente che chi viaggia dall’estero possa aver bisogno di un po’ più di tempo per organizzare il viaggio in Italia. In tal caso, fatecelo sapere e e vi verremo incontro il più possibile.
 dressCodeQuestion: È previsto un dress code?

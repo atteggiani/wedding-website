@@ -14,7 +14,7 @@ parkingQuestion: Is parking available at the venue?
 parkingAnswer: Yes, there is plenty of free parking inside the venue.
 rsvpDeadlineQuestion: What is the deadline for the RSVP?
 rsvpDeadlineAnswer: |
-    We kindly ask our guests to RSVP by the <strong>end of April</strong>. This will help us plan the celebration and make sure the day is going to be amazing!
+    We kindly ask our guests to RSVP by <strong>30 April 2026</strong>. This will help us plan the celebration and make sure the day is going to be amazing!
     
     However, we completely understand that guests traveling from abroad might need a little extra time to organize their trip to Italy. If that’s the case, just let us know, and we’ll make it work for you.
 dressCodeQuestion: Is there a dress code for the event?
