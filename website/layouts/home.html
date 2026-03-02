@@ -3,31 +3,31 @@
 {{ end }}
 
 {{ define "main" }}
-<div class="background-image"></div>
+<div class="home-hero">
+    <div class="language-buttons">
+        {{ range .Site.Languages }}
+        <a 
+        href="{{ printf "%s/main/" .Lang | relURL }}"
+        class="button centered">
+            <img 
+            src="{{ printf "assets/emojis/flag_%s.svg" .Lang | relURL}}"
+            alt="flag-icon"
+            class="emoji">
+            {{ .LanguageName }}
+        </a>
+        {{ end }}  
+    </div>
 
-<div class="language-buttons">
-    {{ range .Site.Languages }}
-    <a 
-    href="{{ printf "%s/main/" .Lang | relURL }}"
-    class="button flex-fill flex-sm-grow-0 centered">
-        <img 
-        src="{{ printf "assets/emojis/flag_%s.svg" .Lang | relURL}}"
-        alt="flag-icon"
-        class="emoji">
-        {{ .LanguageName }}
-    </a>
-    {{ end }}  
+
+    <h1 class="text-shadow centered">
+        {{ $words := split .Site.Title " " }}
+        {{ range $words }}
+            <span>{{ . }}</span>
+        {{ end }}
+    </h1>
+
+    <h2 class="text-shadow centered">
+        {{ .Site.Params.date }}
+    </h2>
 </div>
-
-
-<h1 class="main-title text-shadow centered">
-    {{ $words := split .Site.Title " " }}
-    {{ range $words }}
-        <span>{{ . }}</span>
-    {{ end }}
-</h1>
-
-<h2 class="main-title text-shadow centered">
-    {{ .Site.Params.date }}
-</h2>
 {{ end }}

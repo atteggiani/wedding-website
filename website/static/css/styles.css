@@ -157,7 +157,7 @@ strong {
 }
 
 /* Mobiles */
-@media (max-width: 992px) {
+/* @media (max-width: 992px) {
     h1 {
         font-size: 3rem;
     }
@@ -170,4 +170,4 @@ strong {
     .page-margins {
        margin: 0 2rem 2rem;
     }
-}
+} */
