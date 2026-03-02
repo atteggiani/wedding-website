@@ -6,6 +6,8 @@ const cardIcons = {
   plusone: 'plusone.png',
 };
 
+const contactUsHTML = '<a href="{{ relLangURL "faq#contacts" }}">{{ i18n "global.contactUs" }}</a>!';
+
 // =====================
 // Templating helpers
 // =====================
@@ -117,9 +119,9 @@ async function getGuestJWT(rsvpPassword, supabaseClient) {
 
     if (res.error) {
         if (res.error.context?.status === 401) {
-            $passwordStatus.html({{ i18n "rsvp.invalid_password" | jsonify }});
+            $passwordStatus.html(`{{ i18n "rsvp.invalid_password" }} ${contactUsHTML}`);
         } else {
-            $passwordStatus.html({{ i18n "rsvp.error_validating_password" | jsonify }});
+            $passwordStatus.html(`{{ i18n "rsvp.error_validating_password" }} ${contactUsHTML}`);
         }
         return
     }
@@ -276,10 +278,7 @@ $loadRsvpBtn.on('click', async function () {
             if (!error) {
                 renderGuests(data);
             } else {
-                $passwordStatus.html(interpolateString(
-                    {{ i18n "rsvp.error_retrieving_data" | jsonify }},
-                    { rsvpPassword }
-                ));
+                $passwordStatus.html(`{{ i18n "rsvp.error_retrieving_data" }} ${contactUsHTML}`);
             }
         }
     } finally {
@@ -373,7 +372,7 @@ $rsvpForm.on('submit', async function (e) {
                     { eta }
                 ));
             } else {
-                $submitStatus.html({{ i18n "rsvp.error_submission" | jsonify }});
+                $submitStatus.html(`{{ i18n "rsvp.error_submission" }} ${contactUsHTML}`);
             }
             throw new Error(error.message || 'Unknown error');
         }
