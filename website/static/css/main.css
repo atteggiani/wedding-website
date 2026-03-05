@@ -1,5 +1,37 @@
+:root {
+    --main-title-h2-margin-top: 0.5rem;
+    --info-margin-bottom: 1rem;
+}
+
 .container {
     padding-top: 0;
+}
+
+.hero {
+    position: relative;
+    width: 100vw;
+    margin: 0 calc(-50vw + 50%);
+    top: calc(-1*var(--banner-height));
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+}
+
+.language-buttons {
+    visibility: hidden;
+}
+
+.main-title {
+    position: relative;
+    top: calc(1/2 * (var(--main-title-h2-margin-top) + (var(--hero-h2-font-size) * var(--hero-h2-line-height)) + var(--info-margin-bottom)));
+}
+
+.main-title h2 {
+    margin-top: var(--main-title-h2-margin-top);
 }
 
 section {
@@ -16,26 +48,14 @@ section {
     gap: 3rem;
 }
 
-/* Landing Section */
-section.main-section {
-    height: 100vh;
-    margin-top: calc(-1 * var(--banner-height));
-    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
-                url('../assets/background.jpeg') center/cover no-repeat;
-    overflow: hidden;
-    z-index: 0;
-    top: 0;
-}
-
 .main-info {
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 10vh;
     display: flex;
     justify-content: space-between;
+    align-items: flex-start;
     padding: 0 2rem;
-    gap: 0 1rem;
+    gap: 0 2rem;
+    height: calc(var(--hero-h2-font-size) * var(--hero-h2-line-height));
+    margin-bottom: var(--info-margin-bottom);
 }
 
 .info-box {
@@ -49,11 +69,11 @@ section.main-section {
 
 .info-label {
     margin-bottom: 0.25rem;
-    font-size: 2em;
+    font-size: 1.8em;
 }
 
 .info-value {
-    font-size: 2em;
+    font-size: 1.8em;
 }
 
 .section-image {
@@ -68,7 +88,6 @@ section.main-section {
     object-position: center;
 }
 
-/* Reverse layout */
 section:is(:nth-child(odd)) .section-image {
     order: 1;
 }
@@ -106,24 +125,19 @@ section a {
 
 /* Mobiles */
 @media (max-width: 992px) {
-    h1.main-title {
-        font-size: 3em;
-    }
-    h2.main-title {
-        font-size: 2em;
-    }
-    
-    .main-info {
-        bottom: 5vh;
+    :root {
+        --info-margin-bottom: 2rem;
     }
 
-    .info-label {
-        margin-bottom: 0.1rem;
-        font-size: 1.2em;
+    .hero {
+        position: relative;
+        width: 100vw;
+        margin: 0 calc(-50vw + 50%);
+        top: 0;
+        top: calc(-1*var(--banner-height));
+        min-height: 100vh;
     }
-    .info-value {
-        font-size: 1.2em;
-    }
+
     section {
         flex-direction: column;
         padding: 1rem 6rem;
@@ -132,7 +146,6 @@ section a {
         height: auto;
     }
 
-    /* Don't reverse layout */
     section:is(:nth-child(odd)) .section-image {
         order: 0;
     }
