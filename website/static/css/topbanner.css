@@ -18,6 +18,7 @@
 }
 
 .container-fluid {
+    height: 100%;
     gap: 1rem;
 }
 
@@ -88,7 +89,7 @@
 
 h5.offcanvas-title {
     font-weight: 700;
-    font-size: 1.5em;
+    font-size: 3.5rem;
     color: var(--color-white);
 }
 
@@ -112,6 +113,7 @@ h5.offcanvas-title {
 }
 
 .banner-title.collapsed {
+    font-size: 3.5rem;
     display: none;
 }
 
@@ -124,6 +126,10 @@ h5.offcanvas-title {
 
 /* When the banner is collapsed, make title occupy as much space as possible */
 @media (max-width: 992px) {
+    :root {
+        --banner-height: 8rem;
+    }
+
     .banner-title {
         flex-grow: 1;
     }
@@ -147,5 +153,27 @@ h5.offcanvas-title {
     }
     .banner-title:not(.collapsed) {
         display: none;
+    }
+
+    .top-banner a {
+        font-size: 1.8rem;
+    }
+    .top-banner .offcanvas a {
+        font-size: 2.5rem;
+    }
+
+    .navbar-toggler {
+        height: 4.25rem;
+    }
+    .navbar-toggler-icon {
+        width: 3rem;
+    }
+    
+    .offcanbas-body .nav-link {
+        font-size: 3rem;
+    }
+
+    .language-switcher button {
+        font-size: 2.5rem;
     }
 }
