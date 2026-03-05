@@ -1,14 +1,32 @@
 <!-- Main Section -->
-<section class="main-section">
-    <h1 class="main-title text-shadow centered">
-        {{ $words := split .Site.Title " " }}
-        {{ range $words }}
-            <span>{{ . }}</span>
-        {{ end }}
-    </h1>
-    <h2 class="main-title text-shadow centered">
-        {{ .Params.subtitle }}
-    </h2>
+<div class="hero">
+    <div class="background-image"></div>
+    <div class="language-buttons">
+        {{ range .Site.Languages }}
+        <a 
+        href="{{ printf "%s/main/" .Lang | relURL }}"
+        class="button centered">
+            <img 
+            src="{{ printf "assets/emojis/flag_%s.svg" .Lang | relURL}}"
+            alt="flag-icon"
+            class="emoji">
+            {{ .LanguageName }}
+        </a>
+        {{ end }}  
+    </div>
+
+    <div class="main-title">
+        <h1 class="text-shadow centered">
+            {{ $words := split .Site.Title " " }}
+            {{ range $words }}
+                <span>{{ . }}</span>
+            {{ end }}
+        </h1>
+        <h2 class="text-shadow centered">
+            {{ .Params.subtitle }}
+        </h2>
+    </div>
+
     <div class="main-info centered">
         <div class="info-box">
             <div class="info-label text-shadow">{{ .Params.when }}</div>
@@ -19,7 +37,7 @@
             <div class="info-value text-shadow">{{ i18n "global.fullLocation" }}</div>
         </div>
     </div>
-</section>
+</div>
 <!-- Ceremony Section -->
 <section>
     <div class="section-image">

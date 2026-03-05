@@ -3,7 +3,8 @@
 {{ end }}
 
 {{ define "main" }}
-<div class="home-hero">
+<div class="hero">
+    <div class="background-image"></div>
     <div class="language-buttons">
         {{ range .Site.Languages }}
         <a 
@@ -17,7 +18,6 @@
         </a>
         {{ end }}  
     </div>
-
 
     <h1 class="text-shadow centered">
         {{ $words := split .Site.Title " " }}
