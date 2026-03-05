@@ -19,7 +19,7 @@
 .timeline-event {
     margin-bottom: 2rem;
     width: 100%;
-    height: 70vh;
+    height: 70dvh;
     scroll-snap-align: start;
     display: flex;
     align-items: center;

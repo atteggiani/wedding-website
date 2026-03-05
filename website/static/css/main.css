@@ -9,10 +9,10 @@
 
 .hero {
     position: relative;
-    width: 100vw;
-    margin: 0 calc(-50vw + 50%);
+    width: 100dvw;
+    margin: 0 calc(-50dvw + 50%);
     top: calc(-1*var(--banner-height));
-    min-height: 100vh;
+    min-height: 100dvh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -36,10 +36,10 @@
 
 section {
     position: relative;
-    width: 100vw;
-    height: 75vh;
-    margin-left: calc(-50vw + 50%);
-    margin-right: calc(-50vw + 50%);
+    width: 100dvw;
+    height: 75dvh;
+    margin-left: calc(-50dvw + 50%);
+    margin-right: calc(-50dvw + 50%);
     padding: 2rem 8rem;
     margin-top: 4rem;
     display: flex;
@@ -131,11 +131,11 @@ section a {
 
     .hero {
         position: relative;
-        width: 100vw;
-        margin: 0 calc(-50vw + 50%);
+        width: 100dvw;
+        margin: 0 calc(-50dvw + 50%);
         top: 0;
         top: calc(-1*var(--banner-height));
-        min-height: 100vh;
+        min-height: 100dvh;
     }
 
     section {
@@ -163,10 +163,10 @@ section a {
     }
     
     .section-image {
-        max-height: 50vh;
+        max-height: 50dvh;
     }
     .section-image img {
-        max-height: 50vh;
-        max-width: 50vw;
+        max-height: 50dvh;
+        max-width: 50dvw;
     }
 }

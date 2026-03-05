@@ -83,7 +83,7 @@
 /* Burger menu slider */
 .offcanvas.offcanvas-end {
     background-color: var(--color-bg);
-    width: 60vw;
+    width: 60dvw;
 }
 
 h5.offcanvas-title {
