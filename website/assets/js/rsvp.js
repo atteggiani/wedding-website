@@ -118,8 +118,12 @@ async function getGuestJWT(rsvpPassword, supabaseClient) {
     );
 
     if (res.error) {
-        if (res.error.context?.status === 401) {
+        if (res.error.context?.status === 401) { // Invalid password
             $passwordStatus.html(`{{ i18n "rsvp.invalid_password" }} ${contactUsHTML}`);
+        } else if (res.error.context?.status === 403) { // Banned
+            $passwordStatus.html(`{{ i18n "rsvp.banned" }}`);
+        } else if (res.error.context?.status === 429) { // Rate limit hit
+            $passwordStatus.html(`{{ i18n "rsvp.rate_limit_hit" }}`);
         } else {
             $passwordStatus.html(`{{ i18n "rsvp.error_validating_password" }} ${contactUsHTML}`);
         }

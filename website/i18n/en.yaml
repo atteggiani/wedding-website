@@ -28,6 +28,8 @@ rsvp:
     There was an error saving your RSVP. Please try again. 
     If the error persists, please don't hesitate to
   success_submission: "Your RSVP has been saved successfully!"
+  rate_limit_hit: "Too many failed attempts. Please try again later."
+  banned: "Too many failed attempts. You are permanently banned."
 menu:
   story: "Our Story"
   travel: "Travel & Stay"

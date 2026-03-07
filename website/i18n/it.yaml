@@ -28,6 +28,8 @@ rsvp:
     Si è verificato un errore durante il salvataggio della tua conferma. Per favore riprova. 
     Se l'errore persiste, non esitare a
   success_submission: "La tua partecipazione è stata salvata con successo!"
+  rate_limit_hit: "Troppi tentativi falliti. Per favore riprova più tardi."
+  banned: "Troppi tentativi falliti. Sei permanentemente bannato."
 menu:
   story: "La Nostra Storia"
   travel: "Viaggio e Alloggio"

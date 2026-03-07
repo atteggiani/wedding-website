@@ -28,6 +28,8 @@ rsvp:
     Hubo un error al guardar tu confirmación. Por favor, inténtalo de nuevo. 
     Si el error persiste, ¡por favor no dudes en
   success_submission: "¡Tu partecipación ha sido registrada exitosamente!"
+  rate_limit_hit: "Demasiados intentos fallidos. Por favor, inténtalo de nuevo más tarde."
+  banned: "Demasiados intentos fallidos. Has sido baneado permanentemente."
 menu:
   story: "Nuestra Historia"
   travel: "Viaje y Alojamiento"
