@@ -6,7 +6,7 @@ on:
     - cron: "0 14 * * *" # every day at 14:00 UTC (1am AEDT)
 env:
   BACKUP_FOLDER: backups
-  TABLES: 'guests guest_auth contacts'
+  TABLES: 'guests guest_auth contacts ip_rate_limits'
 
 jobs:
   backup:
