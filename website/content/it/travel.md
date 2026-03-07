@@ -22,7 +22,7 @@ car: In Macchina / Taxi
 carInfo: |
     Se viaggiate in macchina, potete seguire le direzioni di Google Maps per <strong><a href="https://www.google.com/maps/dir//Torre+Ubaldo,+35,+SS7,+04012+Cisterna+di+Latina+LT,+Italy/@41.5723936,12.8336098,14z/data=!4m9!4m8!1m0!1m5!1m1!1s0x132574686c1587ff:0xcaa9ed4e66798233!2m2!1d12.8807421!2d41.5578294!3e0?entry=ttu&g_ep=EgoyMDI2MDEyOC4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener noreferrer">Torre Ubaldo</a></strong>!
     
-    Un ampio parcheggio è dispobibile presso la location.
+    Un ampio parcheggio è disponibile presso la location.
 
     Se vi occorre un taxi, potete chiamare il seguente servizio:
 stay: Dove Alloggiare
